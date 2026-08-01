@@ -7,9 +7,9 @@
 }
 
 :root {
-  --black: #111;
-  --gray: #777;
-  --white: #fff;
+  --black: #151515;
+  --gray: #6f6f6b;
+  --white: #f4f3ef;
   --font: "Pixelify Sans", "Fusion Pixel 12px", monospace;
   --page: min(1120px, calc(100% - 40px));
 }
