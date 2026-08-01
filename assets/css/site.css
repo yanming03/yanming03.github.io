@@ -16,10 +16,10 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; color: var(--black); background: var(--white); font-family: var(--font); font-size: 14px; font-synthesis: none; cursor: url("../cursors/cat.svg") 3 2, auto; }
+body { margin: 0; color: var(--black); background: var(--white); font-family: var(--font); font-size: 14px; font-synthesis: none; cursor: url("../cursors/cat.png") 3 2, url("../cursors/cat.svg") 3 2, auto; }
 a { color: inherit; text-underline-offset: 4px; }
 button { color: inherit; background: none; font: inherit; }
-a, button, video, [role="button"] { cursor: url("../cursors/cat.svg") 3 2, pointer; }
+a, button, video, [role="button"] { cursor: url("../cursors/cat.png") 3 2, url("../cursors/cat.svg") 3 2, pointer; }
 :focus-visible { outline: 1px solid var(--black); outline-offset: 4px; }
 .skip { position: fixed; left: 12px; top: -50px; padding: 8px; background: var(--white); z-index: 5; }
 .skip:focus { top: 12px; }
