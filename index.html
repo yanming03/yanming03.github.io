@@ -8,10 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
     <link rel="stylesheet" href="assets/css/site.css" />
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
     <script defer src="content/index.js"></script>
     <script defer src="assets/js/site.js"></script>
   </head>
@@ -20,16 +17,24 @@
 
     <header class="identity" id="top">
       <h1>YANMING<span aria-hidden="true">_</span></h1>
+      <div
+        id="catgirl"
+        role="button"
+        tabindex="0"
+        aria-label="pixel catgirl, idle; press to interact"
+      ></div>
     </header>
 
     <nav class="relations" aria-label="内容关系">
       <span>research</span>
       <span aria-hidden="true">-&gt;</span>
-      <a href="#index" data-filter-link="paper">papers</a>
+      <a href="#index" data-filter-link="blogs">blogs</a>
       <span aria-hidden="true">|</span>
-      <a href="#index" data-filter-link="note">notes</a>
+      <a href="#index" data-filter-link="agenda">agenda</a>
       <span aria-hidden="true">|</span>
-      <a href="#index" data-filter-link="work">works</a>
+      <a href="#index" data-filter-link="papers">papers</a>
+      <span aria-hidden="true">+</span>
+      <a href="#index" data-filter-link="misc">misc</a>
     </nav>
 
     <main id="content">
@@ -38,9 +43,10 @@
           <h2 id="index-title">[index]</h2>
           <div class="filters" aria-label="筛选内容">
             <button class="active" type="button" data-filter="all">all</button>
-            <button type="button" data-filter="paper">paper</button>
-            <button type="button" data-filter="note">note</button>
-            <button type="button" data-filter="work">work</button>
+            <button type="button" data-filter="blogs">blogs</button>
+            <button type="button" data-filter="agenda">agenda</button>
+            <button type="button" data-filter="papers">papers</button>
+            <button type="button" data-filter="misc">misc</button>
           </div>
         </header>
 
@@ -49,14 +55,15 @@
         </div>
         <ol class="entries" id="entries" aria-live="polite"></ol>
         <p class="empty" id="empty" hidden>no entries.</p>
+
       </section>
     </main>
 
     <footer class="contact" id="contact">
       <span>[contact]</span>
-      <a href="mailto:hello@example.com">mail -&gt;</a>
-      <a href="#">github -&gt;</a>
-      <a href="#">scholar -&gt;</a>
+      <a href="mailto:yanming_03@outlook.com">mail -&gt;</a>
+      <a href="https://github.com/Tsunami-kun">github -&gt;</a>
+      <a href="https://scholar.google.com/citations?user=gHy232gAAAAJ&amp;hl=en">scholar -&gt;</a>
       <a class="top" href="#top">top ↑</a>
     </footer>
   </body>
