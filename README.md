@@ -12,7 +12,7 @@ python3 -m http.server 8000
 
 ## 内容能力
 
-- KaTeX 数学公式：正文默认使用块级 `$$...$$`
+- KaTeX 数学公式：正文默认使用块级 `$$...$$`；公式默认蓝色，可用 `data-math-color="red|green|purple|orange|blue"` 选择颜色
 - 内容索引：通过 `data-type` 扩展和筛选 blogs、agenda、papers 及 misc
 - 富媒体：详情页可以继续接入原生视频、音频或交互内容
 - 完整响应式导航与移动端排版
