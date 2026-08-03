@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="CapTwin (0)：从 Per-Act 到 Per-Act-Reflect，讨论环境反馈如何推动 coding agent 具身演化。" />
-    <title>CapTwin (0) Per-Act-Reflect / Yanming</title>
+    <meta name="description" content="CapTwin (0)：从 Per-Act 到 Per-Code-Act，讨论代码、环境反馈与 coding agent 的闭环演化。" />
+    <title>CapTwin (0) Per-Code-Act / Yanming</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&amp;display=swap" rel="stylesheet" />
@@ -29,44 +29,68 @@
       <main class="article" id="article">
         <header class="article-header">
           <p class="article-meta"><span>[002]</span><span>blogs</span><time datetime="2026">2026</time></p>
-          <h1>CapTwin (0) Per-Act-Reflect</h1>
-          <p class="lead">你是一只章鱼🐙,请相信你是!</p>
+          <h1>CapTwin (0) Per-Code-Act</h1>
         </header>
 
         <section class="article-section" aria-labelledby="per-act-title">
-          <h2 id="per-act-title">Per-Act：感知后作用</h2>
-          <p>你感受水流、岩面与触腕压力，然后移动触腕。</p>
-          <div class="math-block">$$E_t\xrightarrow{P}S_t\xrightarrow{A}E_{t+1}$$</div>
-          <div class="map-table" role="table" aria-label="Per-Act 映射">
-            <div role="row"><span role="columnheader">map</span><span role="columnheader">input -&gt; output</span><span role="columnheader">你</span></div>
-            <div role="row"><span role="cell">P</span><span role="cell">environment -&gt; state</span><span role="cell">感受水流与岩面</span></div>
-            <div role="row"><span role="cell">A</span><span role="cell">state -&gt; environment</span><span role="cell">移动触腕</span></div>
-          </div>
-          <p>闭合条件只有一个：动作后的环境仍能被下一轮 P 读取。</p>
+          <h2 id="per-act-title">Per-Act：反馈控制的生物表述</h2>
+          <p>控制理论早期，反馈控制把行动写成对偏差的反复修正。系统观测输出与目标的差，再由控制器生成动作。闭环稳定时，偏差被限制在目标轨道附近。</p>
+          <div class="math-block">$$e_k=r_k-y_k,\qquad a_k=K(e_k)$$</div>
+          <p>具身智能中的感知—运动循环具有相同结构。感知 P 把环境变成内部状态，运动 A 再把内部状态作用于环境。控制理论描述闭环，生物学描述身体。</p>
+          <div class="math-block" data-math-color="purple">$$E_k\xrightarrow{P}S_k\xrightarrow{A}E_{k+1}$$</div>
+          <p>假设一个生物按固定周期运行，时钟把连续生活切成一系列离散时刻。每次滴答触发一次感知和一次运动，上一轮的结果成为下一轮的输入。</p>
+          <div class="math-block">$$t_k=k\Delta t,\qquad E_{k+1}=(A\circ P)(E_k)$$</div>
+          <p>从趋利避害的草履虫到智人，都能先放进这个最小回路。差异进入 P、A 与内部状态 S；回路形式保持不变。在这个抽象层级，Per-Act 可以被视为生命活动的一条共同法则。</p>
+          <p>控制论是否已经表达了一种智能？对维纳而言，也许是。逻辑、信息与反馈共同构成一个能修正偏差的系统。但这与今天的人工智能相隔很远：当时的核心问题是如何传递信息并稳定系统，今天的核心问题还包括如何从数据中获得感知与行动。</p>
+          <p>经典控制通常先给定动力学，再设计控制律。滑模控制、常微分方程或偏微分方程都可以进入这一框架。</p>
+          <div class="math-block" data-math-color="green">$$\dot{x}=f(x,u),\qquad u=K(x,r)$$</div>
+          <p>现代具身智能把数据放进闭环本身。数据 D 同时塑造感知映射与行动映射；环境产生的新数据，再进入下一轮训练或适应。</p>
+          <div class="math-block" data-math-color="orange">$$D\xrightarrow{\mathrm{train}}(P_\theta,A_\phi),\qquad E_k\xrightarrow{P_\theta}S_k\xrightarrow{A_\phi}E_{k+1}\xrightarrow{\mathrm{observe}}D'$$</div>
+          <p>于是 Per-Act 多出一层时间尺度：身体在短周期内闭环行动，数据在长周期内改变闭环。这个变化也为 CodeGen 提供了入口。</p>
         </section>
 
         <section class="article-section" aria-labelledby="codegen-title">
-          <h2 id="codegen-title">CodeGen 版 Per-Act</h2>
-          <div class="math-block" data-math-color="purple">$$R_t\xrightarrow{P_{code}}C_t\xrightarrow{A_{code}}R_{t+1}$$</div>
-          <div class="mapping-table" role="table" aria-label="你与 CodeGen 的映射">
-            <div role="row"><span role="columnheader">你</span><span role="columnheader">CodeGen</span></div>
-            <div role="row"><span role="cell">海水、岩面、身体</span><span role="cell">repo、tests、tools</span></div>
-            <div role="row"><span role="cell">感觉状态</span><span role="cell">typed context</span></div>
-            <div role="row"><span role="cell">触腕动作</span><span role="cell">patch + command</span></div>
-            <div role="row"><span role="cell">位移与压力变化</span><span role="cell">compiler + test + runtime</span></div>
+          <h2 id="codegen-title">Per-Code-Act</h2>
+          <p>安排重复工作时，我们会写 SOP。SOP 给出步骤，执行者仍要理解文字、识别现场并处理未写出的情况。代码把更多含混处压进可执行的规则，因此能直接驱动机器，也能驱动带有模型的智能系统。</p>
+          <p>代码执行后会产生数据。它规定系统接收什么、按什么顺序变化、在哪些边界内运行；输出与日志因此成为一条可以追溯的轨迹。</p>
+          <div class="math-block" data-math-color="blue">$$C:(X,S_0)\longrightarrow(S_1,S_2,\ldots,S_n;\ O),\qquad \tau_C=S_0\xrightarrow{a_0}S_1\xrightarrow{a_1}\cdots\xrightarrow{a_{n-1}}S_n$$</div>
+          <p>这里 C 是代码，X 是输入，S 是系统状态，O 是输出，轨迹 τ 记录状态与动作的顺序。给定目标条件 φ，成功与失败可以由同一条轨迹判定；不同时刻、不同环境的运行也获得了共同的比较尺度。</p>
+          <div class="math-block" data-math-color="green">$$\operatorname{success}(\tau_C)=\mathbf{1}[\tau_C\models\varphi]$$</div>
+          <p>这延续了一种罗素式的形式化直觉：用符号系统表达对象、关系与推演规则。代码又向前一步，因为这种描述能够运行，并让运行结果反过来接受描述的检验。</p>
+          <p>把生物写成闭环，仍有一种机械论的嫌疑。人的脑中没有字面意义上的齿轮；不同生物也不共享一套刻在 DNA 中、能够逐行执行的 SOP。进入生命的细节后，特例不断出现，状态转移呈现为条件概率。</p>
+          <div class="math-block" data-math-color="purple">$$x_{t+1}\sim p(\,\cdot\mid x_t,a_t),\qquad M_N=\frac{1}{N}\sum_{i=1}^{N}h(x_i)\xrightarrow[N\to\infty]{}\mathbb{E}_p[h(X)]$$</div>
+          <p>这里 x 是微观状态，a 是作用，h 是我们选择的观测，M 是大量观测的统计量。单条轨迹可以充满例外；聚合到足够大的时间、空间或样本尺度后，稳定模式仍可能出现。</p>
+          <p>仿真模型把这些模式写成可运行的代码。少量规则生成大量轨迹，模拟统计量再与现实观察比较。规律是否有效，由两边在指定尺度上能否接近来回答。</p>
+          <div class="math-block" data-math-color="orange">$$C_{\mathrm{model}}\xrightarrow{\mathrm{run}}\{\tilde{\tau}_i\}_{i=1}^{N}\xrightarrow{\mathrm{aggregate}}\tilde{M}_N\approx M_N^{\mathrm{world}}$$</div>
+          <p>至少在统计回归与可重复实践覆盖的尺度上，世界没有退化为无法处理的随机性。理性仍能提出规律，观察仍能推翻规律。代码连接这两步，并推动下一次发现。</p>
+          <p>因此，我偏爱一个更激进的表述：在感知与行动之间，把代码设为边界。感知把世界压缩成可处理的描述；代码把描述组织成可执行的关系；行动把这些关系重新送回世界。</p>
+          <div class="math-block" data-math-color="blue">$$E_t\xrightarrow{\mathrm{Per}}S_t\xrightarrow{\mathrm{Code}}\Pi_t\xrightarrow{\mathrm{Act}}E_{t+1}$$</div>
+          <p>从分析哲学的角度看，这个表述没有那么激进。有意义的思考需要遵循可说明的推理关系，也需要接受事实检验。数学证明、程序与理性推演因此具有相近结构；其中命题—类型、证明—程序的对应可以严格建立，其余关系保留为方法上的类比。</p>
+          <div class="math-block" data-math-color="purple">$$\begin{array}{ccccc}\text{proposition}&amp;\longleftrightarrow&amp;\text{type}\\ \text{proof}&amp;\longleftrightarrow&amp;\text{program}\\ \text{normalization}&amp;\longleftrightarrow&amp;\text{execution}\end{array}$$</div>
+          <p>数学家与程序员都在构造可检查的推演，只是使用的对象与执行介质不同。把代码放进闭环还有更强的野心：系统获得了构造环境的能力。这正是仿真路线中的具身智能所依赖的一步。</p>
+          <p>我们先用代码生成一族可能世界，再让现实观察筛选它们。若模型族足够丰富，真实世界的可观测行为会落在其中，或被其中一个世界逼近。</p>
+          <div class="math-block" data-math-color="orange">$$\theta\sim q(\theta),\qquad W_\theta=\operatorname{Sim}(C,\theta),\qquad \theta^*=\arg\min_\theta d\!\left(O(W_\theta),O(W_{\mathrm{real}})\right)$$</div>
+          <p>这里 q 给出可能世界的分布，C 是仿真代码，O 只取我们能够观察的现象，d 衡量模拟与现实的距离。找到 θ* 后，我们可以在对应世界中复现实象、改变条件，并检验同一规律能否继续成立。</p>
+          <div class="math-block" data-math-color="purple">$$R_t\xrightarrow{\mathrm{Per}}C_t\xrightarrow{\mathrm{Code}}\Delta_t\xrightarrow{\mathrm{Act}}R_{t+1}$$</div>
+          <div class="mapping-table" role="table" aria-label="Per-Code-Act 阶段映射">
+            <div role="row"><span role="columnheader">stage</span><span role="columnheader">input -&gt; output</span></div>
+            <div role="row"><span role="cell">Per</span><span role="cell">repo + tests + tools -&gt; context</span></div>
+            <div role="row"><span role="cell">Code</span><span role="cell">context -&gt; patch</span></div>
+            <div role="row"><span role="cell">Act</span><span role="cell">patch -&gt; updated repo</span></div>
+            <div role="row"><span role="cell">EnvFeedback</span><span role="cell">runtime signals -&gt; pass / fail</span></div>
           </div>
           <div class="math-block">$$\begin{array}{ccc}\text{text}&amp;\xrightarrow{G}&amp;\text{code}\\ \downarrow P&amp;&amp;\downarrow W\\ \text{context}&amp;\xrightarrow{A}&amp;\text{repo}\end{array}\qquad W\circ G\approx A\circ P$$</div>
         </section>
 
         <section class="article-section" aria-labelledby="success-title">
-          <h2 id="success-title">EnvFeedback 成功：图交换</h2>
-          <p>目标变化记作 g。你稳稳接触岩面；CodeGen 通过测试。</p>
+          <h2 id="success-title">EnvFeedback / pass：路径到达目标</h2>
+          <p>目标变化记作 g。CodeGen 产生修改，环境执行验证。</p>
           <div class="math-block" data-math-color="green">$$\begin{array}{ccc}E_t&amp;\xrightarrow{P}&amp;S_t\\ &amp;\searrow_{g}&amp;\downarrow A\\ &amp;&amp;E_{t+1}\end{array}\qquad A\circ P\approx g$$</div>
-          <p>成功保留三项：所需上下文、有效动作、验证条件。不要记忆整份 patch。</p>
+          <p>一次 pass 只覆盖当前 repo。换一个 repo，这条路径需要重新运行。</p>
         </section>
 
         <section class="article-section" aria-labelledby="failure-title">
-          <h2 id="failure-title">EnvFeedback 失败：图不交换</h2>
+          <h2 id="failure-title">EnvFeedback / fail：寻找首个分叉</h2>
           <div class="math-block" data-math-color="red">$$A\circ P\not\approx g$$</div>
           <div class="map-table failure-map" role="table" aria-label="失败归因与修改边">
             <div role="row"><span role="columnheader">signal</span><span role="columnheader">broken map</span><span role="columnheader">revision</span></div>
@@ -75,16 +99,16 @@
             <div role="row"><span role="cell">行为不满足</span><span role="cell">A</span><span role="cell">改生成</span></div>
             <div role="row"><span role="cell">测试不稳定</span><span role="cell">feedback</span><span role="cell">修环境</span></div>
           </div>
-          <p>按来源拆分 stderr。一次只修改一条边，再运行同一反例。</p>
+          <p>实际路径偏离 g。首个分叉点决定修改 P、adapter、A 或 feedback。</p>
         </section>
 
         <section class="article-section" aria-labelledby="evolution-title">
           <h2 id="evolution-title">具身进化：更新闭环</h2>
           <div class="math-block" data-math-color="orange">$$E_t\xrightarrow{P_t}S_t\xrightarrow{A_t}E_{t+1}\xrightarrow{F}O_t\xrightarrow{R}(P,A)_{t+1}$$</div>
-          <p>你根据反馈调整感觉与动作。Coding agent 对应更新 context、工具策略、工具边界与记忆检索。</p>
+          <p>Coding agent 根据反馈更新 context、工具策略、工具边界与记忆检索。</p>
           <div class="math-block">$$T:(E,K)\to(E,K),\qquad T^{n+1}=T\circ T^n$$</div>
           <p>K 是持续更新的 agent 状态。R 改变下一轮 P 或 A，Reflect 才改变系统。</p>
-          <p>追求下一次交换图更接近交换，不追求单次生成更聪明。</p>
+          <p>进化表现为下一次交换图更接近交换；单次生成分数无法刻画这一变化。</p>
         </section>
 
         <section class="article-section references" aria-labelledby="references-title">
