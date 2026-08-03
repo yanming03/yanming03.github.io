@@ -106,9 +106,11 @@ h2 { margin: 0; font-size: 16px; font-weight: 500; }
 .entry .title { font-size: clamp(15px, 2vw, 21px); }
 .entry .link { justify-self: end; }
 .empty { padding: 30px 12px; border-bottom: 1px dashed var(--gray); color: var(--gray); }
-.landscape { margin: 110px 0 0; overflow: hidden; }
-.landscape pre { margin: 0; overflow-x: auto; padding: 0 0 12px; color: var(--black); font: inherit; font-size: clamp(8px, 1.25vw, 13px); line-height: 1.05; text-align: center; }
-.landscape figcaption { margin-top: 12px; color: var(--gray); font-size: 11px; text-align: center; }
+.prettiest { margin: 110px 0 0; }
+.prettiest a { display: block; }
+.prettiest img { display: block; width: 100%; height: auto; border: 1px solid var(--black); filter: grayscale(1); image-rendering: pixelated; }
+.prettiest figcaption { margin-top: 12px; color: var(--gray); font-size: 11px; text-align: center; }
+.prettiest a:hover + figcaption, .prettiest a:focus-visible + figcaption { color: var(--black); text-decoration: underline dashed; text-underline-offset: 4px; }
 
 .contact { min-height: 170px; padding: 36px max(20px, calc((100% - 1120px) / 2)); display: grid; grid-template-columns: 1fr repeat(3, auto) 1fr; align-items: start; gap: 32px; border-top: 1px solid var(--black); }
 .contact > span { color: var(--gray); }
@@ -163,7 +165,7 @@ h2 { margin: 0; font-size: 16px; font-weight: 500; }
   .identity p { margin-top: 36px; }
   .relations { padding-inline: 12px; }
   .index { padding: 65px 0 90px; }
-  .landscape { margin-top: 72px; }
+  .prettiest { margin-top: 72px; }
   .index-header { display: block; }
   .filters { margin-top: 28px; gap: 12px; }
   .column-labels { display: none; }
