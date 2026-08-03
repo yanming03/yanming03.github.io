@@ -154,6 +154,13 @@ h2 { margin: 0; font-size: 16px; font-weight: 500; }
 .math-block[data-math-color="orange"] { --math-color: var(--math-orange); }
 .article-footer { min-height: 130px; padding: 30px 0; border-top: 1px solid var(--black); display: flex; justify-content: space-between; gap: 20px; }
 .character-art { margin: 56px 0; padding: 28px 0; overflow-x: auto; border-top: 1px dashed var(--gray); border-bottom: 1px dashed var(--gray); font: inherit; line-height: 1.2; }
+.references p { margin-block: 12px; font-size: 12px; }
+.map-table, .mapping-table { margin: 28px 0; border-top: 1px solid var(--black); }
+.map-table [role="row"], .mapping-table [role="row"] { display: grid; border-bottom: 1px dashed var(--gray); }
+.map-table [role="row"] { grid-template-columns: 90px 1fr 1.25fr; }
+.mapping-table [role="row"] { grid-template-columns: 1fr 1fr; }
+.map-table span, .mapping-table span { padding: 10px 8px; }
+.map-table [role="columnheader"], .mapping-table [role="columnheader"] { color: var(--gray); font-size: 11px; }
 
 @media (max-width: 680px) {
   :root { --page: calc(100% - 24px); }
@@ -182,6 +189,8 @@ h2 { margin: 0; font-size: 16px; font-weight: 500; }
   .article .lead { font-size: 14px; }
   .article-section { margin-top: 52px; }
   .math-block { padding-inline: 4px; }
+  .map-table [role="row"] { grid-template-columns: 64px 1fr 1.2fr; }
+  .map-table span, .mapping-table span { padding-inline: 4px; font-size: 10px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
