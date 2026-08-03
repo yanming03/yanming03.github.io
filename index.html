@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <script src="assets/js/theme.js"></script>
     <link rel="stylesheet" href="assets/css/site.css" />
     <script defer src="content/index.js"></script>
     <script defer src="assets/js/site.js"></script>
@@ -17,12 +18,15 @@
 
     <header class="identity" id="top">
       <h1>YANMING<span aria-hidden="true">_</span></h1>
-      <div
-        id="catgirl"
-        role="button"
-        tabindex="0"
-        aria-label="pixel catgirl, idle; press to interact"
-      ></div>
+      <div class="identity-controls">
+        <div
+          id="catgirl"
+          role="button"
+          tabindex="0"
+          aria-label="pixel catgirl, idle; press to interact"
+        ></div>
+        <button class="theme-toggle" type="button" aria-label="切换配色"></button>
+      </div>
     </header>
 
     <nav class="relations" aria-label="内容关系">
