@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Embodied Harness：面向机器人任务的插件式 agent harness，连接语义工具、可替换 provider 与 RoboTwin。" />
+    <title>Embodied Harness / Yanming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&amp;display=swap" rel="stylesheet" />
+    <script src="../../../assets/js/theme.js"></script>
+    <link rel="stylesheet" href="../../../assets/css/site.css" />
+    <script defer src="../../../assets/js/article.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#article">跳到正文</a>
+
+    <div class="article-shell">
+      <nav class="article-nav" aria-label="文章路径">
+        <a href="../../../index.html">index</a>
+        <span aria-hidden="true">-&gt;</span>
+        <span class="current">003 / blogs</span>
+        <button class="theme-toggle" type="button" aria-label="切换配色"></button>
+      </nav>
+
+      <main class="article" id="article">
+        <header class="article-header">
+          <p class="article-meta"><span>[003]</span><span>blogs</span><time datetime="2026">2026</time></p>
+          <h1>Embodied Harness</h1>
+          <p>把 agent 的推理循环接到机器人世界，同时不把仿真器 API 和控制器细节暴露给模型。</p>
+        </header>
+
+        <section class="article-section" aria-labelledby="problem-title">
+          <h2 id="problem-title">Problem</h2>
+          <p>机器人环境通常提供相机、对象句柄、关节状态和控制器调用。模型若直接操作这些接口，prompt 会绑定某个仿真器，轨迹也会混入大量控制细节。</p>
+          <p>Embodied Harness 把模型接口压缩为语义操作。模型观察图像、定位对象、读取本体状态并执行抓取；provider 决定这些操作来自固定 fixture、仿真真值，还是真实运行的 RoboTwin。</p>
+        </section>
+
+        <section class="article-section" aria-labelledby="design-title">
+          <h2 id="design-title">Design</h2>
+          <div class="mapping-table" role="table" aria-label="Embodied Harness 分层">
+            <div role="row"><span role="columnheader">layer</span><span role="columnheader">responsibility</span></div>
+            <div role="row"><span role="cell">agent</span><span role="cell">reason about task outcomes</span></div>
+            <div role="row"><span role="cell">semantic tools</span><span role="cell">inspect / locate / grasp / proprioception</span></div>
+            <div role="row"><span role="cell">capabilities</span><span role="cell">observation / object pose / robot</span></div>
+            <div role="row"><span role="cell">providers</span><span role="cell">fixture or RoboTwin bridge</span></div>
+          </div>
+          <p>工具参数在两种运行环境中保持一致，因此同一个 agent 组合可以先在无密钥 fixture 中验证，再切换到 RoboTwin。图像字节存入 attachment；session 只记录引用、语义输入和技能结果，历史不会被 base64 图像或控制器轨迹淹没。</p>
+        </section>
+
+        <section class="article-section" aria-labelledby="robotwin-title">
+          <h2 id="robotwin-title">RoboTwin path</h2>
+          <p>一个小型 Python sidecar 在 RoboTwin 进程内拥有场景，并通过 JSON-RPC 暴露 RGB、对象位姿、关节状态和语义抓取。TypeScript provider 负责连接检查和结果映射，agent loop 保持不变。</p>
+          <p>仓库中的 <code>captwin</code> 是这条桥接协议的历史名称，不是另一项必须安装的软件。运行真实 demo 只需要现有 RoboTwin checkout、它的 Python 环境和一个模型 API key。</p>
+        </section>
+
+        <section class="article-section" aria-labelledby="use-title">
+          <h2 id="use-title">Use it</h2>
+          <p>当前实现覆盖 RGB 观察、特权对象位姿、关节本体感知和抓取。无密钥 demo 验证完整工具序列与持久化事件；真实组合通过同一组语义工具连接 RoboTwin。</p>
+          <p><a href="https://github.com/Tsunami-kun/embodied_harness">repository -&gt;</a> <a href="https://github.com/Tsunami-kun/embodied_harness#install">install -&gt;</a> <a href="https://github.com/Tsunami-kun/embodied_harness/blob/master/docs/subsystems/embodied.md">architecture -&gt;</a></p>
+        </section>
+      </main>
+
+      <footer class="article-footer">
+        <a href="../../../index.html#entry-003">&lt;- index</a>
+        <a href="#article">top ↑</a>
+      </footer>
+    </div>
+  </body>
+</html>
