@@ -1,0 +1,13 @@
+{
+  "task": "fold_clothes",
+  "success_rate_percent": 38.0,
+  "mean_score": 46.13,
+  "metric_scope": "formal evaluation reported by the user",
+  "source_type": "user_provided",
+  "reported_on": "2026-09-27",
+  "source_statement": "叠衣服官方正式的成功率是38,分数是46.13(这是正式测的)",
+  "policy_revision": null,
+  "evaluated_episodes": null,
+  "source_result": null,
+  "verification_note": "The formal endpoint is supplied by the user. No per-version formal results or episode count were supplied; archived 40-scene development results are a separate evaluation."
+}

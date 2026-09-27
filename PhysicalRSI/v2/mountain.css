@@ -1,0 +1,42 @@
+/* An open cartographic plate: controls float in the sky, routes sit on the relief. */
+.mountain-figure{position:relative;isolation:isolate}
+.mountain-figure .chart-toolbar{position:absolute;top:20px;right:22px;z-index:8;border:0;border-radius:0;padding:0;background:transparent}
+.mountain-figure .chart-controls{gap:8px;display:flex;align-items:center}
+.mountain-figure .chart-controls select,.mountain-figure .chart-controls button{border:1px solid #cbd8d6;background:#fffdfbd9;box-shadow:0 2px 8px #23343206;border-radius:20px;color:#45615d;min-height:34px;font-size:11px}
+.mountain-figure .chart-controls select{padding:6px 28px 6px 13px}
+.mountain-figure .chart-controls button{width:34px;padding:0;font-size:17px}
+.mountain-figure .summit{aspect-ratio:1024/590;border:0;border-radius:2px;background:linear-gradient(180deg,#f2f8f7,#edf5f4);overflow:hidden}
+.mountain-figure .mountain{object-fit:fill;filter:grayscale(.75) contrast(1.09);opacity:1;mix-blend-mode:multiply}
+.mountain-figure .summit::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,#f2f8f7 0%,transparent 15%,transparent 79%,#f2f8f7 100%)}
+.mountain-figure .summit::after{display:none}
+.mountain-figure .chart-bottom{border:0;border-radius:0;background:transparent;padding:12px 4px 18px;color:#69807d;font:9px var(--mono)}
+.mountain-figure .chart-bottom button{font:11px var(--sans);color:#446964}
+.mountain-figure figcaption{border-top:1px solid var(--line);padding-top:12px;gap:14px;font-size:10px}
+.mountain-figure .route-guide{stroke:#689b94;stroke-dasharray:1 6;stroke-width:1;opacity:.25}
+.mountain-figure .route-halo{stroke:#f9fefd;stroke-width:7;opacity:.95}
+.mountain-figure #kai-trail{stroke:#3da396;stroke-width:2.5;filter:drop-shadow(0 1px 2px #33887d25)}
+.mountain-figure .route-continuation{stroke:#3da396;stroke-width:1.8;stroke-dasharray:2 6;opacity:.8}
+.mountain-figure .peer-routes path{stroke:#5b6765;stroke-width:.9;stroke-dasharray:1 5;stroke-linecap:round;stroke-linejoin:round;opacity:.32}
+.mountain-figure #kai-climber{width:34px;height:34px}
+.mountain-figure .kai-symbol{border:2px solid #fcfefe;background:#328479!important;box-shadow:0 0 0 4px #f9fefd99,0 4px 10px #295b5425;padding:0}
+.mountain-figure .kai-symbol svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.mountain-figure .kai-ripple{inset:-7px;border-color:#78bdb477!important}
+.ascent-name{position:absolute;left:calc(100% + 12px);top:50%;transform:translateY(-50%);padding:6px 10px;background:#fbfefef0;border:1px solid #a6d2cc;border-radius:3px;color:#328479;font:600 12px var(--sans);letter-spacing:-.2px;white-space:nowrap;box-shadow:0 3px 12px #2859530b}
+.ascent-name::before{content:'';position:absolute;right:100%;top:50%;width:12px;border-top:1px solid #75b5ad}
+.mountain-figure .climber .badge{border-color:#a9b8b6!important;box-shadow:0 0 0 2px #fbfefea6,0 3px 7px #1e302e1c;transition:transform .18s,box-shadow .18s}
+.mountain-figure .climber .badge img{filter:saturate(.55);padding:4px}
+.mountain-figure .climber:hover .badge,.mountain-figure .climber.selected .badge{box-shadow:0 0 0 3px #c1e7e2,0 4px 12px #35766d26}
+.mountain-figure .climber-rank{background:#485b58;border:1px solid #fbfefe;line-height:12px}
+.mountain-figure .leader-label{font-size:9px;color:#536e6a;background:#fcfefee8;border:1px solid #d2e2e0;padding:4px 6px}
+.mountain-figure .pause-ascent{width:30px;height:30px;padding:0;right:22px;bottom:22px;border-radius:50%;border-color:#afc7c4;color:#477972;background:#fbfefec9}
+.mountain-figure .mountain-scale{left:4px;bottom:14px;width:70px;border-top-color:#9ebab6;font:8px var(--mono);color:#688480;padding-top:8px}
+.map-compass{position:absolute;left:12px;top:18px;width:36px;height:48px;z-index:2;color:#7b9995;pointer-events:none}.map-compass text{font:10px Georgia,serif;fill:currentColor}.map-compass path,.map-compass circle{stroke:currentColor;stroke-width:.65;fill:none}.map-compass .compass-north{fill:currentColor;stroke:none}.map-compass circle{opacity:.4}
+@media(max-width:600px){.mountain-figure .chart-toolbar{top:6px;right:0}.mountain-figure .chart-controls select,.mountain-figure .chart-controls button{min-height:28px;font-size:10px}.mountain-figure .chart-controls button{width:28px}.mountain-figure .chart-controls select{padding:4px 20px 4px 9px}.mountain-figure .summit{aspect-ratio:4/3.4}.mountain-figure .map-compass{left:0;top:4px;width:24px;height:34px}.mountain-figure #kai-climber{width:27px;height:27px}.mountain-figure .kai-symbol svg{width:14px;height:14px}.ascent-name{font-size:9px;padding:4px 6px;left:calc(100% + 8px)}.ascent-name::before{width:8px}.mountain-figure .climber .badge img{padding:3px}.mountain-figure .pause-ascent{right:1px;bottom:12px;width:25px;height:25px}.mountain-figure .mountain-scale{bottom:10px;font-size:7px;width:52px}.mountain-figure .chart-bottom{font-size:7px;padding:10px 0 14px}.mountain-figure .chart-bottom button{font-size:9px}.mountain-figure .leader-label{display:none}.mountain-figure figcaption{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.mountain-figure .climber .badge{transition:none}}
+/* Pause the ascent, never the visibility of data markers. */
+.mountain-figure .climber{animation:none;opacity:1}.mountain-figure .mountain-scale{z-index:2}
+
+.mountain-figure .chart-bottom{justify-content:flex-end;padding-bottom:0}
+.everest-concept{margin:0 0 48px;overflow:hidden;border-radius:3px}
+.everest-concept img{display:block;width:100%;height:auto}
+@media(max-width:600px){.everest-concept{margin-bottom:32px}}

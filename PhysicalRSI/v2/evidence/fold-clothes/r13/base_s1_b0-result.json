@@ -1,0 +1,37 @@
+{
+  "success_rate": 0.6666666666666666,
+  "eval_time": 6,
+  "score": 70.0,
+  "details": {
+    "0": {
+      "layout_id": 18,
+      "success": false,
+      "score": 0.2
+    },
+    "1": {
+      "layout_id": 19,
+      "success": true,
+      "score": 1.0
+    },
+    "2": {
+      "layout_id": 20,
+      "success": true,
+      "score": 1.0
+    },
+    "3": {
+      "layout_id": 21,
+      "success": true,
+      "score": 1.0
+    },
+    "4": {
+      "layout_id": 22,
+      "success": false,
+      "score": 0.0
+    },
+    "5": {
+      "layout_id": 23,
+      "success": true,
+      "score": 1.0
+    }
+  }
+}

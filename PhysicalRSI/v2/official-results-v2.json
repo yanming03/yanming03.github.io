@@ -1,0 +1,585 @@
+{
+  "overall": {
+    "score": 36,
+    "sr": 31,
+    "source": "Official evaluation results supplied by the project author; not recomputed from partial screenshots."
+  },
+  "edition": "2026-09-28",
+  "comparators": [
+    {
+      "name": "Simate-beta",
+      "score": 33.95,
+      "sr": 27.96,
+      "role": "Best other model"
+    },
+    {
+      "name": "Liber-0 Preview",
+      "score": 30.74,
+      "sr": 25.52,
+      "role": ""
+    },
+    {
+      "name": "Liber-0 Lite",
+      "score": 29.24,
+      "sr": 24.23,
+      "role": "Best WAM"
+    },
+    {
+      "name": "GPT-6-Astra",
+      "score": 28.97,
+      "sr": 22.48,
+      "role": ""
+    },
+    {
+      "name": "DM0.5",
+      "score": 24.9,
+      "sr": 19.34,
+      "role": "Best VLA"
+    },
+    {
+      "name": "Pi-05",
+      "score": 11.44,
+      "sr": 6.93,
+      "role": "Our motor-policy tool"
+    }
+  ],
+  "task_metrics": {
+    "align_blocks": {
+      "sr": 86,
+      "score": 86,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "arrange_largest_number": {
+      "sr": 1,
+      "score": 3.87,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "build_tower": {
+      "sr": 29,
+      "score": 37.13,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "deposit_coin": {
+      "sr": 56,
+      "score": 62.27,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "fasten_screws": {
+      "sr": 0,
+      "score": 7.6,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "fill_egg_holder": {
+      "sr": 0,
+      "score": 1.9,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "fill_pen_holder": {
+      "sr": 3,
+      "score": 21.87,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "fold_clothes": {
+      "sr": 41,
+      "score": 48.8,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "general_pickup": {
+      "sr": 47,
+      "score": 47.33,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "hang_mugs": {
+      "sr": 0,
+      "score": 8.8,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "imitate_sorting_sequence": {
+      "sr": 0,
+      "score": 1.1,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Memory"
+    },
+    "insert_key": {
+      "sr": 39,
+      "score": 48.43,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "insert_tubes": {
+      "sr": 66,
+      "score": 78.93,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "make_toast": {
+      "sr": 0,
+      "score": 6,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "organize_table": {
+      "sr": 4,
+      "score": 27.33,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "pack_objects_into_box": {
+      "sr": 5,
+      "score": 26.67,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "pick_from_conveyor_by_image": {
+      "sr": 0,
+      "score": 0,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "play_Xylophone": {
+      "sr": 1,
+      "score": 0.67,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "play_stacking_toy": {
+      "sr": 0,
+      "score": 0,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "play_tic_tac_toe": {
+      "sr": 94,
+      "score": 98.33,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "plug_in_charger": {
+      "sr": 31,
+      "score": 30.67,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "pour_balls_into_vase": {
+      "sr": 39,
+      "score": 38.67,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "pour_by_language": {
+      "sr": 0,
+      "score": 10.13,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "press_by_number": {
+      "sr": 79,
+      "score": 79.33,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Memory"
+    },
+    "push_T": {
+      "sr": 65,
+      "score": 65.33,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "put_bottles_into_dustbin": {
+      "sr": 75,
+      "score": 83.7,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "solve_equation": {
+      "sr": 60,
+      "score": 60,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "sort_nesting_dolls_by_size": {
+      "sr": 16,
+      "score": 16,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "stack_blocks": {
+      "sr": 9,
+      "score": 18.93,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "stack_blocks_by_language": {
+      "sr": 0,
+      "score": 0,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "stack_bowls": {
+      "sr": 75,
+      "score": 78.47,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "store_laptop_and_headphones": {
+      "sr": 1,
+      "score": 13.07,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "store_tools_in_toolbox": {
+      "sr": 0,
+      "score": 6.67,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "swap_blocks": {
+      "sr": 0,
+      "score": 0,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Memory"
+    },
+    "sweep_blocks": {
+      "sr": 0,
+      "score": 0,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "stack_bowls_random": {
+      "sr": 0,
+      "score": 10,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "push_T_random": {
+      "sr": 0,
+      "score": 0,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "pack_objects_into_box_random": {
+      "sr": 0,
+      "score": 15.07,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "fold_clothes_random": {
+      "sr": 35,
+      "score": 43.47,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "hang_mugs_random": {
+      "sr": 0,
+      "score": 2,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "sweep_blocks_random": {
+      "sr": 0,
+      "score": 0,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "pour_liquid_into_cup_random": {
+      "sr": 9,
+      "score": 9.33,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "make_toast_random": {
+      "sr": 0,
+      "score": 4.67,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "arrange_largest_number_random": {
+      "sr": 21,
+      "score": 32.47,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "sort_nesting_dolls_by_size_random": {
+      "sr": 0,
+      "score": 0,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "store_laptop_and_headphones_random": {
+      "sr": 1,
+      "score": 13.07,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "stack_blocks_random": {
+      "sr": 0,
+      "score": 2.4,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "classify_objects": {
+      "sr": 36,
+      "score": 52,
+      "estimated": true,
+      "source": "Mean of the two available seeds in the 42-task official sheet",
+      "category": "Long horizon"
+    },
+    "classify_objects_by_language": {
+      "sr": 8,
+      "score": 22.2,
+      "estimated": true,
+      "source": "Mean of the two available seeds in the 42-task official sheet",
+      "category": "Open"
+    },
+    "cover_blocks": {
+      "sr": 100,
+      "score": 100,
+      "estimated": true,
+      "source": "Mean of the two available seeds in the 42-task official sheet",
+      "category": "Memory"
+    },
+    "make_kong": {
+      "sr": 81,
+      "score": 81,
+      "estimated": true,
+      "source": "Mean of the two available seeds in the 42-task official sheet",
+      "category": "Long horizon"
+    },
+    "swap_T": {
+      "sr": 93,
+      "score": 93,
+      "estimated": true,
+      "source": "Mean of the two available seeds in the 42-task official sheet",
+      "category": "Memory"
+    },
+    "match_and_pick_from_conveyor": {
+      "sr": 7,
+      "score": 7.33,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Memory"
+    },
+    "pour_liquid_into_cup": {
+      "sr": 94,
+      "score": 94,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": true,
+      "category": "Generalization"
+    }
+  },
+  "task_note": "54 named settings across 42 base tasks and 12 random-layout variants. Generalization rows use the standard/random sheet. A tilde marks estimated task means; category estimates use ≈. Diagnostic task results from the other sheet are retained separately.",
+  "sources": [
+    "evidence/official-results/微信图片_20260924140241_60_1093.png",
+    "evidence/official-results/微信图片_20260924140105_58_1093.png",
+    "evidence/official-results/微信图片_20260924140241_61_1093.png"
+  ],
+  "skill_source": {
+    "branch": "origin/qiubin",
+    "commit": "77b86089fd218db791fa941004890aaf79cd81d9"
+  },
+  "diagnostic_task_metrics": {
+    "stack_bowls": {
+      "sr": 37,
+      "score": 44.23,
+      "source": "42-task result sheets"
+    },
+    "push_T": {
+      "sr": 33,
+      "score": 32.67,
+      "source": "42-task result sheets"
+    },
+    "pack_objects_into_box": {
+      "sr": 3,
+      "score": 20.67,
+      "source": "42-task result sheets"
+    },
+    "fold_clothes": {
+      "sr": 38,
+      "score": 46.13,
+      "source": "42-task result sheets"
+    },
+    "hang_mugs": {
+      "sr": 0,
+      "score": 5.4,
+      "source": "42-task result sheets"
+    },
+    "sweep_blocks": {
+      "sr": 0,
+      "score": 0,
+      "source": "42-task result sheets"
+    },
+    "make_toast": {
+      "sr": 0,
+      "score": 5.33,
+      "source": "42-task result sheets"
+    },
+    "arrange_largest_number": {
+      "sr": 11,
+      "score": 18.17,
+      "source": "42-task result sheets"
+    },
+    "sort_nesting_dolls_by_size": {
+      "sr": 8,
+      "score": 8,
+      "source": "42-task result sheets"
+    },
+    "store_laptop_and_headphones": {
+      "sr": 1,
+      "score": 13.07,
+      "source": "42-task result sheets"
+    },
+    "stack_blocks": {
+      "sr": 5,
+      "score": 10.67,
+      "source": "42-task result sheets"
+    }
+  },
+  "category_estimates": {
+    "Open": {
+      "sr": 25.125,
+      "score": 29.041249999999998,
+      "estimated": true,
+      "tasks": [
+        "align_blocks",
+        "solve_equation",
+        "stack_blocks_by_language",
+        "general_pickup",
+        "classify_objects_by_language",
+        "pick_from_conveyor_by_image",
+        "store_tools_in_toolbox",
+        "pour_by_language"
+      ]
+    },
+    "Precision": {
+      "sr": 32.625,
+      "score": 38.04625,
+      "estimated": true,
+      "tasks": [
+        "fasten_screws",
+        "insert_tubes",
+        "plug_in_charger",
+        "pour_balls_into_vase",
+        "play_Xylophone",
+        "deposit_coin",
+        "insert_key",
+        "build_tower"
+      ]
+    },
+    "Long horizon": {
+      "sr": 36.625,
+      "score": 45.76625,
+      "estimated": true,
+      "tasks": [
+        "put_bottles_into_dustbin",
+        "play_tic_tac_toe",
+        "classify_objects",
+        "fill_pen_holder",
+        "fill_egg_holder",
+        "organize_table",
+        "play_stacking_toy",
+        "make_kong"
+      ]
+    },
+    "Memory": {
+      "sr": 46.5,
+      "score": 46.79333333333333,
+      "estimated": true,
+      "tasks": [
+        "cover_blocks",
+        "match_and_pick_from_conveyor",
+        "swap_T",
+        "press_by_number",
+        "imitate_sorting_sequence",
+        "swap_blocks"
+      ]
+    },
+    "Generalization": {
+      "sr": 15.541666666666666,
+      "score": 21.35083333333333,
+      "estimated": true,
+      "tasks": [
+        "stack_bowls",
+        "stack_bowls_random",
+        "push_T",
+        "push_T_random",
+        "pack_objects_into_box",
+        "pack_objects_into_box_random",
+        "fold_clothes",
+        "fold_clothes_random",
+        "hang_mugs",
+        "hang_mugs_random",
+        "sweep_blocks",
+        "sweep_blocks_random",
+        "pour_liquid_into_cup",
+        "pour_liquid_into_cup_random",
+        "make_toast",
+        "make_toast_random",
+        "arrange_largest_number",
+        "arrange_largest_number_random",
+        "sort_nesting_dolls_by_size",
+        "sort_nesting_dolls_by_size_random",
+        "store_laptop_and_headphones",
+        "store_laptop_and_headphones_random",
+        "stack_blocks",
+        "stack_blocks_random"
+      ]
+    }
+  },
+  "estimation_method": "Task rows preserve printed official averages. Missing row means use the mean of available seed results. Category estimates average task rows equally; generalization averages the 12 standard/random pairs. These older partial-sheet estimates are not forced to reproduce the later official 36 score / 31% SR overall."
+}

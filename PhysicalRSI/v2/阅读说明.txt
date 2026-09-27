@@ -1,0 +1,6 @@
+PhysicalRSI v2
+
+在线地址：https://yanming03.github.io/PhysicalRSI/v2/
+完整解压后，用 Chrome 或 Edge 打开 index.html。图片、视频、字体和交互数据均已包含。
+请保留目录结构。外部引用需要联网。
+演进模块来自 mengyiming/work 6c611b0，适配 v2 青绿色；珠峰图使用 MMLab 图标。

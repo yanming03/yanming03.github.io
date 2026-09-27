@@ -1,0 +1,24 @@
+.darwin-opening{--lens-x:-500px;--lens-y:-500px;--lens-radius:0px;position:relative;isolation:isolate;overflow:hidden;min-height:520px;height:clamp(520px,66vh,690px);border-block:1px solid #c6dad7;background:#f2f8f7;margin-top:0}
+.masthead{border-bottom:0}
+.darwin-base,.darwin-reveal{position:absolute;inset:0;background:#f2f8f7;overflow:hidden}
+.darwin-pattern{position:absolute;inset:-45px -140px;display:flex;flex-direction:column;justify-content:space-around;gap:12px;overflow:hidden;pointer-events:none;user-select:none;opacity:.065;mask-image:radial-gradient(ellipse 45% 44% at 50% 50%,#0002,#000 100%)}
+.darwin-pattern-row{display:flex;align-items:center;gap:48px;white-space:nowrap;flex-shrink:0;font-size:clamp(37px,4.6vw,67px);line-height:1.15}.darwin-pattern-row:nth-child(even){transform:translateX(-180px)}
+.darwin-composition{position:absolute;inset:0;display:grid;grid-template-columns:230px minmax(0,790px);align-items:center;justify-content:center;gap:48px;padding:58px 6% 72px}
+.darwin-portrait{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;mix-blend-mode:multiply;opacity:.9}
+.darwin-opening .opening-quote{margin:0;width:100%;max-width:none;text-align:left;position:relative}
+.darwin-opening .opening-quote blockquote{max-width:none;margin:0;font:italic 500 clamp(30px,3.05vw,44px)/1.3 'Cormorant Garamond',Georgia,serif;letter-spacing:-.015em;color:#29413e;text-wrap:balance}
+.darwin-opening .opening-quote figcaption{display:flex;justify-content:flex-end;gap:5px;flex-wrap:wrap;margin-top:24px;padding:0;border:0;font:400 12px/1.5 var(--sans);color:#558c85;text-align:right}
+.darwin-opening .opening-quote cite{font-style:normal}.darwin-opening .opening-quote a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}.darwin-opening .opening-quote a:hover{border-bottom-color:currentColor}
+.darwin-opening .opening-quote [lang="zh"] blockquote{font:400 clamp(24px,2.25vw,33px)/1.85 'Songti SC','Noto Serif CJK SC','SimSun',serif;letter-spacing:.055em}
+.darwin-translation[hidden]{display:none!important}
+.darwin-reveal{z-index:2;background:#202d2b;pointer-events:none;clip-path:circle(var(--lens-radius) at var(--lens-x) var(--lens-y));will-change:clip-path}
+.darwin-reveal .darwin-pattern{opacity:.13}.darwin-reveal .physicalrsi{color:#d5e9e6}.darwin-reveal .brand-rsi{color:#98e4da}
+.darwin-reveal .darwin-portrait{filter:grayscale(1) invert(1);mix-blend-mode:screen;opacity:.92}
+.darwin-reveal .opening-quote blockquote{color:#f3fcfb}.darwin-reveal .opening-quote figcaption{color:#a6e7df}
+
+.darwin-opening a:focus-visible{outline:2px solid #4eb7a9;outline-offset:4px}
+@media(min-width:1600px){.darwin-composition{grid-template-columns:260px minmax(0,850px);gap:64px}}
+@media(max-width:900px){.darwin-composition{grid-template-columns:170px minmax(0,1fr);gap:28px;padding-inline:6%}.darwin-opening .opening-quote blockquote{font-size:34px}.darwin-opening .opening-quote [lang="zh"] blockquote{font-size:27px}}
+@media(max-width:600px){.darwin-opening{height:auto;min-height:560px}.darwin-composition{grid-template-columns:minmax(0,1fr);grid-template-rows:150px auto;align-content:center;justify-items:center;gap:20px;padding:32px 7% 78px}.darwin-portrait{width:158px}.darwin-opening .opening-quote blockquote{font-size:30px;line-height:1.3;text-align:center}.darwin-opening .opening-quote [lang="zh"] blockquote{font-size:24px;line-height:1.8}.darwin-opening .opening-quote figcaption{font-size:10px;gap:3px;margin-top:20px}.darwin-pattern{inset:-30px -190px;gap:9px;opacity:.06}.darwin-pattern-row{font-size:40px;gap:35px}.darwin-reveal{will-change:auto}}
+@media(max-width:360px){.darwin-opening{min-height:575px}.darwin-opening .opening-quote blockquote{font-size:28px}.darwin-opening .opening-quote [lang="zh"] blockquote{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.darwin-reveal{will-change:auto}}

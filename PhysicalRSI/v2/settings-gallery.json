@@ -1,0 +1,1154 @@
+[
+  {
+    "task": "arrange_largest_number",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_kai_20260922/arrange_largest_number/seed0/episode_0000017_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_kai_20260922/arrange_largest_number/seed0/_result.json",
+    "episode_result": {
+      "layout_id": 17,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/arrange_largest_number.mp4",
+    "poster": "media/settings/arrange_largest_number.jpg",
+    "duration": 25.44,
+    "metric": {
+      "sr": 1,
+      "score": 3.87,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "arrange largest number",
+    "category": "Generalization",
+    "source_sha256": "27d77a6d03044846a60537cc817ce7c796cc95b117e4088700b80dced71671c3"
+  },
+  {
+    "task": "arrange_largest_number_random",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/arrange_largest_number_random/seed2/attempt_01/episode_0000008_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/arrange_largest_number_random-selected.mp4",
+    "poster": "media/experiments/arrange_largest_number_random-selected.jpg",
+    "receipt": "evidence/experiments/native/arrange_largest_number_random__seed2.json",
+    "selected_from": "previously reviewed success",
+    "duration": 29.44,
+    "metric": {
+      "sr": 21,
+      "score": 32.47,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "arrange largest number random",
+    "category": "Generalization",
+    "source_sha256": "faa5dab5d8d5eb2c2eca8e2431497a086c07751691c4a9ef366ea3fdbef20c7c"
+  },
+  {
+    "task": "fold_clothes",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/fold_clothes/seed0/attempt_02/episode_0000003_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/fold_clothes/seed0/attempt_02/_result.json",
+    "episode_result": {
+      "layout_id": 3,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/fold_clothes.mp4",
+    "poster": "media/settings/fold_clothes.jpg",
+    "duration": 11.88,
+    "metric": {
+      "sr": 41,
+      "score": 48.8,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "fold clothes",
+    "category": "Generalization",
+    "source_sha256": "b0043e54a8e4aadf200b1bb93ca2e101be471583793a068efef7fa63dcdba821"
+  },
+  {
+    "task": "fold_clothes_random",
+    "source": "/mnt/data/roborouter_videos/cap_pi05_54tasks_27gpu_batch10_20260921/fold_clothes_random/episode_0000005_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/cap_pi05_54tasks_27gpu_batch10_20260921/fold_clothes_random/_result.json",
+    "episode_result": {
+      "layout_id": 5,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/fold_clothes_random.mp4",
+    "poster": "media/settings/fold_clothes_random.jpg",
+    "duration": 11.6,
+    "metric": {
+      "sr": 35,
+      "score": 43.47,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "fold clothes random",
+    "category": "Generalization",
+    "source_sha256": "5a4b72ae8952497ee0feb04016e8436ab30716ddcbdd5b8b20094719f4e7b74a"
+  },
+  {
+    "task": "hang_mugs",
+    "source": "/mnt/data/roborouter_videos/latest54_batch10_20260921_141939/hang_mugs/episode_0000002_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/latest54_batch10_20260921_141939/hang_mugs/_result.json",
+    "episode_result": {
+      "layout_id": 2,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/hang_mugs.mp4",
+    "poster": "media/settings/hang_mugs.jpg",
+    "duration": 17.48,
+    "metric": {
+      "sr": 0,
+      "score": 8.8,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "hang mugs",
+    "category": "Generalization",
+    "source_sha256": "f5169e51e15d6588fba7abeab0e4b4325e042fd0b7829a9d6f1471080a1fc7fa"
+  },
+  {
+    "task": "make_toast",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/make_toast/seed1/attempt_01/episode_0000008_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/make_toast/seed1/attempt_01/_result.json",
+    "episode_result": {
+      "layout_id": 8,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/make_toast.mp4",
+    "poster": "media/settings/make_toast.jpg",
+    "duration": 18.4,
+    "metric": {
+      "sr": 0,
+      "score": 6,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "make toast",
+    "category": "Generalization",
+    "source_sha256": "b227ad77d962e52e94d6fc369b87056b4162c7a28648670ee38e0899a2665d63"
+  },
+  {
+    "task": "pack_objects_into_box",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/pack_objects_into_box/seed0/attempt_02/episode_0000004_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/pack_objects_into_box/seed0/attempt_02/_result.json",
+    "episode_result": {
+      "layout_id": 4,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/pack_objects_into_box.mp4",
+    "poster": "media/settings/pack_objects_into_box.jpg",
+    "duration": 46.4,
+    "metric": {
+      "sr": 5,
+      "score": 26.67,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "pack objects into box",
+    "category": "Generalization",
+    "source_sha256": "b45eac72c47cee7fcc0a06e8a4de1a3015f94b7d159ff87dd29a538182da171d"
+  },
+  {
+    "task": "pack_objects_into_box_random",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/pack_objects_into_box_random/seed2/attempt_01/episode_0000011_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/pack_objects_into_box_random-selected.mp4",
+    "poster": "media/experiments/pack_objects_into_box_random-selected.jpg",
+    "receipt": "evidence/experiments/native/pack_objects_into_box_random__seed2.json",
+    "selected_from": "previously reviewed success",
+    "duration": 43.44,
+    "metric": {
+      "sr": 0,
+      "score": 15.07,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "pack objects into box random",
+    "category": "Generalization",
+    "source_sha256": "d94a1ad0f2f3ce6625faa1b9617f5ccb6d8c2a6d096eb06383c3d3e6f616b7d6"
+  },
+  {
+    "task": "pour_liquid_into_cup",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/pour_liquid_into_cup/seed0/attempt_01/episode_0000009_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/pour_liquid_into_cup-selected.mp4",
+    "poster": "media/experiments/pour_liquid_into_cup-selected.jpg",
+    "receipt": "evidence/experiments/native/pour_liquid_into_cup__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 14.84,
+    "metric": {
+      "sr": 94,
+      "score": 94,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": true,
+      "category": "Generalization"
+    },
+    "name": "pour liquid into cup",
+    "category": "Generalization",
+    "source_sha256": "be88c678511126b485efcf027d43b4ef2a06701205e9e9dea72af948892977d1"
+  },
+  {
+    "task": "pour_liquid_into_cup_random",
+    "source": "/mnt/data/roborouter_videos/latest54_batch10_20260921_141939/pour_liquid_into_cup_random/episode_0000004_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/latest54_batch10_20260921_141939/pour_liquid_into_cup_random/_result.json",
+    "episode_result": {
+      "layout_id": 4,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/pour_liquid_into_cup_random.mp4",
+    "poster": "media/settings/pour_liquid_into_cup_random.jpg",
+    "duration": 8.0,
+    "metric": {
+      "sr": 9,
+      "score": 9.33,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "pour liquid into cup random",
+    "category": "Generalization",
+    "source_sha256": "908941c274b8a2a5e90456d182d86157f3efc49b7fcd9f200591cffafbe6094e"
+  },
+  {
+    "task": "push_T",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/push_T/seed1/attempt_01/episode_0000024_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/push_T-selected.mp4",
+    "poster": "media/experiments/push_T-selected.jpg",
+    "receipt": "evidence/experiments/native/push_T__seed1.json",
+    "selected_from": "previously reviewed success",
+    "duration": 22.64,
+    "metric": {
+      "sr": 65,
+      "score": 65.33,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "push T",
+    "category": "Generalization",
+    "source_sha256": "5587dc698e0673f52dbec70a6c1793f8eb75d0433f3645d9a5d6d537b677b855"
+  },
+  {
+    "task": "sort_nesting_dolls_by_size",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/sort_nesting_dolls_by_size/seed1/attempt_01/episode_0000017_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/sort_nesting_dolls_by_size-selected.mp4",
+    "poster": "media/experiments/sort_nesting_dolls_by_size-selected.jpg",
+    "receipt": "evidence/experiments/native/sort_nesting_dolls_by_size__seed1.json",
+    "selected_from": "previously reviewed success",
+    "duration": 36.28,
+    "metric": {
+      "sr": 16,
+      "score": 16,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "sort nesting dolls by size",
+    "category": "Generalization",
+    "source_sha256": "e5dd658f46394a20c507b069dcc923be6bf566968e3f54d63c3ebfa811db92f8"
+  },
+  {
+    "task": "stack_blocks",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/stack_blocks/seed2/attempt_01/episode_0000008_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/stack_blocks-selected.mp4",
+    "poster": "media/experiments/stack_blocks-selected.jpg",
+    "receipt": "evidence/experiments/native/stack_blocks__seed2.json",
+    "selected_from": "previously reviewed success",
+    "duration": 10.24,
+    "metric": {
+      "sr": 9,
+      "score": 18.93,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "stack blocks",
+    "category": "Generalization",
+    "source_sha256": "36277e97a0305f977de23d67531ab60507e335cd2961a9bfb66096e6f868baa3"
+  },
+  {
+    "task": "stack_bowls",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/stack_bowls/seed0/attempt_02/episode_0000018_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/stack_bowls-selected.mp4",
+    "poster": "media/experiments/stack_bowls-selected.jpg",
+    "receipt": "evidence/experiments/native/stack_bowls__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 14.68,
+    "metric": {
+      "sr": 75,
+      "score": 78.47,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "stack bowls",
+    "category": "Generalization",
+    "source_sha256": "f6fc9c782925e2a027c78cfe1fb429506c05415ade933139beccb1c98b3877b1"
+  },
+  {
+    "task": "stack_bowls_random",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/stack_bowls_random/seed1/attempt_02/episode_0000002_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/stack_bowls_random/seed1/attempt_02/_result.json",
+    "episode_result": {
+      "layout_id": 2,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/stack_bowls_random.mp4",
+    "poster": "media/settings/stack_bowls_random.jpg",
+    "duration": 20.6,
+    "metric": {
+      "sr": 0,
+      "score": 10,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "stack bowls random",
+    "category": "Generalization",
+    "source_sha256": "0271dcc951e8e2481f7b021ca7cc15d6956948af38842016a7352b6721d2ba33"
+  },
+  {
+    "task": "store_laptop_and_headphones",
+    "source": "/mnt/data/roborouter_videos/latest54_batch10_20260921_141939/store_laptop_and_headphones/episode_0000009_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/latest54_batch10_20260921_141939/store_laptop_and_headphones/_result.json",
+    "episode_result": {
+      "layout_id": 9,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/store_laptop_and_headphones.mp4",
+    "poster": "media/settings/store_laptop_and_headphones.jpg",
+    "duration": 19.64,
+    "metric": {
+      "sr": 1,
+      "score": 13.07,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "store laptop and headphones",
+    "category": "Generalization",
+    "source_sha256": "d187d1e75ac24e8934e316989bc33f965b696646f4e3d71ad4e475f43eb21cc0"
+  },
+  {
+    "task": "store_laptop_and_headphones_random",
+    "source": "/mnt/data/roborouter_videos/latest54_batch10_20260921_141939/store_laptop_and_headphones_random/episode_0000004_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/latest54_batch10_20260921_141939/store_laptop_and_headphones_random/_result.json",
+    "episode_result": {
+      "layout_id": 4,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/store_laptop_and_headphones_random.mp4",
+    "poster": "media/settings/store_laptop_and_headphones_random.jpg",
+    "duration": 17.4,
+    "metric": {
+      "sr": 1,
+      "score": 13.07,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "store laptop and headphones random",
+    "category": "Generalization",
+    "source_sha256": "59648dbac6981c5f79413d2e397b2c8ddb79a0388d0a58171af4d0ad425b7be5"
+  },
+  {
+    "task": "sweep_blocks",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/sweep_blocks/seed0/attempt_01/episode_0000012_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/sweep_blocks/seed0/attempt_01/_result.json",
+    "episode_result": {
+      "layout_id": 12,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/sweep_blocks.mp4",
+    "poster": "media/settings/sweep_blocks.jpg",
+    "duration": 17.24,
+    "metric": {
+      "sr": 0,
+      "score": 0,
+      "source": "Generalization standard-layout official sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "sweep blocks",
+    "category": "Generalization",
+    "source_sha256": "2533dfa6447415ec5143c76d1ada0b5f1bc453cfeafcdf3d1a28c7f9bd0235ec"
+  },
+  {
+    "task": "classify_objects",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/classify_objects/seed1/attempt_01/episode_0000037_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/classify_objects-selected.mp4",
+    "poster": "media/experiments/classify_objects-selected.jpg",
+    "receipt": "evidence/experiments/native/classify_objects__seed1.json",
+    "selected_from": "previously reviewed success",
+    "duration": 24.36,
+    "metric": {
+      "sr": 36,
+      "score": 52,
+      "estimated": true,
+      "source": "Mean of the two available seeds in the 42-task official sheet",
+      "category": "Long horizon"
+    },
+    "name": "classify objects",
+    "category": "Long horizon",
+    "source_sha256": "c62971e016c7955926dfb3901f0e4359b4569b25b293dc8970ef792d3a3195c6"
+  },
+  {
+    "task": "fill_pen_holder",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/fill_pen_holder/seed0/attempt_01/episode_0000007_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/fill_pen_holder/seed0/attempt_01/_result.json",
+    "episode_result": {
+      "layout_id": 7,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/fill_pen_holder.mp4",
+    "poster": "media/settings/fill_pen_holder.jpg",
+    "duration": 35.16,
+    "metric": {
+      "sr": 3,
+      "score": 21.87,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "name": "fill pen holder",
+    "category": "Long horizon",
+    "source_sha256": "7162ba1bfcf74112baf864821921688abdcf08b30b0bf3048e512cab157aefc3"
+  },
+  {
+    "task": "make_kong",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/make_kong/seed0/attempt_02/episode_0000000_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/make_kong/seed0/attempt_02/_result.json",
+    "episode_result": {
+      "layout_id": 0,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/make_kong.mp4",
+    "poster": "media/settings/make_kong.jpg",
+    "duration": 23.36,
+    "metric": {
+      "sr": 81,
+      "score": 81,
+      "estimated": true,
+      "source": "Mean of the two available seeds in the 42-task official sheet",
+      "category": "Long horizon"
+    },
+    "name": "make kong",
+    "category": "Long horizon",
+    "source_sha256": "0f4f71d64f17c806e04fc102b381711f8dffab01be056972777741c016146f17"
+  },
+  {
+    "task": "organize_table",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/organize_table/seed1/attempt_01/episode_0000016_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/organize_table/seed1/attempt_01/_result.json",
+    "episode_result": {
+      "layout_id": 16,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/organize_table.mp4",
+    "poster": "media/settings/organize_table.jpg",
+    "duration": 34.0,
+    "metric": {
+      "sr": 4,
+      "score": 27.33,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "name": "organize table",
+    "category": "Long horizon",
+    "source_sha256": "ea51c5da9bba0e7112a34668c9aac172aa689a221cad16f360414687fb9aea6a"
+  },
+  {
+    "task": "play_tic_tac_toe",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/play_tic_tac_toe/seed0/attempt_01/episode_0000020_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/play_tic_tac_toe-selected.mp4",
+    "poster": "media/experiments/play_tic_tac_toe-selected.jpg",
+    "receipt": "evidence/experiments/native/play_tic_tac_toe__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 42.16,
+    "metric": {
+      "sr": 94,
+      "score": 98.33,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "name": "play tic tac toe",
+    "category": "Long horizon",
+    "source_sha256": "aa3ede275ed06b2ddfe7aa8507485572a42b14bb648e5f5b4d204290052c45c3"
+  },
+  {
+    "task": "put_bottles_into_dustbin",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/put_bottles_into_dustbin/seed2/attempt_01/episode_0000004_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/put_bottles_into_dustbin-selected.mp4",
+    "poster": "media/experiments/put_bottles_into_dustbin-selected.jpg",
+    "receipt": "evidence/experiments/native/put_bottles_into_dustbin__seed2.json",
+    "selected_from": "previously reviewed success",
+    "duration": 19.12,
+    "metric": {
+      "sr": 75,
+      "score": 83.7,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "name": "put bottles into dustbin",
+    "category": "Long horizon",
+    "source_sha256": "0d44b3c8cf5d077b3bf81798fef2712743e2bed37f8087381dbf404802cd7f54"
+  },
+  {
+    "task": "cover_blocks",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/cover_blocks/seed0/attempt_01/episode_0000029_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/cover_blocks-selected.mp4",
+    "poster": "media/experiments/cover_blocks-selected.jpg",
+    "receipt": "evidence/experiments/native/cover_blocks__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 14.36,
+    "metric": {
+      "sr": 100,
+      "score": 100,
+      "estimated": true,
+      "source": "Mean of the two available seeds in the 42-task official sheet",
+      "category": "Memory"
+    },
+    "name": "cover blocks",
+    "category": "Memory",
+    "source_sha256": "072a17abda8d8dae92adf6f0de2acadf87c32bcff0e1653343e11f822056518a"
+  },
+  {
+    "task": "match_and_pick_from_conveyor",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/match_and_pick_from_conveyor/seed0/attempt_01/episode_0000001_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/match_and_pick_from_conveyor/seed0/attempt_01/_result.json",
+    "episode_result": {
+      "layout_id": 1,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/match_and_pick_from_conveyor.mp4",
+    "poster": "media/settings/match_and_pick_from_conveyor.jpg",
+    "duration": 21.52,
+    "metric": {
+      "sr": 7,
+      "score": 7.33,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Memory"
+    },
+    "name": "match and pick from conveyor",
+    "category": "Memory",
+    "source_sha256": "dc89598337654de04b726260694f447e0a8a51c0ecac56bfa3b43c334b8bae50"
+  },
+  {
+    "task": "press_by_number",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/press_by_number/seed0/attempt_01/episode_0000031_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/press_by_number-selected.mp4",
+    "poster": "media/experiments/press_by_number-selected.jpg",
+    "receipt": "evidence/experiments/native/press_by_number__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 13.76,
+    "metric": {
+      "sr": 79,
+      "score": 79.33,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Memory"
+    },
+    "name": "press by number",
+    "category": "Memory",
+    "source_sha256": "ab5392bc2827433703921171a3530116df3e96e112f3edbae10cf92b2a6a458c"
+  },
+  {
+    "task": "swap_T",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/swap_T/seed2/attempt_01/episode_0000006_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/swap_T-selected.mp4",
+    "poster": "media/experiments/swap_T-selected.jpg",
+    "receipt": "evidence/experiments/native/swap_T__seed2.json",
+    "selected_from": "previously reviewed success",
+    "duration": 15.48,
+    "metric": {
+      "sr": 93,
+      "score": 93,
+      "estimated": true,
+      "source": "Mean of the two available seeds in the 42-task official sheet",
+      "category": "Memory"
+    },
+    "name": "swap T",
+    "category": "Memory",
+    "source_sha256": "3758785a36279daec22b9c7b76e16b9a66b9154760406514c0af3b97d4860db2"
+  },
+  {
+    "task": "swap_blocks",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/swap_blocks/seed2/attempt_01/episode_0000014_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/swap_blocks-selected.mp4",
+    "poster": "media/experiments/swap_blocks-selected.jpg",
+    "receipt": "evidence/experiments/native/swap_blocks__seed2.json",
+    "selected_from": "previously reviewed success",
+    "duration": 17.0,
+    "metric": {
+      "sr": 0,
+      "score": 0,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Memory"
+    },
+    "name": "swap blocks",
+    "category": "Memory",
+    "source_sha256": "2cceaa9fff70f059d745ae59a86799bd4e0bc53d4ec38a26e4fb99837152fa4f"
+  },
+  {
+    "task": "align_blocks",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/align_blocks/seed0/attempt_01/episode_0000035_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/align_blocks-selected.mp4",
+    "poster": "media/experiments/align_blocks-selected.jpg",
+    "receipt": "evidence/experiments/native/align_blocks__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 3.84,
+    "metric": {
+      "sr": 86,
+      "score": 86,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "name": "align blocks",
+    "category": "Open",
+    "source_sha256": "0991eaba22d3f60b25add4a7a725a0173b4a42489dd4568bdd2e0adf2fa322fb"
+  },
+  {
+    "task": "classify_objects_by_language",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/classify_objects_by_language/seed2/attempt_01/episode_0000021_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/classify_objects_by_language-selected.mp4",
+    "poster": "media/experiments/classify_objects_by_language-selected.jpg",
+    "receipt": "evidence/experiments/native/classify_objects_by_language__seed2.json",
+    "selected_from": "previously reviewed success",
+    "duration": 30.52,
+    "metric": {
+      "sr": 8,
+      "score": 22.2,
+      "estimated": true,
+      "source": "Mean of the two available seeds in the 42-task official sheet",
+      "category": "Open"
+    },
+    "name": "classify objects by language",
+    "category": "Open",
+    "source_sha256": "b5b2c931784d64ad008e66a2a052ff4e08040aa8af33af0680a7b3e2ab9721ae"
+  },
+  {
+    "task": "general_pickup",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/general_pickup/seed1/attempt_01/episode_0000039_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/general_pickup-selected.mp4",
+    "poster": "media/experiments/general_pickup-selected.jpg",
+    "receipt": "evidence/experiments/native/general_pickup__seed1.json",
+    "selected_from": "previously reviewed success",
+    "duration": 7.28,
+    "metric": {
+      "sr": 47,
+      "score": 47.33,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "name": "general pickup",
+    "category": "Open",
+    "source_sha256": "06d0ba4b553624fa0c3d7a950e3b8d183fd59fb0a89cee88157b08283e46918a"
+  },
+  {
+    "task": "solve_equation",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/solve_equation/seed0/attempt_02/episode_0000024_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/solve_equation-selected.mp4",
+    "poster": "media/experiments/solve_equation-selected.jpg",
+    "receipt": "evidence/experiments/native/solve_equation__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 7.28,
+    "metric": {
+      "sr": 60,
+      "score": 60,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "name": "solve equation",
+    "category": "Open",
+    "source_sha256": "2a5196e68a52346c7793eb1e7f6fc7d61638835e738b27b9a10a59fe0bd554f7"
+  },
+  {
+    "task": "build_tower",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/build_tower/seed1/attempt_01/episode_0000040_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/build_tower-selected.mp4",
+    "poster": "media/experiments/build_tower-selected.jpg",
+    "receipt": "evidence/experiments/native/build_tower__seed1.json",
+    "selected_from": "previously reviewed success",
+    "duration": 28.4,
+    "metric": {
+      "sr": 29,
+      "score": 37.13,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "name": "build tower",
+    "category": "Precision",
+    "source_sha256": "86bbc2fe592d5fb58c95453ef3dca192af11cfdc09b4ce18b904a853bed77b2a"
+  },
+  {
+    "task": "deposit_coin",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/deposit_coin/seed0/attempt_01/episode_0000043_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/deposit_coin-selected.mp4",
+    "poster": "media/experiments/deposit_coin-selected.jpg",
+    "receipt": "evidence/experiments/native/deposit_coin__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 11.8,
+    "metric": {
+      "sr": 56,
+      "score": 62.27,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "name": "deposit coin",
+    "category": "Precision",
+    "source_sha256": "fc74727de85318ca62cfcfa41b3dd7d3c62234cbcfccf0fe21e87c7d28456e0b"
+  },
+  {
+    "task": "fasten_screws",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/fasten_screws/seed0/attempt_01/episode_0000003_cam_head_success.mp4",
+    "success": true,
+    "receipt": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/fasten_screws/seed0/attempt_01/_result.json",
+    "episode_result": {
+      "layout_id": 3,
+      "success": true,
+      "score": 1.0
+    },
+    "video": "media/settings/fasten_screws.mp4",
+    "poster": "media/settings/fasten_screws.jpg",
+    "duration": 53.6,
+    "metric": {
+      "sr": 0,
+      "score": 7.6,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "name": "fasten screws",
+    "category": "Precision",
+    "source_sha256": "b349388c1bd477590f5a6ca392c059ad60d04f5615b46ac4fa8009ad4dbd1c30"
+  },
+  {
+    "task": "insert_key",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/insert_key/seed0/attempt_01/episode_0000026_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/insert_key-selected.mp4",
+    "poster": "media/experiments/insert_key-selected.jpg",
+    "receipt": "evidence/experiments/native/insert_key__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 12.04,
+    "metric": {
+      "sr": 39,
+      "score": 48.43,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "name": "insert key",
+    "category": "Precision",
+    "source_sha256": "9340a9aa0c4728226ddc960377d0009320825f9f7924e8f65c730d1f0c24b8b8"
+  },
+  {
+    "task": "insert_tubes",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/insert_tubes/seed0/attempt_01/episode_0000010_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/insert_tubes-selected.mp4",
+    "poster": "media/experiments/insert_tubes-selected.jpg",
+    "receipt": "evidence/experiments/native/insert_tubes__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 18.32,
+    "metric": {
+      "sr": 66,
+      "score": 78.93,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "name": "insert tubes",
+    "category": "Precision",
+    "source_sha256": "7aab0f2b1f02e5b4f8758ba9f0c4e4cdcd254fe56786e6cb9ee7b00983f1b299"
+  },
+  {
+    "task": "plug_in_charger",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/plug_in_charger/seed0/attempt_01/episode_0000028_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/plug_in_charger-selected.mp4",
+    "poster": "media/experiments/plug_in_charger-selected.jpg",
+    "receipt": "evidence/experiments/native/plug_in_charger__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 13.6,
+    "metric": {
+      "sr": 31,
+      "score": 30.67,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "name": "plug in charger",
+    "category": "Precision",
+    "source_sha256": "75159ca9f3d0015b7255996126a1341390408c087324cb239184faef87490840"
+  },
+  {
+    "task": "pour_balls_into_vase",
+    "source": "/mnt/data/roborouter_videos/official6300_24gpu_groups10_max20_agent_20260922/pour_balls_into_vase/seed0/attempt_01/episode_0000043_cam_head_success.mp4",
+    "success": true,
+    "video": "media/experiments/pour_balls_into_vase-selected.mp4",
+    "poster": "media/experiments/pour_balls_into_vase-selected.jpg",
+    "receipt": "evidence/experiments/native/pour_balls_into_vase__seed0.json",
+    "selected_from": "previously reviewed success",
+    "duration": 20.84,
+    "metric": {
+      "sr": 39,
+      "score": 38.67,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "name": "pour balls into vase",
+    "category": "Precision",
+    "source_sha256": "200dd3b6a3debef324a0c05a12900b81a3de31a1632cfee68baf7ddc6436e8dd"
+  },
+  {
+    "task": "hang_mugs_random",
+    "source": "/mnt/data/roborouter_videos/hang_mugs_random/latest54_batch10_20260921_141939__hang_mugs_random/episode_0000001_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/hang_mugs_random/latest54_batch10_20260921_141939__hang_mugs_random/_result.json",
+    "episode_result": {
+      "layout_id": 1,
+      "success": false,
+      "score": 0.4
+    },
+    "video": "media/settings/hang_mugs_random.mp4",
+    "poster": "media/settings/hang_mugs_random.jpg",
+    "duration": 32.04,
+    "metric": {
+      "sr": 0,
+      "score": 2,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "hang mugs random",
+    "category": "Generalization",
+    "source_sha256": "f9ed24e5602f545af7637ab7adbd6e948e57164e8f2f587e42ec002d9a5697c3"
+  },
+  {
+    "task": "make_toast_random",
+    "source": "/mnt/data/roborouter_videos/make_toast_random/official6300_24gpu_groups10_max40_20260921__make_toast_random__seed0__attempt4/episode_0000000_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/make_toast_random/official6300_24gpu_groups10_max40_20260921__make_toast_random__seed0__attempt4/_result.json",
+    "episode_result": {
+      "layout_id": 0,
+      "success": false,
+      "score": 0.5
+    },
+    "video": "media/settings/make_toast_random.mp4",
+    "poster": "media/settings/make_toast_random.jpg",
+    "duration": 56.04,
+    "metric": {
+      "sr": 0,
+      "score": 4.67,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "make toast random",
+    "category": "Generalization",
+    "source_sha256": "edda709c47d579a75d34cacab1620b85a98195309151b29e30af749b8019cd8f"
+  },
+  {
+    "task": "sort_nesting_dolls_by_size_random",
+    "source": "/mnt/data/roborouter_videos/sort_nesting_dolls_by_size_random/cap_pi05_54tasks_27gpu_batch10_20260921__sort_nesting_dolls_by_size_random/episode_0000000_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/sort_nesting_dolls_by_size_random/cap_pi05_54tasks_27gpu_batch10_20260921__sort_nesting_dolls_by_size_random/_result.json",
+    "episode_result": {
+      "layout_id": 0,
+      "success": false,
+      "score": 0.0
+    },
+    "video": "media/settings/sort_nesting_dolls_by_size_random.mp4",
+    "poster": "media/settings/sort_nesting_dolls_by_size_random.jpg",
+    "duration": 42.04,
+    "metric": {
+      "sr": 0,
+      "score": 0,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "sort nesting dolls by size random",
+    "category": "Generalization",
+    "source_sha256": "86bfd06aafd6a36d0a093da0bd4163fcf9db55cec578115b103fc6d3fc4847f6"
+  },
+  {
+    "task": "stack_blocks_random",
+    "source": "/mnt/data/roborouter_videos/stack_blocks_random/latest54_batch10_20260921_141939__stack_blocks_random/episode_0000001_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/stack_blocks_random/latest54_batch10_20260921_141939__stack_blocks_random/_result.json",
+    "episode_result": {
+      "layout_id": 1,
+      "success": false,
+      "score": 0.15
+    },
+    "video": "media/settings/stack_blocks_random.mp4",
+    "poster": "media/settings/stack_blocks_random.jpg",
+    "duration": 22.04,
+    "metric": {
+      "sr": 0,
+      "score": 2.4,
+      "source": "generalization random-layout sheet",
+      "estimated": false,
+      "category": "Generalization"
+    },
+    "name": "stack blocks random",
+    "category": "Generalization",
+    "source_sha256": "b2cb32d59444dd275ed5468ee746018626b730ae53c86ce308914bde6097437c"
+  },
+  {
+    "task": "fill_egg_holder",
+    "source": "/mnt/data/roborouter_videos/fill_egg_holder/latest54_batch10_20260921_141939__fill_egg_holder/episode_0000003_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/fill_egg_holder/latest54_batch10_20260921_141939__fill_egg_holder/_result.json",
+    "episode_result": {
+      "layout_id": 3,
+      "success": false,
+      "score": 0.25
+    },
+    "video": "media/settings/fill_egg_holder.mp4",
+    "poster": "media/settings/fill_egg_holder.jpg",
+    "duration": 28.04,
+    "metric": {
+      "sr": 0,
+      "score": 1.9,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "name": "fill egg holder",
+    "category": "Long horizon",
+    "source_sha256": "59eb9c5b0450e79bc4abb6fd6e78e8eb5146d5cbce617869555ce0441574c90a"
+  },
+  {
+    "task": "play_stacking_toy",
+    "source": "/mnt/data/roborouter_videos/play_stacking_toy/latest54_batch10_20260921_141939__play_stacking_toy/episode_0000005_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/play_stacking_toy/latest54_batch10_20260921_141939__play_stacking_toy/_result.json",
+    "episode_result": {
+      "layout_id": 5,
+      "success": false,
+      "score": 0.3
+    },
+    "video": "media/settings/play_stacking_toy.mp4",
+    "poster": "media/settings/play_stacking_toy.jpg",
+    "duration": 48.04,
+    "metric": {
+      "sr": 0,
+      "score": 0,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Long horizon"
+    },
+    "name": "play stacking toy",
+    "category": "Long horizon",
+    "source_sha256": "e596c01c6daee805625986ffaa0d7efd9c27679d00375b226fcf0ce56a77f8b6"
+  },
+  {
+    "task": "imitate_sorting_sequence",
+    "source": "/mnt/data/roborouter_videos/imitate_sorting_sequence/official6300_24gpu_groups10_max40_20260921__imitate_sorting_sequence__seed2__attempt2/episode_0000018_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/imitate_sorting_sequence/official6300_24gpu_groups10_max40_20260921__imitate_sorting_sequence__seed2__attempt2/_result.json",
+    "episode_result": {
+      "layout_id": 20,
+      "success": false,
+      "score": 0.5
+    },
+    "video": "media/settings/imitate_sorting_sequence.mp4",
+    "poster": "media/settings/imitate_sorting_sequence.jpg",
+    "duration": 64.04,
+    "metric": {
+      "sr": 0,
+      "score": 1.1,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Memory"
+    },
+    "name": "imitate sorting sequence",
+    "category": "Memory",
+    "source_sha256": "25789e3607df81e65166a5351961a9cc86af35ee93fdb3c4517a46eec0f4f69f"
+  },
+  {
+    "task": "pick_from_conveyor_by_image",
+    "source": "/mnt/data/roborouter_videos/pick_from_conveyor_by_image/cap_pi05_54tasks_27gpu_batch10_20260921__pick_from_conveyor_by_image/episode_0000000_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/pick_from_conveyor_by_image/cap_pi05_54tasks_27gpu_batch10_20260921__pick_from_conveyor_by_image/_result.json",
+    "episode_result": {
+      "layout_id": 0,
+      "success": false,
+      "score": 0.0
+    },
+    "video": "media/settings/pick_from_conveyor_by_image.mp4",
+    "poster": "media/settings/pick_from_conveyor_by_image.jpg",
+    "duration": 28.04,
+    "metric": {
+      "sr": 0,
+      "score": 0,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "name": "pick from conveyor by image",
+    "category": "Open",
+    "source_sha256": "548714eccd7e015bcbf40d21cbf5285ad89c79ac6737955082773c218e5f2f3d"
+  },
+  {
+    "task": "pour_by_language",
+    "source": "/mnt/data/roborouter_videos/pour_by_language/official6300_24gpu_groups10_max40_20260921__pour_by_language__seed0__attempt2/episode_0000000_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/pour_by_language/official6300_24gpu_groups10_max40_20260921__pour_by_language__seed0__attempt2/_result.json",
+    "episode_result": {
+      "layout_id": 0,
+      "success": false,
+      "score": 0.2
+    },
+    "video": "media/settings/pour_by_language.mp4",
+    "poster": "media/settings/pour_by_language.jpg",
+    "duration": 32.04,
+    "metric": {
+      "sr": 0,
+      "score": 10.13,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "name": "pour by language",
+    "category": "Open",
+    "source_sha256": "f6881f9118b214f80d241cd37dab3afef34330f1a18c4299aca8b6b4c340ef95"
+  },
+  {
+    "task": "stack_blocks_by_language",
+    "source": "/mnt/data/roborouter_videos/stack_blocks_by_language/official6300_24gpu_groups10_max40_20260921__stack_blocks_by_language__seed0__attempt2/episode_0000000_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/stack_blocks_by_language/official6300_24gpu_groups10_max40_20260921__stack_blocks_by_language__seed0__attempt2/_result.json",
+    "episode_result": {
+      "layout_id": 0,
+      "success": false,
+      "score": 0.0
+    },
+    "video": "media/settings/stack_blocks_by_language.mp4",
+    "poster": "media/settings/stack_blocks_by_language.jpg",
+    "duration": 16.04,
+    "metric": {
+      "sr": 0,
+      "score": 0,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "name": "stack blocks by language",
+    "category": "Open",
+    "source_sha256": "da6f9736970814f9c9cda7912913b87dbc3185bec9c3c8ed074484c8e88b1c76"
+  },
+  {
+    "task": "store_tools_in_toolbox",
+    "source": "/mnt/data/roborouter_videos/store_tools_in_toolbox/official6300_24gpu_groups10_max40_20260921__store_tools_in_toolbox__seed0__attempt2/episode_0000003_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/store_tools_in_toolbox/official6300_24gpu_groups10_max40_20260921__store_tools_in_toolbox__seed0__attempt2/_result.json",
+    "episode_result": {
+      "layout_id": 3,
+      "success": false,
+      "score": 0.25
+    },
+    "video": "media/settings/store_tools_in_toolbox.mp4",
+    "poster": "media/settings/store_tools_in_toolbox.jpg",
+    "duration": 36.04,
+    "metric": {
+      "sr": 0,
+      "score": 6.67,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Open"
+    },
+    "name": "store tools in toolbox",
+    "category": "Open",
+    "source_sha256": "b366add746b214623f1e7b68a94ea0757c38e3bb56e544c40b74316de1000cc1"
+  },
+  {
+    "task": "play_Xylophone",
+    "source": "/mnt/data/roborouter_videos/play_Xylophone/all54_3layouts_20260921_103439__play_Xylophone_00_a1/episode_0000000_cam_head_fail.mp4",
+    "success": false,
+    "receipt": "/mnt/data/roborouter_videos/play_Xylophone/all54_3layouts_20260921_103439__play_Xylophone_00_a1/_result.json",
+    "episode_result": {
+      "layout_id": 0,
+      "success": false,
+      "score": 0.0
+    },
+    "video": "media/settings/play_Xylophone.mp4",
+    "poster": "media/settings/play_Xylophone.jpg",
+    "duration": 20.04,
+    "metric": {
+      "sr": 1,
+      "score": 0.67,
+      "source": "42-task result sheets",
+      "estimated": false,
+      "category": "Precision"
+    },
+    "name": "play xylophone",
+    "category": "Precision",
+    "source_sha256": "7aa122a9743df6270d9aef90c20d074e61adc592005cf56f2511d65c6f756aea"
+  }
+]

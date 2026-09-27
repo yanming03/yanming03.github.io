@@ -1,0 +1,762 @@
+[
+  {
+    "id": "open",
+    "name": "Open",
+    "rows": [
+      {
+        "key": "PhysicalRSI",
+        "name": "PhysicalRSI",
+        "score": 29.041249999999998,
+        "sr": 25.125,
+        "estimated": true
+      },
+      {
+        "key": "Pi_05",
+        "name": "π₀.₅",
+        "score": 1.98,
+        "sr": 1.67,
+        "estimated": false
+      },
+      {
+        "key": "GPT-6-Astra",
+        "name": "GPT-6 Astra",
+        "score": 34.36,
+        "sr": 31.0,
+        "estimated": false
+      },
+      {
+        "key": "Simate-beta",
+        "name": "Simate-beta",
+        "score": 9.12,
+        "sr": 8.5,
+        "estimated": false
+      },
+      {
+        "key": "OpenDM05",
+        "name": "DM0.5",
+        "score": 2.43,
+        "sr": 2.08,
+        "estimated": false
+      },
+      {
+        "key": "Liber_wam",
+        "name": "Liber-0 Lite",
+        "score": 3.06,
+        "sr": 2.58,
+        "estimated": false
+      }
+    ],
+    "tasks": [
+      {
+        "id": "solve_equation",
+        "name": "solve equation",
+        "rows": [
+          {
+            "key": "PhysicalRSI",
+            "name": "PhysicalRSI",
+            "score": 60,
+            "sr": 60,
+            "estimated": false
+          },
+          {
+            "key": "Pi_05",
+            "name": "π₀.₅",
+            "score": 0,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "GPT-6-Astra",
+            "name": "GPT-6 Astra",
+            "score": 40,
+            "sr": 40,
+            "estimated": false
+          },
+          {
+            "key": "Simate-beta",
+            "name": "Simate-beta",
+            "score": 0,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "OpenDM05",
+            "name": "DM0.5",
+            "score": 0,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "Liber_wam",
+            "name": "Liber-0 Lite",
+            "score": 0,
+            "sr": 0,
+            "estimated": false
+          }
+        ],
+        "formula": "o → equation → target → action",
+        "comparison": "On equation solving, π₀.₅, DM0.5, Liber-0 Lite and Simate-beta all have 0% SR; Astra reaches 40%, and PhysicalRSI 60%.",
+        "mechanism": "The harness separates symbol recognition and equation solving from locating and pressing the answer. A motor policy alone does not provide that symbolic-to-spatial mapping."
+      },
+      {
+        "id": "align_blocks",
+        "name": "align blocks",
+        "rows": [
+          {
+            "key": "PhysicalRSI",
+            "name": "PhysicalRSI",
+            "score": 86,
+            "sr": 86,
+            "estimated": false
+          },
+          {
+            "key": "Pi_05",
+            "name": "π₀.₅",
+            "score": 0,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "GPT-6-Astra",
+            "name": "GPT-6 Astra",
+            "score": 50,
+            "sr": 50,
+            "estimated": false
+          },
+          {
+            "key": "Simate-beta",
+            "name": "Simate-beta",
+            "score": 0,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "OpenDM05",
+            "name": "DM0.5",
+            "score": 0,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "Liber_wam",
+            "name": "Liber-0 Lite",
+            "score": 0,
+            "sr": 0,
+            "estimated": false
+          }
+        ],
+        "formula": "pᵢ → ℓ* : min Σᵢ dist(pᵢ, ℓ*)²",
+        "comparison": "Alignment reaches 86% SR, versus Astra’s 50%; the four motor-policy and agent baselines shown here are at 0%.",
+        "mechanism": "Estimate the target line, then use staged contact to bring blocks into alignment. The target is a geometric relation across objects, rather than an isolated grasp."
+      }
+    ]
+  },
+  {
+    "id": "precision",
+    "name": "Precision",
+    "rows": [
+      {
+        "key": "PhysicalRSI",
+        "name": "PhysicalRSI",
+        "score": 38.04625,
+        "sr": 32.625,
+        "estimated": true
+      },
+      {
+        "key": "Pi_05",
+        "name": "π₀.₅",
+        "score": 12.4,
+        "sr": 5.5,
+        "estimated": false
+      },
+      {
+        "key": "GPT-6-Astra",
+        "name": "GPT-6 Astra",
+        "score": 12.65,
+        "sr": 4.0,
+        "estimated": false
+      },
+      {
+        "key": "Simate-beta",
+        "name": "Simate-beta",
+        "score": 34.35,
+        "sr": 26.92,
+        "estimated": false
+      },
+      {
+        "key": "OpenDM05",
+        "name": "DM0.5",
+        "score": 24.82,
+        "sr": 16.75,
+        "estimated": false
+      },
+      {
+        "key": "Liber_wam",
+        "name": "Liber-0 Lite",
+        "score": 36.6,
+        "sr": 31.08,
+        "estimated": false
+      }
+    ],
+    "tasks": [
+      {
+        "id": "insert_key",
+        "name": "insert key",
+        "rows": [
+          {
+            "key": "PhysicalRSI",
+            "name": "PhysicalRSI",
+            "score": 48.43,
+            "sr": 39,
+            "estimated": false
+          },
+          {
+            "key": "Pi_05",
+            "name": "π₀.₅",
+            "score": 11.9,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "GPT-6-Astra",
+            "name": "GPT-6 Astra",
+            "score": 14.4,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "Simate-beta",
+            "name": "Simate-beta",
+            "score": 10.9,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "OpenDM05",
+            "name": "DM0.5",
+            "score": 4.9,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "Liber_wam",
+            "name": "Liber-0 Lite",
+            "score": 0.7,
+            "sr": 0,
+            "estimated": false
+          }
+        ],
+        "formula": "T_key → T_lock : ΔR → 0, Δp → 0",
+        "comparison": "PhysicalRSI reaches 39% SR. π₀.₅, Astra, Simate-beta, DM0.5 and Liber-0 Lite all have 0% SR on this task.",
+        "mechanism": "Reaching the lock is insufficient: key orientation and insertion position must agree. The skill separates approach, alignment and the final insertion motion."
+      },
+      {
+        "id": "insert_tubes",
+        "name": "insert tubes",
+        "rows": [
+          {
+            "key": "PhysicalRSI",
+            "name": "PhysicalRSI",
+            "score": 78.93,
+            "sr": 66,
+            "estimated": false
+          },
+          {
+            "key": "Pi_05",
+            "name": "π₀.₅",
+            "score": 17.87,
+            "sr": 3.33,
+            "estimated": false
+          },
+          {
+            "key": "GPT-6-Astra",
+            "name": "GPT-6 Astra",
+            "score": 6,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "Simate-beta",
+            "name": "Simate-beta",
+            "score": 41.2,
+            "sr": 22,
+            "estimated": false
+          },
+          {
+            "key": "OpenDM05",
+            "name": "DM0.5",
+            "score": 71.73,
+            "sr": 59.33,
+            "estimated": false
+          },
+          {
+            "key": "Liber_wam",
+            "name": "Liber-0 Lite",
+            "score": 81.07,
+            "sr": 72,
+            "estimated": false
+          }
+        ],
+        "formula": "p_tip → p_hole; axis_tip ∥ axis_hole",
+        "comparison": "PhysicalRSI reaches 66% SR, versus π₀.₅’s 3.33% and Astra’s 0%. Liber-0 Lite is stronger here at 72%.",
+        "mechanism": "A staged geometric controller reduces the alignment problem before contact. Tube insertion also shows where a strong learned motor policy remains effective."
+      }
+    ]
+  },
+  {
+    "id": "longHorizon",
+    "name": "Long horizon",
+    "rows": [
+      {
+        "key": "PhysicalRSI",
+        "name": "PhysicalRSI",
+        "score": 45.76625,
+        "sr": 36.625,
+        "estimated": true
+      },
+      {
+        "key": "Pi_05",
+        "name": "π₀.₅",
+        "score": 23.54,
+        "sr": 14.67,
+        "estimated": false
+      },
+      {
+        "key": "GPT-6-Astra",
+        "name": "GPT-6 Astra",
+        "score": 21.45,
+        "sr": 8.25,
+        "estimated": false
+      },
+      {
+        "key": "Simate-beta",
+        "name": "Simate-beta",
+        "score": 57.84,
+        "sr": 43.42,
+        "estimated": false
+      },
+      {
+        "key": "OpenDM05",
+        "name": "DM0.5",
+        "score": 33.7,
+        "sr": 19.5,
+        "estimated": false
+      },
+      {
+        "key": "Liber_wam",
+        "name": "Liber-0 Lite",
+        "score": 45.5,
+        "sr": 32.92,
+        "estimated": false
+      }
+    ],
+    "tasks": [
+      {
+        "id": "play_tic_tac_toe",
+        "name": "play tic tac toe",
+        "rows": [
+          {
+            "key": "PhysicalRSI",
+            "name": "PhysicalRSI",
+            "score": 98.33,
+            "sr": 94,
+            "estimated": false
+          },
+          {
+            "key": "Pi_05",
+            "name": "π₀.₅",
+            "score": 8.23,
+            "sr": 1.33,
+            "estimated": false
+          },
+          {
+            "key": "GPT-6-Astra",
+            "name": "GPT-6 Astra",
+            "score": 10.7,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "Simate-beta",
+            "name": "Simate-beta",
+            "score": 86.27,
+            "sr": 60.67,
+            "estimated": false
+          },
+          {
+            "key": "OpenDM05",
+            "name": "DM0.5",
+            "score": 35.77,
+            "sr": 3.33,
+            "estimated": false
+          },
+          {
+            "key": "Liber_wam",
+            "name": "Liber-0 Lite",
+            "score": 94.53,
+            "sr": 86,
+            "estimated": false
+          }
+        ],
+        "formula": "board_t → move_t → board_t₊₁",
+        "comparison": "PhysicalRSI reaches 94% SR; π₀.₅ reaches 1.33%, Astra 0%, Simate-beta 60.67%, and Liber-0 Lite 86%.",
+        "mechanism": "Read the board, choose a legal move and place at the corresponding cell. Repeating this state-to-action mapping matters over the entire game."
+      },
+      {
+        "id": "put_bottles_into_dustbin",
+        "name": "put bottles into dustbin",
+        "rows": [
+          {
+            "key": "PhysicalRSI",
+            "name": "PhysicalRSI",
+            "score": 83.7,
+            "sr": 75,
+            "estimated": false
+          },
+          {
+            "key": "Pi_05",
+            "name": "π₀.₅",
+            "score": 79.93,
+            "sr": 69.33,
+            "estimated": false
+          },
+          {
+            "key": "GPT-6-Astra",
+            "name": "GPT-6 Astra",
+            "score": 35.3,
+            "sr": 10,
+            "estimated": false
+          },
+          {
+            "key": "Simate-beta",
+            "name": "Simate-beta",
+            "score": 100,
+            "sr": 100,
+            "estimated": false
+          },
+          {
+            "key": "OpenDM05",
+            "name": "DM0.5",
+            "score": 81.7,
+            "sr": 72,
+            "estimated": false
+          },
+          {
+            "key": "Liber_wam",
+            "name": "Liber-0 Lite",
+            "score": 98,
+            "sr": 97,
+            "estimated": false
+          }
+        ],
+        "formula": "{p₁, …, pₙ} → grasp → transport → release",
+        "comparison": "PhysicalRSI reaches 75% SR, above π₀.₅’s 69.33% and Astra’s 10%. Simate-beta leads this task at 100%.",
+        "mechanism": "Repeated pick-and-place rewards stable motor control and progress tracking. The contrast with tic-tac-toe separates motor repetition from symbolic state transitions."
+      }
+    ]
+  },
+  {
+    "id": "memory",
+    "name": "Memory",
+    "rows": [
+      {
+        "key": "PhysicalRSI",
+        "name": "PhysicalRSI",
+        "score": 46.79333333333333,
+        "sr": 46.5,
+        "estimated": true
+      },
+      {
+        "key": "Pi_05",
+        "name": "π₀.₅",
+        "score": 5.89,
+        "sr": 4.67,
+        "estimated": false
+      },
+      {
+        "key": "GPT-6-Astra",
+        "name": "GPT-6 Astra",
+        "score": 43.04,
+        "sr": 38.67,
+        "estimated": false
+      },
+      {
+        "key": "Simate-beta",
+        "name": "Simate-beta",
+        "score": 33.33,
+        "sr": 33.0,
+        "estimated": false
+      },
+      {
+        "key": "OpenDM05",
+        "name": "DM0.5",
+        "score": 47.74,
+        "sr": 47.44,
+        "estimated": false
+      },
+      {
+        "key": "Liber_wam",
+        "name": "Liber-0 Lite",
+        "score": 35.68,
+        "sr": 35.44,
+        "estimated": false
+      }
+    ],
+    "tasks": [
+      {
+        "id": "press_by_number",
+        "name": "press by number",
+        "rows": [
+          {
+            "key": "PhysicalRSI",
+            "name": "PhysicalRSI",
+            "score": 79.33,
+            "sr": 79,
+            "estimated": false
+          },
+          {
+            "key": "Pi_05",
+            "name": "π₀.₅",
+            "score": 0,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "GPT-6-Astra",
+            "name": "GPT-6 Astra",
+            "score": 70,
+            "sr": 70,
+            "estimated": false
+          },
+          {
+            "key": "Simate-beta",
+            "name": "Simate-beta",
+            "score": 0.67,
+            "sr": 0.67,
+            "estimated": false
+          },
+          {
+            "key": "OpenDM05",
+            "name": "DM0.5",
+            "score": 95.33,
+            "sr": 95.33,
+            "estimated": false
+          },
+          {
+            "key": "Liber_wam",
+            "name": "Liber-0 Lite",
+            "score": 0,
+            "sr": 0,
+            "estimated": false
+          }
+        ],
+        "formula": "n_remaining ← n_remaining − 1",
+        "comparison": "π₀.₅ and Liber-0 Lite have 0% SR; PhysicalRSI reaches 79%, Astra 70%, and DM0.5 95.33%.",
+        "mechanism": "Count completed presses and include a release between contacts. Progress is episode state: a repeated visual scene does not mean that the remaining action is unchanged."
+      },
+      {
+        "id": "cover_blocks",
+        "name": "cover blocks",
+        "rows": [
+          {
+            "key": "PhysicalRSI",
+            "name": "PhysicalRSI",
+            "score": 100,
+            "sr": 100,
+            "estimated": true
+          },
+          {
+            "key": "Pi_05",
+            "name": "π₀.₅",
+            "score": 19.07,
+            "sr": 13.33,
+            "estimated": false
+          },
+          {
+            "key": "GPT-6-Astra",
+            "name": "GPT-6 Astra",
+            "score": 49.3,
+            "sr": 46,
+            "estimated": false
+          },
+          {
+            "key": "Simate-beta",
+            "name": "Simate-beta",
+            "score": 100,
+            "sr": 100,
+            "estimated": false
+          },
+          {
+            "key": "OpenDM05",
+            "name": "DM0.5",
+            "score": 100,
+            "sr": 100,
+            "estimated": false
+          },
+          {
+            "key": "Liber_wam",
+            "name": "Liber-0 Lite",
+            "score": 100,
+            "sr": 100,
+            "estimated": false
+          }
+        ],
+        "formula": "visible pᵢ → memory mᵢ → occluded target",
+        "comparison": "The two reported PhysicalRSI seeds both reach 100% SR. The complete-run mean shown here is estimated from those seeds.",
+        "mechanism": "In the π₀.₅ comparison clip, the last cup grasp misses and the blue block stays covered. Retaining cup/object correspondence supports an ordered reveal after occlusion."
+      }
+    ]
+  },
+  {
+    "id": "generalization",
+    "name": "Generalization",
+    "rows": [
+      {
+        "key": "PhysicalRSI",
+        "name": "PhysicalRSI",
+        "score": 21.35083333333333,
+        "sr": 15.541666666666666,
+        "estimated": true
+      },
+      {
+        "key": "Pi_05",
+        "name": "π₀.₅",
+        "score": 13.375,
+        "sr": 8.165000000000001,
+        "estimated": false
+      },
+      {
+        "key": "GPT-6-Astra",
+        "name": "GPT-6 Astra",
+        "score": 33.36,
+        "sr": 30.5,
+        "estimated": false
+      },
+      {
+        "key": "Simate-beta",
+        "name": "Simate-beta",
+        "score": 35.085,
+        "sr": 27.945,
+        "estimated": false
+      },
+      {
+        "key": "OpenDM05",
+        "name": "DM0.5",
+        "score": 15.774999999999999,
+        "sr": 10.945,
+        "estimated": false
+      },
+      {
+        "key": "Liber_wam",
+        "name": "Liber-0 Lite",
+        "score": 25.355,
+        "sr": 19.11,
+        "estimated": false
+      }
+    ],
+    "tasks": [
+      {
+        "id": "arrange_largest_number_random",
+        "name": "arrange largest number random",
+        "rows": [
+          {
+            "key": "PhysicalRSI",
+            "name": "PhysicalRSI",
+            "score": 32.47,
+            "sr": 21,
+            "estimated": false
+          },
+          {
+            "key": "Pi_05",
+            "name": "π₀.₅",
+            "score": 0.4,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "GPT-6-Astra",
+            "name": "GPT-6 Astra",
+            "score": 61.4,
+            "sr": 52,
+            "estimated": false
+          },
+          {
+            "key": "Simate-beta",
+            "name": "Simate-beta",
+            "score": 4.33,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "OpenDM05",
+            "name": "DM0.5",
+            "score": 0.87,
+            "sr": 0,
+            "estimated": false
+          },
+          {
+            "key": "Liber_wam",
+            "name": "Liber-0 Lite",
+            "score": 5.67,
+            "sr": 1,
+            "estimated": false
+          }
+        ],
+        "formula": "σ = argsort(d, ↓); p*ᵢ = p₀ + iΔx",
+        "comparison": "PhysicalRSI reaches 21% SR on random layouts; π₀.₅, DM0.5 and Simate-beta reach 0%, and Liber-0 Lite 1%. Astra leads at 52%.",
+        "mechanism": "Locate the digits in the new scene, sort by value and assign placement slots. The π₀.₅ clip reaches among distractors without completing the row."
+      },
+      {
+        "id": "fold_clothes_random",
+        "name": "fold clothes random",
+        "rows": [
+          {
+            "key": "PhysicalRSI",
+            "name": "PhysicalRSI",
+            "score": 43.47,
+            "sr": 35,
+            "estimated": false
+          },
+          {
+            "key": "Pi_05",
+            "name": "π₀.₅",
+            "score": 16.53,
+            "sr": 9.33,
+            "estimated": false
+          },
+          {
+            "key": "GPT-6-Astra",
+            "name": "GPT-6 Astra",
+            "score": 76,
+            "sr": 72,
+            "estimated": false
+          },
+          {
+            "key": "Simate-beta",
+            "name": "Simate-beta",
+            "score": 77.87,
+            "sr": 76,
+            "estimated": false
+          },
+          {
+            "key": "OpenDM05",
+            "name": "DM0.5",
+            "score": 14.67,
+            "sr": 10.67,
+            "estimated": false
+          },
+          {
+            "key": "Liber_wam",
+            "name": "Liber-0 Lite",
+            "score": 8.27,
+            "sr": 7,
+            "estimated": false
+          }
+        ],
+        "formula": "new cloth geometry → fold targets → contact",
+        "comparison": "PhysicalRSI reaches 35% SR, versus π₀.₅’s 9.33% and Liber-0 Lite’s 7%. Astra and Simate-beta are higher at 72% and 76%.",
+        "mechanism": "Update garment-relative targets when the layout changes. The development sequence below shows concrete revisions to target selection, grasping and fold completion."
+      }
+    ]
+  }
+]
