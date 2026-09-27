@@ -1,0 +1,784 @@
+{
+  "revision": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/candidates/campaign_fold_clothes_20260907/iterations/r10_descending_fold",
+  "updated_at": 1788831136.0747142,
+  "expected_task_score": null,
+  "unseen_qualification": "pending: incomplete task-wide offline/unfinished exposure history",
+  "splits": {
+    "development": {
+      "base": {
+        "planned_n": 12,
+        "completed_n": 12,
+        "missing_n": 0,
+        "completed_subset_mean": 20.0,
+        "population_std": 36.51483716701107,
+        "full_frozen_coverage_mean": 20.0,
+        "confirmed_unseen": {
+          "n": 0,
+          "mean": null,
+          "population_std": null,
+          "missing_n": null,
+          "qualification": "pending"
+        },
+        "episodes": [
+          {
+            "config": "base",
+            "seed": 1,
+            "layout_id": 18,
+            "layout_sha256": "ab02fd9cb2458fa97c51cde2b0e1857a5f1f0b61ecf7bffc142b0932e752cdc2",
+            "garment_sha256": "7e4d4dcbd5550f06e7fa7519239b85d643407f407c714a6e997a46111daa59b6",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_18.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-51-28/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 1,
+            "layout_id": 19,
+            "layout_sha256": "044b943a84967928d136a6effd42e2d765dbb2a509ef718ab56da99beeae1089",
+            "garment_sha256": "500f7579790b420780aded2f2a6e8817e25bfd86cc41c9b6a70457b7dd47ab7a",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_19.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-51-28/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 1,
+            "layout_id": 20,
+            "layout_sha256": "9e34987aff3830784eb9b453064cd9290b111f76d530e47384eedc10f74ac2f5",
+            "garment_sha256": "ffa2d2e515ecf540201f02c701bb9d75dbca860d4b0d1b71de359386f98e5120",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_20.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-51-28/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 1,
+            "layout_id": 21,
+            "layout_sha256": "28abaab30c282dbd0b61eb4169c27af8bb85e5523b445778baf4efbff018f98f",
+            "garment_sha256": "b8bd3be5848517124de7af2e8256395a77f658f9893133c5b80f7ca6ec7b7221",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_21.json",
+            "exposure": "development",
+            "episode_score": 100.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-51-28/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 1,
+            "layout_id": 22,
+            "layout_sha256": "69ffedd0f8fcff0a46e8035d15e543b49df1e732e13b31472790aeadbb751410",
+            "garment_sha256": "ed88d743ad052aeb088a810e4bd3714334b29d7cf59eeae800944fcc193be024",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_22.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-51-28/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 1,
+            "layout_id": 23,
+            "layout_sha256": "e3f28e6837f9b623788d765066a9a3cb56a3b0987e7cc605b25bfc4738899cae",
+            "garment_sha256": "6eb1a9168d5ce2407e78f151751ee47546a81e309414ac49a28d2fffb6944a7f",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_23.json",
+            "exposure": "development",
+            "episode_score": 100.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-51-28/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 0,
+            "layout_id": 8,
+            "layout_sha256": "6344d9498589397a14403e1d35c2c714cdcf738af2006a5f022669c72bcb6e77",
+            "garment_sha256": "4bb26b52fe22821d696b230bb5f03ef862b1162237e1ae931310d68d9f09ff26",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_8.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-57-42/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 0,
+            "layout_id": 9,
+            "layout_sha256": "db8fbdffe16f5e9f5a4001a6fa116d3a42d75d7f40d91543f7fe829dd22b1554",
+            "garment_sha256": "ba413bc860a53c77b62d0adfe6bc7e0f1a7e0cc06ad03abe8854b60f5108f6b0",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_9.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-57-42/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 0,
+            "layout_id": 10,
+            "layout_sha256": "783028f5f8e4ae2e0d6c7afabe8ad54d2acde4678d109056c1a05f8f7ee5b1de",
+            "garment_sha256": "e30a2a76dcd6e751cacc2b3f5db3681fd28778766502041fee3ba149b568e354",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_10.json",
+            "exposure": "development",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-57-42/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 0,
+            "layout_id": 11,
+            "layout_sha256": "733b9e770bb18264ac40d086d13a24a48eb47a11e305d7306af37cece45f5b8c",
+            "garment_sha256": "29a8120b1594052e179c615e0fc2eb558b45428e86e1d037b917b2a6c35da166",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_11.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-57-42/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 0,
+            "layout_id": 12,
+            "layout_sha256": "1fd33f2d99c1a9758edeafcbe91718f6473538ffff59f94952c47b0a8de91780",
+            "garment_sha256": "9c8df92ea7aaceee6c5f39cc9b414f5c492ad651bd5784b772250ad3ef7413f0",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_12.json",
+            "exposure": "development",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-57-42/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 0,
+            "layout_id": 13,
+            "layout_sha256": "d15d62de6e4d8a15a354629e5af3eee8aef039e2f9d4e8be97924e62cc375ffa",
+            "garment_sha256": "e3464e6de499ebfa9c34b0f9e05450aef032812e220f2583e3767049b22e381a",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_13.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/base_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_06-57-42/_result.json"
+          }
+        ]
+      },
+      "random": {
+        "planned_n": 12,
+        "completed_n": 12,
+        "missing_n": 0,
+        "completed_subset_mean": 3.3333333333333335,
+        "population_std": 7.453559924999299,
+        "full_frozen_coverage_mean": 3.3333333333333335,
+        "confirmed_unseen": {
+          "n": 0,
+          "mean": null,
+          "population_std": null,
+          "missing_n": null,
+          "qualification": "pending"
+        },
+        "episodes": [
+          {
+            "config": "random",
+            "seed": 1,
+            "layout_id": 0,
+            "layout_sha256": "ab22f3228ebba6d14a9f16beaaf78f724663ee8dad85199e786a96addf8f0cdc",
+            "garment_sha256": "e06d6133ac8291aa44720b53d7aca6fb68f3bb4eb6fbc995c39b78eec86a7ff7",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_0.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-04-00/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 1,
+            "layout_id": 1,
+            "layout_sha256": "2c93b9a9e267f591edff9fa8995e36a441b0acf4d4b338bf66724d5dea9b40e7",
+            "garment_sha256": "a2ccea414ebe896906edaf3a67140960a18b9f7adfe23f32a5afe11a20da989a",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_1.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-04-00/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 1,
+            "layout_id": 2,
+            "layout_sha256": "65397c8664fa69205d24e9777b7e12647b30bfe824327e43491c265ee2a6b81a",
+            "garment_sha256": "69b28345b9faebc0f99fe5c3dc4c8c92a4af74358882c51f6543502f6f57a6d2",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_2.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-04-00/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 1,
+            "layout_id": 3,
+            "layout_sha256": "d005baae70358dc1131fe12f930da386aeac99a1974e101756b3b4489a7b2e7e",
+            "garment_sha256": "b88910a5be0dc39352b149cb2700246e52595a5749747c74747f841dbc49a583",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_3.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-04-00/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 1,
+            "layout_id": 4,
+            "layout_sha256": "5a9eaf383a596f00a00d54a404306713c6932619cd64a32a8a3ec91c8984d8c6",
+            "garment_sha256": "9dc54ad1848bea9a67a2e5aaecf5da92bf8b6f43f37f2f1bf4c1b9a62cefeb6b",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_4.json",
+            "exposure": "development",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-04-00/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 1,
+            "layout_id": 5,
+            "layout_sha256": "61f59ca242ab2b012df285bc31a2d94924e5854ef8a826a8ecd49bf9cd0cc0ff",
+            "garment_sha256": "d04f0703e68f9d3da30179b1acf434c7e1a4d595c40894c293433bfe78410108",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_5.json",
+            "exposure": "development",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s1/results/native/1_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-04-00/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 0,
+            "layout_id": 6,
+            "layout_sha256": "db38009370613f6754ffce7aed8595f4fd6a88fb270a0cdb942d9eee0f413431",
+            "garment_sha256": "4005bea2eee6f7b97cf8c0cb9d142b5ca7dc829329c806157724252541bdd1e9",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_6.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-14-16/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 0,
+            "layout_id": 7,
+            "layout_sha256": "413c2812847c8a2ae43885f9ebf6d9e19049b3a5c6f6e00abcf413371651ad5d",
+            "garment_sha256": "8ce96dcb3c14408a9bede51bd3b755198034326b04f165c188666cccdee1627a",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_7.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-14-16/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 0,
+            "layout_id": 8,
+            "layout_sha256": "68185ef8ddefaff32080986656199e9a02264cd142f64598bb27d5786ae6b76f",
+            "garment_sha256": "8db90d9ad7bd280c2d105b51d06b78e12cc5bb547598d89d1e6e87aef0572b4f",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_8.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-14-16/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 0,
+            "layout_id": 9,
+            "layout_sha256": "c3f68242d3d95e78e915316f14c1bc302b41744af7c89f7eb8cb389fa3ccdb83",
+            "garment_sha256": "ea31c8a58202d4057fc41adbb8aadc8eabac460997a64cd2e14ce1b6bd5d6c8c",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_9.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-14-16/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 0,
+            "layout_id": 10,
+            "layout_sha256": "6adef9190e414ebc2a02eebaf29738acf2a7f7d1e5458f53b9a9bd62ea30ea81",
+            "garment_sha256": "3e4b32d8b73c020dcdc96446e509b30e70c693574a444ddb077ff0400a058528",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_10.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-14-16/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 0,
+            "layout_id": 11,
+            "layout_sha256": "6b6ee365b0c884bb0c3ba57af2c9c2eb6d762f1f6de3b7336eb9963702576366",
+            "garment_sha256": "465b48d2e930daed4d4db773f2d7f36efdb0eec52c605ab0f63b81d7fd260639",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_11.json",
+            "exposure": "development",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10/random_s0/results/native/0_ckpt_name=r10-descending-fold,action_type=ee/2026-09-08_07-14-16/_result.json"
+          }
+        ]
+      }
+    },
+    "validation": {
+      "base": {
+        "planned_n": 20,
+        "completed_n": 20,
+        "missing_n": 0,
+        "completed_subset_mean": 13.0,
+        "population_std": 22.15851980616034,
+        "full_frozen_coverage_mean": 13.0,
+        "confirmed_unseen": {
+          "n": 0,
+          "mean": null,
+          "population_std": null,
+          "missing_n": null,
+          "qualification": "pending"
+        },
+        "episodes": [
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 25,
+            "layout_sha256": "3f19d14b3b5600bcfafcf79c7625a8174e55f7f7ff4e15713cb0b4289444dddb",
+            "garment_sha256": "93cdd9687a69d676ae216c10bc8de1e7d60c6b528ce5a1e471c7c814c04508d7",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_25.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v0/results/native/2_ckpt_name=r10-descending-fold-base_v0,action_type=ee/2026-09-08_07-24-34/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 26,
+            "layout_sha256": "4abdc197e50d11e40ecd4b558b4abcac9feb2ba3cd564688a75935051a55729e",
+            "garment_sha256": "ac8bea115873b5cbfbb866532259cb38cd0be7dea30b74ebe39dd207b1dd791e",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_26.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v0/results/native/2_ckpt_name=r10-descending-fold-base_v0,action_type=ee/2026-09-08_07-24-34/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 27,
+            "layout_sha256": "26c38b46c89afe5cda88e0e8f4d61cb9503a6efc6604d5332d9ce082d99d3dcd",
+            "garment_sha256": "571f0b4a7f49c6538b6cf174f953fabf9bb9da6636a46ba2a5867f673992144b",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_27.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v0/results/native/2_ckpt_name=r10-descending-fold-base_v0,action_type=ee/2026-09-08_07-24-34/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 28,
+            "layout_sha256": "dbb5b070bf9e5de464ad7d0c304e83661b7cf2263713c46720fa907b99e10ce0",
+            "garment_sha256": "604c09e3c292235123c3977754dee3925cd20422d5b2a692a466fc113dc1933a",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_28.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v0/results/native/2_ckpt_name=r10-descending-fold-base_v0,action_type=ee/2026-09-08_07-24-34/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 29,
+            "layout_sha256": "c73293a08fcea972bf09017e4f61fc6d821cfabd1cbcd52a684341b21600694c",
+            "garment_sha256": "60ccf5ab034cc6c98d311d13308ead8ad1d4a538da265e22486d840a8392f1b3",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_29.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v0/results/native/2_ckpt_name=r10-descending-fold-base_v0,action_type=ee/2026-09-08_07-24-34/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 30,
+            "layout_sha256": "547343ea89fd5a3955dd4e663f4b008db0563114de1f2ad020349f13cd0a86a4",
+            "garment_sha256": "f26312356a61f1c36c3fbd8a5414109f9d87fba77f6b4f18e2d8bb052a83096d",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_30.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v1/results/native/2_ckpt_name=r10-descending-fold-base_v1,action_type=ee/2026-09-08_07-30-18/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 31,
+            "layout_sha256": "e3bbe7157f180d3b739a89c5208fe2b3c9a123e4754716ecc5466f9793e405b1",
+            "garment_sha256": "c0b56e8e6cbb70ae22d4a1bc86ced81903b5c47d0dc87bc6817a6a500e898704",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_31.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v1/results/native/2_ckpt_name=r10-descending-fold-base_v1,action_type=ee/2026-09-08_07-30-18/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 32,
+            "layout_sha256": "98b307b5668b810e2e056baac2ff78ced1f041233c31e8eaba027f489672ff15",
+            "garment_sha256": "2ff315a509b9b1b4da5f70f2466cfac4e0df767c48e4bac7eb0354c4d4184510",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_32.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v1/results/native/2_ckpt_name=r10-descending-fold-base_v1,action_type=ee/2026-09-08_07-30-18/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 33,
+            "layout_sha256": "f10c58defe9b635d4df889f959a30861a5d04e75d019fb605d28259fb0d6fdc2",
+            "garment_sha256": "01a050d758394fb8a06942a7ebadbc40300850eb11293166d396ef27228fff89",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_33.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v1/results/native/2_ckpt_name=r10-descending-fold-base_v1,action_type=ee/2026-09-08_07-30-18/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 34,
+            "layout_sha256": "e3ac985d4aacd2837baf60b89b80cb815e476370af8743a2a01a9209f9ec84bb",
+            "garment_sha256": "8cddaab33ebaf32dad7f938f3688413ec75c95be3d619a7e91bb54895321a9be",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_34.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v1/results/native/2_ckpt_name=r10-descending-fold-base_v1,action_type=ee/2026-09-08_07-30-18/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 35,
+            "layout_sha256": "51e1ee6358bf022abfc8ad0e48a85178d8389424678bb3039faf79449a234de7",
+            "garment_sha256": "f67310dbef875383f5bb163496e8649b1003c98206ee2e2b49465639ca8ece78",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_35.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v2/results/native/2_ckpt_name=r10-descending-fold-base_v2,action_type=ee/2026-09-08_07-37-16/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 36,
+            "layout_sha256": "84a7b3e6a0d4009a45244e706f24ebce9a69acf81605162fdcfc2cf51caa680b",
+            "garment_sha256": "f918d8d91df3ae7b3d0f29891a211630d5d0937176ed13b260bd6d2e08549dee",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_36.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v2/results/native/2_ckpt_name=r10-descending-fold-base_v2,action_type=ee/2026-09-08_07-37-16/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 37,
+            "layout_sha256": "9abf0ad5d1692b325b4c94949682e7ece6b8a993b96cc3981a62c4c900975d81",
+            "garment_sha256": "2dd9c2ff5418ee2e1895f76beaa9f3981fbed2226dc35511c035139b478978c3",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_37.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v2/results/native/2_ckpt_name=r10-descending-fold-base_v2,action_type=ee/2026-09-08_07-37-16/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 38,
+            "layout_sha256": "d09b86b842610ed4ca94748f2a8ffd8157b8b120a7975ae36bd1598ff02b0ffd",
+            "garment_sha256": "150fe3724e6abd5cc01a45696bd0667b47e8035a314b385aea373a9f2dcea580",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_38.json",
+            "exposure": "pending",
+            "episode_score": 100.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v2/results/native/2_ckpt_name=r10-descending-fold-base_v2,action_type=ee/2026-09-08_07-37-16/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 39,
+            "layout_sha256": "b50a79a89fd07f2123ac2f43b991c2eaccd67539bbfb94dcfda14ab3e751721c",
+            "garment_sha256": "118350eb8bb8d0391c2325761ce562258cd82829e39af188ccc2db55452e5974",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_39.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v2/results/native/2_ckpt_name=r10-descending-fold-base_v2,action_type=ee/2026-09-08_07-37-16/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 40,
+            "layout_sha256": "1835627f5f2930c745e4c04527d729ed53936041de05798255adfd107c5bf1db",
+            "garment_sha256": "be4556417142500ad89b8e00a89b1421f13811e007a03c12674e58b024d95f9b",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_40.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v3/results/native/2_ckpt_name=r10-descending-fold-base_v3,action_type=ee/2026-09-08_07-44-17/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 41,
+            "layout_sha256": "8c5f7d6a25769d40606e51e0f8b9dac5412c550c1ac284a6c05e032c225fee6a",
+            "garment_sha256": "c686f365315d8d89b35da3f65427a727e57ada1e2c417de30d8ee7c4902c7dc1",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_41.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v3/results/native/2_ckpt_name=r10-descending-fold-base_v3,action_type=ee/2026-09-08_07-44-17/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 42,
+            "layout_sha256": "592ae00e1741b42f144cf5e133ed880f3586c17a6fb30e0818bb367efb9b5378",
+            "garment_sha256": "839b3a13c63945891f2355cc1e2de373867ff343baa448bd3df542a9e1f25b0b",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_42.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v3/results/native/2_ckpt_name=r10-descending-fold-base_v3,action_type=ee/2026-09-08_07-44-17/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 43,
+            "layout_sha256": "4fbb75f5b8af2bb5102e437684c98afc422db6444ada0f4a2f185e28f6a57fc2",
+            "garment_sha256": "f4e02a0888006fefb2065896aa0e839755e81dd7dfb960052b39c57444b951de",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_43.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v3/results/native/2_ckpt_name=r10-descending-fold-base_v3,action_type=ee/2026-09-08_07-44-17/_result.json"
+          },
+          {
+            "config": "base",
+            "seed": 2,
+            "layout_id": 44,
+            "layout_sha256": "e8caf571b4beadfd2496f341a9c2b341ea453a9e59fb8ccc76e9a13c0c29ca19",
+            "garment_sha256": "7802056d771177858e523f1bd52ad8820511d3503fd9b9e6b563bfba31cfb278",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_44.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/base_v3/results/native/2_ckpt_name=r10-descending-fold-base_v3,action_type=ee/2026-09-08_07-44-17/_result.json"
+          }
+        ]
+      },
+      "random": {
+        "planned_n": 20,
+        "completed_n": 20,
+        "missing_n": 0,
+        "completed_subset_mean": 14.0,
+        "population_std": 29.732137494637012,
+        "full_frozen_coverage_mean": 14.0,
+        "confirmed_unseen": {
+          "n": 0,
+          "mean": null,
+          "population_std": null,
+          "missing_n": null,
+          "qualification": "pending"
+        },
+        "episodes": [
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 10,
+            "layout_sha256": "804d8d415f7aa701645a5f024c1d86fb54cc900ea7145bd62529643b89befe85",
+            "garment_sha256": "8f61b7b3b7fb10c10ca265a416e43ff6bb8c1e8b2e07854315d19b803b96372c",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_10.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v0/results/native/2_ckpt_name=r10-descending-fold-random_v0,action_type=ee/2026-09-08_07-50-40/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 11,
+            "layout_sha256": "efa201774fdc675837edd5f899a9a4f630f2c8ce4c3085a076fc3b6fd4aa767a",
+            "garment_sha256": "c53f8d778b267a0bf82ec97a99a02ec0ade8965d3360fc201418308edf93143d",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_11.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v0/results/native/2_ckpt_name=r10-descending-fold-random_v0,action_type=ee/2026-09-08_07-50-40/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 12,
+            "layout_sha256": "a8af6df19a560efe7989beafc6b138e1ee6a521e6a66435d3972641053341b51",
+            "garment_sha256": "32471a0b056f23e11b4e3e49b99977e7dbe8d5081a5e7a3433b4244b15e0fd68",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_12.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v0/results/native/2_ckpt_name=r10-descending-fold-random_v0,action_type=ee/2026-09-08_07-50-40/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 13,
+            "layout_sha256": "7c23cf3fd4357acf50c3e1100e7240317c33ea24532f7ba3e906fd4c7f74b401",
+            "garment_sha256": "03af15342d4cad8fefb04f4d7c066f454b242a533f02306a977005d511797583",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_13.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v0/results/native/2_ckpt_name=r10-descending-fold-random_v0,action_type=ee/2026-09-08_07-50-40/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 14,
+            "layout_sha256": "e634c6478e2dc0892a7f3271e9010bee266cd30ce480f34e14f376abd1d0e1de",
+            "garment_sha256": "36824c29992dbe3a368f5dca323087b2360d47ba5272055060db33b423f072c6",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_14.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v0/results/native/2_ckpt_name=r10-descending-fold-random_v0,action_type=ee/2026-09-08_07-50-40/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 15,
+            "layout_sha256": "9dd5679b20277cb586fb20e3ce02a5b21166f10aed69f2f87bf128b5ddd025e5",
+            "garment_sha256": "8a1aa09f0ccc17216cfd9ad129cbc155ff2b5393f26cf53f95004c5e854ab266",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_15.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v1/results/native/2_ckpt_name=r10-descending-fold-random_v1,action_type=ee/2026-09-08_07-59-02/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 16,
+            "layout_sha256": "122773773d71ae7b09176c55e95db7710c393126043a4cb50a8a7bf52a232115",
+            "garment_sha256": "844ea4a09d9898f2d9794b76ed9deb428df5ba15d470df71525ccfeaffa07963",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_16.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v1/results/native/2_ckpt_name=r10-descending-fold-random_v1,action_type=ee/2026-09-08_07-59-02/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 17,
+            "layout_sha256": "4ec76341a7f57c7a107d7cf7ca01638a8206f0c0b81e2c96c30f5ea27553c460",
+            "garment_sha256": "3cb2b9f4ee35317a00cec3a6b1dc6125c9828b42dc77e24813868ceb5da9029a",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_17.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v1/results/native/2_ckpt_name=r10-descending-fold-random_v1,action_type=ee/2026-09-08_07-59-02/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 18,
+            "layout_sha256": "452a52fb03bc53702fc74528a28fb1a63fa8c4a0bb11fc6fbb0fdbb94585e13a",
+            "garment_sha256": "a3e30a2c3f868933309f2ce7ed361f25204af8b6bc0c391b917b853e1155e212",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_18.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v1/results/native/2_ckpt_name=r10-descending-fold-random_v1,action_type=ee/2026-09-08_07-59-02/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 19,
+            "layout_sha256": "143edfd3275f73ea0e97c9765f675f1b9d749e345650d8ef7a771ad38ce8b4f6",
+            "garment_sha256": "816067f9c585c400fbe93835fbaffaa209a9eca9f6e13a0d3ae1363c5e92c9a1",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_19.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v1/results/native/2_ckpt_name=r10-descending-fold-random_v1,action_type=ee/2026-09-08_07-59-02/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 20,
+            "layout_sha256": "de758dd19d6c76185fe44e579b155b7b975587115c4d0841be55c138c3c2bef9",
+            "garment_sha256": "ad2b7298930710ab0f1174c82bfd90baac23cd012afb6dc6f434a1c7b9df2412",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_20.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v2/results/native/2_ckpt_name=r10-descending-fold-random_v2,action_type=ee/2026-09-08_08-06-55/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 21,
+            "layout_sha256": "597af53c838233d0aa9f03021b064d6b8d1ba76343b9d02c4a32a84ab4445d04",
+            "garment_sha256": "3ff6e5c4ce8e4cfe65ef5b9de0f304c8280fc211d47d152e8c4dabb097a90742",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_21.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v2/results/native/2_ckpt_name=r10-descending-fold-random_v2,action_type=ee/2026-09-08_08-06-55/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 22,
+            "layout_sha256": "c525dc0cc36fd0a43291df76da40b18aa20b6403321d6c8e0c698d7ceef2d7e2",
+            "garment_sha256": "2d7f04798f5c7232a20b93f1645c0af250fe357c54ffa0107ef7b6a8b01fd176",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_22.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v2/results/native/2_ckpt_name=r10-descending-fold-random_v2,action_type=ee/2026-09-08_08-06-55/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 23,
+            "layout_sha256": "4b9495e2d105ece9181fa4f5d47eede2c1274fcb37bb274f0b4912bb6e6b05f8",
+            "garment_sha256": "3d6c25fe0a6010f00f3c37e63a5d4f653e2b93675237cacd1e34ecbf3b5412d6",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_23.json",
+            "exposure": "pending",
+            "episode_score": 100.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v2/results/native/2_ckpt_name=r10-descending-fold-random_v2,action_type=ee/2026-09-08_08-06-55/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 24,
+            "layout_sha256": "205f22c9b9ad0ae2dae0866a0b0781ec7a142fe4bcb635f34b922617f78a94b7",
+            "garment_sha256": "99dc9dff2aeff2f5fb80381e05317a0c767ec4df6857ad0ffcc807e1058c1b13",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_24.json",
+            "exposure": "pending",
+            "episode_score": 100.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v2/results/native/2_ckpt_name=r10-descending-fold-random_v2,action_type=ee/2026-09-08_08-06-55/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 25,
+            "layout_sha256": "8f16e5fd8408c79bed10d4f4bb14bf179153f3140181267511b2fe4580cafa1e",
+            "garment_sha256": "03171257befcddbcbb385a32018ef2030d2032a020d5822c15c631cb62a8563a",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_25.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v3/results/native/2_ckpt_name=r10-descending-fold-random_v3,action_type=ee/2026-09-08_08-14-56/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 26,
+            "layout_sha256": "a2936ad019abc969dbce7d8356636749930209369a8f2dce887a5002179b8a03",
+            "garment_sha256": "5f7de91552546552b859be8495e6454c24af6b4a05aa2021638c23119a9247d3",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_26.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v3/results/native/2_ckpt_name=r10-descending-fold-random_v3,action_type=ee/2026-09-08_08-14-56/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 27,
+            "layout_sha256": "87a852546962c0dbe0c0d543e752c567a972b2a9aa599e8f45e74b8b14caa4b3",
+            "garment_sha256": "840d2b4f879857c39d19e063097bc32de4101b066ed382d8133bdc839d7d672a",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_27.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v3/results/native/2_ckpt_name=r10-descending-fold-random_v3,action_type=ee/2026-09-08_08-14-56/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 28,
+            "layout_sha256": "866c1d4f14f0f0b27607037c6e46a726e4240b2464e3145af7877e6c50e34897",
+            "garment_sha256": "ae5eedc1024de44ec55c053585ad5a440894112801d8dc58a2a1c13364692c13",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_28.json",
+            "exposure": "pending",
+            "episode_score": 0.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v3/results/native/2_ckpt_name=r10-descending-fold-random_v3,action_type=ee/2026-09-08_08-14-56/_result.json"
+          },
+          {
+            "config": "random",
+            "seed": 2,
+            "layout_id": 29,
+            "layout_sha256": "2dcc3230602ebdd6bc70cec69d60a04fa1969bc1e3f67c745568ad632559de83",
+            "garment_sha256": "e7621dfdc47541bec421849cdfdfd7feeef1ef67da14a93d4c305b68dd4f2456",
+            "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/2/fold_clothes_random_29.json",
+            "exposure": "pending",
+            "episode_score": 20.0,
+            "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r10_validation/random_v3/results/native/2_ckpt_name=r10-descending-fold-random_v3,action_type=ee/2026-09-08_08-14-56/_result.json"
+          }
+        ]
+      }
+    }
+  }
+}

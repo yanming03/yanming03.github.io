@@ -1,0 +1,855 @@
+{
+  "scene": {
+    "config": "base",
+    "seed": 2,
+    "layout_id": 11,
+    "camera": "head"
+  },
+  "selection": "Three native development recordings of base seed 2 layout 11: R14, R17, R22. Same light striped shirt, clean wooden table, initial arrangement and head camera. Native scores 0, 20, 100; two failures followed by success. Chart values use the separate complete common 40-scene coverage cohort.",
+  "source_videos": [
+    {
+      "revision": "R14",
+      "video": "media/fold-clothes/r14-base2-scene11-display.mp4",
+      "poster": "media/fold-clothes/r14-base2-scene11-display.jpg",
+      "original_video": "media/fold-clothes/r14-base2-scene11-full.mp4",
+      "source_video": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r14/base_s2_b1/results/native/2026-09-08_08-34-36/episode_0000000_cam_head_fail.mp4",
+      "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r14/base_s2_b1/results/native/2026-09-08_08-34-36/_result.json",
+      "result": "evidence/fold-clothes/story/r14-result.json",
+      "selected_score": 0.0,
+      "selected_success": false,
+      "selected_layout": 11,
+      "selected_seed": 2,
+      "selected_config": "base",
+      "recording_split": "development",
+      "chart_split": "separate common 40-scene coverage",
+      "selected_episode": 0,
+      "source_media": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "25/1",
+            "nb_frames": "501"
+          }
+        ],
+        "format": {
+          "duration": "20.040000"
+        }
+      },
+      "excerpt_start_seconds": 0,
+      "excerpt_end_seconds": 15.4,
+      "outcome_at_seconds": 15.4,
+      "outcome_hold_seconds": 0.8,
+      "story": {
+        "transition": "Initial harness"
+      },
+      "playback_end_seconds": 15.4,
+      "editing_note": "Show the sleeve attempts through 15.4 seconds. The left motion displaces the shirt; the right grasp misses and that sleeve remains outside. Omit the unsuccessful hem attempt. Failed is the full native outcome, not a controller abort at the editorial cut.",
+      "cues": [
+        {
+          "at": 0,
+          "text": "Reach for the left sleeve",
+          "tone": "action"
+        },
+        {
+          "at": 3.2,
+          "text": "Fold the sleeve inward",
+          "tone": "action",
+          "memory_id": "feedback"
+        },
+        {
+          "at": 8.8,
+          "text": "Reach for the right sleeve",
+          "tone": "action"
+        },
+        {
+          "at": 15.0,
+          "text": "Right sleeve missed",
+          "tone": "failure"
+        }
+      ],
+      "outcome_label": "Failed",
+      "display_media": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 960,
+            "r_frame_rate": "25/1",
+            "nb_frames": "501"
+          }
+        ],
+        "format": {
+          "duration": "20.040000"
+        }
+      },
+      "playback_edits": [
+        {
+          "source_start_seconds": 0,
+          "source_end_seconds": 15.4,
+          "playback_rate": 1,
+          "start_seconds": 0,
+          "end_seconds": 15.4
+        }
+      ]
+    },
+    {
+      "revision": "R17",
+      "video": "media/fold-clothes/r17-base2-scene11-display.mp4",
+      "poster": "media/fold-clothes/r17-base2-scene11-display.jpg",
+      "original_video": "media/fold-clothes/r17-base2-scene11-full.mp4",
+      "source_video": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r17/base_s2_b0/results/native/2026-09-08_09-25-53/episode_0000003_cam_head_fail.mp4",
+      "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r17/base_s2_b0/results/native/2026-09-08_09-25-53/_result.json",
+      "result": "evidence/fold-clothes/story/r17-result.json",
+      "selected_score": 20.0,
+      "selected_success": false,
+      "selected_layout": 11,
+      "selected_seed": 2,
+      "selected_config": "base",
+      "recording_split": "development",
+      "chart_split": "separate common 40-scene coverage",
+      "selected_episode": 3,
+      "source_media": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "25/1",
+            "nb_frames": "501"
+          }
+        ],
+        "format": {
+          "duration": "20.040000"
+        }
+      },
+      "excerpt_start_seconds": null,
+      "excerpt_end_seconds": null,
+      "outcome_at_seconds": 19.2,
+      "outcome_hold_seconds": 0.8,
+      "story": {
+        "transition": "Return memory"
+      },
+      "cues": [
+        {
+          "at": 0,
+          "text": "Reach for the left sleeve",
+          "tone": "action"
+        },
+        {
+          "at": 3.2,
+          "text": "Fold the sleeve inward",
+          "tone": "action",
+          "memory_id": "feedback"
+        },
+        {
+          "at": 6.8,
+          "text": "Return along the recorded path",
+          "tone": "action",
+          "memory_id": "return"
+        },
+        {
+          "at": 8.8,
+          "text": "Reach for the right sleeve",
+          "tone": "action"
+        },
+        {
+          "at": 11.2,
+          "text": "Fold the right sleeve inward",
+          "tone": "action"
+        },
+        {
+          "at": 15.2,
+          "text": "Fold the bottom edge upward",
+          "tone": "action"
+        },
+        {
+          "at": 19.2,
+          "text": "One corner left unfolded",
+          "tone": "failure"
+        }
+      ],
+      "outcome_label": "Failed",
+      "display_media": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 960,
+            "r_frame_rate": "25/1",
+            "nb_frames": "501"
+          }
+        ],
+        "format": {
+          "duration": "20.040000"
+        }
+      },
+      "playback_edits": [
+        {
+          "source_start_seconds": 0,
+          "source_end_seconds": 15.2,
+          "playback_rate": 3,
+          "start_seconds": 0,
+          "end_seconds": 5.08
+        },
+        {
+          "source_start_seconds": 15.2,
+          "source_end_seconds": 20.04,
+          "playback_rate": 1,
+          "start_seconds": 5.08,
+          "end_seconds": 9.92
+        }
+      ]
+    },
+    {
+      "revision": "R22",
+      "video": "media/fold-clothes/r22-base2-scene11-display.mp4",
+      "poster": "media/fold-clothes/r22-base2-scene11-display.jpg",
+      "original_video": "media/fold-clothes/r22-base2-scene11-full.mp4",
+      "source_video": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22/base_s2_b0/results/native/2026-09-08_12-25-54/episode_0000003_cam_head_success.mp4",
+      "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22/base_s2_b0/results/native/2026-09-08_12-25-54/_result.json",
+      "result": "evidence/fold-clothes/story/r22-result.json",
+      "selected_score": 100.0,
+      "selected_success": true,
+      "selected_layout": 11,
+      "selected_seed": 2,
+      "selected_config": "base",
+      "recording_split": "development",
+      "chart_split": "separate common 40-scene coverage",
+      "selected_episode": 3,
+      "source_media": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "25/1",
+            "nb_frames": "498"
+          }
+        ],
+        "format": {
+          "duration": "19.920000"
+        }
+      },
+      "excerpt_start_seconds": null,
+      "excerpt_end_seconds": null,
+      "outcome_at_seconds": 19.2,
+      "outcome_hold_seconds": 0.8,
+      "story": {
+        "transition": "Wrist alignment + tracking"
+      },
+      "cues": [
+        {
+          "at": 0,
+          "text": "Locate the sleeve edge",
+          "tone": "action",
+          "memory_id": "selection"
+        },
+        {
+          "at": 1.2,
+          "text": "Align the grasp",
+          "tone": "action",
+          "memory_id": "alignment"
+        },
+        {
+          "at": 3.2,
+          "text": "Fold the left sleeve inward",
+          "tone": "action",
+          "memory_id": "feedback"
+        },
+        {
+          "at": 7.2,
+          "text": "Return to the approach pose",
+          "tone": "action",
+          "memory_id": "return"
+        },
+        {
+          "at": 8.8,
+          "text": "Check the wrist and head views",
+          "tone": "action",
+          "memory_id": "crossview"
+        },
+        {
+          "at": 11.2,
+          "text": "Fold the right sleeve inward",
+          "tone": "action"
+        },
+        {
+          "at": 15.2,
+          "text": "Locate the folded garment",
+          "tone": "action",
+          "memory_id": "tracking"
+        },
+        {
+          "at": 15.68,
+          "text": "Align both hem grasps",
+          "tone": "action",
+          "memory_id": "alignment"
+        },
+        {
+          "at": 17.2,
+          "text": "Fold the bottom edge upward",
+          "tone": "action"
+        },
+        {
+          "at": 19.2,
+          "text": "Fold complete",
+          "tone": "success"
+        }
+      ],
+      "outcome_label": "Success",
+      "display_media": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 960,
+            "r_frame_rate": "25/1",
+            "nb_frames": "498"
+          }
+        ],
+        "format": {
+          "duration": "19.920000"
+        }
+      },
+      "playback_edits": [
+        {
+          "source_start_seconds": 0,
+          "source_end_seconds": 15.2,
+          "playback_rate": 3,
+          "start_seconds": 0,
+          "end_seconds": 5.08
+        },
+        {
+          "source_start_seconds": 15.2,
+          "source_end_seconds": 19.92,
+          "playback_rate": 1,
+          "start_seconds": 5.08,
+          "end_seconds": 9.8
+        }
+      ]
+    }
+  ],
+  "native_successes": [
+    false,
+    false,
+    true
+  ],
+  "memory_library": [
+    {
+      "id": "selection",
+      "title": "Target selection",
+      "summary": "Identify the garment to fold.",
+      "description": "Prefer a shirt instance, then clothing; generic fabric alone is not a target.",
+      "introduced_in": "R21",
+      "revision": "R22",
+      "source_video": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22/base_s2_b0/results/native/2026-09-08_12-25-54/episode_0000003_cam_head_success.mp4",
+      "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22/base_s2_b0/results/native/2026-09-08_12-25-54/_result.json",
+      "result": "evidence/fold-clothes/story/r22-result.json",
+      "spec": "evidence/fold-clothes/validation/r21/SPEC.md",
+      "camera": "head",
+      "start_seconds": 0,
+      "end_seconds": 4.8,
+      "video": "media/fold-clothes/skill-selection.mp4",
+      "poster": "media/fold-clothes/skill-selection.jpg"
+    },
+    {
+      "id": "alignment",
+      "title": "Wrist alignment",
+      "summary": "Correct the grasp from a close view.",
+      "description": "Use the wrist view before descent to move the grasp point inside the cloth boundary.",
+      "introduced_in": "R19",
+      "revision": "R22",
+      "source_video": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22/base_s2_b0/results/native/2026-09-08_12-25-54/episode_0000003_cam_right_wrist_success.mp4",
+      "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22/base_s2_b0/results/native/2026-09-08_12-25-54/_result.json",
+      "result": "evidence/fold-clothes/story/r22-result.json",
+      "spec": "evidence/fold-clothes/validation/r19/SPEC.md",
+      "camera": "right_wrist",
+      "start_seconds": 8.8,
+      "end_seconds": 12.0,
+      "video": "media/fold-clothes/skill-alignment.mp4",
+      "poster": "media/fold-clothes/skill-alignment.jpg"
+    },
+    {
+      "id": "feedback",
+      "title": "Motion feedback",
+      "summary": "Adjust to the arm’s actual position.",
+      "description": "Start each folding move from the measured arm pose and adjust when motion falls behind.",
+      "introduced_in": "R11",
+      "revision": "R14",
+      "source_video": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r14/base_s2_b1/results/native/2026-09-08_08-34-36/episode_0000000_cam_head_fail.mp4",
+      "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r14/base_s2_b1/results/native/2026-09-08_08-34-36/_result.json",
+      "result": "evidence/fold-clothes/story/r14-result.json",
+      "spec": "evidence/fold-clothes/validation/r11/SPEC.md",
+      "camera": "head",
+      "start_seconds": 3.2,
+      "end_seconds": 6.4,
+      "video": "media/fold-clothes/skill-feedback.mp4",
+      "poster": "media/fold-clothes/skill-feedback.jpg"
+    },
+    {
+      "id": "return",
+      "title": "Return memory",
+      "summary": "Return to a pose reached earlier.",
+      "description": "Save the approach joint pose and return to it after releasing the cloth.",
+      "introduced_in": "R13",
+      "revision": "R17",
+      "source_video": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r17/base_s2_b0/results/native/2026-09-08_09-25-53/episode_0000003_cam_head_fail.mp4",
+      "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r17/base_s2_b0/results/native/2026-09-08_09-25-53/_result.json",
+      "result": "evidence/fold-clothes/story/r17-result.json",
+      "spec": "evidence/fold-clothes/validation/r13/SPEC.md",
+      "camera": "head",
+      "start_seconds": 6.8,
+      "end_seconds": 8.4,
+      "video": "media/fold-clothes/skill-return.mp4",
+      "poster": "media/fold-clothes/skill-return.jpg"
+    },
+    {
+      "id": "tracking",
+      "title": "Garment tracking",
+      "summary": "Follow the cloth as it folds.",
+      "description": "Match the folded cloth to its earlier position and outline before grasping the hem.",
+      "introduced_in": "R22",
+      "revision": "R22",
+      "source_video": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22/base_s2_b0/results/native/2026-09-08_12-25-54/episode_0000003_cam_head_success.mp4",
+      "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22/base_s2_b0/results/native/2026-09-08_12-25-54/_result.json",
+      "result": "evidence/fold-clothes/story/r22-result.json",
+      "spec": "evidence/fold-clothes/validation/r22/SPEC.md",
+      "camera": "head",
+      "start_seconds": 14.8,
+      "end_seconds": 19.6,
+      "video": "media/fold-clothes/skill-tracking.mp4",
+      "poster": "media/fold-clothes/skill-tracking.jpg"
+    },
+    {
+      "id": "crossview",
+      "title": "Cross-view check",
+      "summary": "Match the wrist view to the garment.",
+      "description": "Accept a wrist grasp correction only where the wrist and head views both identify cloth.",
+      "introduced_in": "R19",
+      "revision": "R22",
+      "source_video": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22/base_s2_b0/results/native/2026-09-08_12-25-54/episode_0000003_cam_left_wrist_success.mp4",
+      "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22/base_s2_b0/results/native/2026-09-08_12-25-54/_result.json",
+      "result": "evidence/fold-clothes/story/r22-result.json",
+      "spec": "evidence/fold-clothes/validation/r19/SPEC.md",
+      "camera": "left_wrist",
+      "start_seconds": 15.2,
+      "end_seconds": 17.6,
+      "video": "media/fold-clothes/skill-crossview.mp4",
+      "poster": "media/fold-clothes/skill-crossview.jpg"
+    }
+  ],
+  "skill_reference": "evidence/fold-clothes/qiubin-skill-reference.json",
+  "display_processing": "Original 640×480 / 25 fps recordings retained unchanged. Display uses mild spatial sharpening and Lanczos enlargement to 1280×960, H.264 CRF 16. No added native detail, motion interpolation, stabilization or speed change.",
+  "comparison_limit": "Six selected chronological chart milestones, each evaluated on exactly the same 40 planned development coverage scenes: 20 base and 20 random. All successes and failures are included. Three separate development recordings illustrate R14, R17 and R22; the videos are not chart-cohort episodes. The full archived history includes regressions and incomplete runs. Independent unseen qualification is pending. No generalization, model-call reduction or wall-clock speedup claim.",
+  "narrative_note": "R14 displaces the shirt during the left fold and misses the right sleeve. R17 uses recorded return poses and reverses its measured descent path: both sleeves fold in, but the left hem grasp misses. This precise development scene is cited in the R19 wrist-refinement SPEC. R22 inherits R19 wrist refinement, R21 shirt selection and R13 return poses, and adds temporal garment association; it completes the fold. R22 does not inherit the R17 reverse-path variant. These are selected campaign policies, not isolated ablations or a direct parent-child chain. Videos are development examples; SR and Score include all results in each separate complete common 40-scene chart cohort.",
+  "sequence": {
+    "video": "media/fold-clothes/evolution-sequence.mp4",
+    "poster": "media/fold-clothes/r14-base2-scene11-display.jpg",
+    "chapters": [
+      {
+        "revision": "R14",
+        "start_seconds": 0,
+        "source_end_seconds": 15.4,
+        "hold_seconds": 0.8,
+        "playback_edits": [
+          {
+            "source_start_seconds": 0,
+            "source_end_seconds": 15.4,
+            "playback_rate": 1,
+            "start_seconds": 0,
+            "end_seconds": 15.4
+          }
+        ],
+        "source_playback_duration_seconds": 15.4,
+        "end_seconds": 16.2
+      },
+      {
+        "revision": "R17",
+        "start_seconds": 22.52,
+        "source_end_seconds": 20.04,
+        "hold_seconds": 0.8,
+        "playback_edits": [
+          {
+            "source_start_seconds": 0,
+            "source_end_seconds": 15.2,
+            "playback_rate": 3,
+            "start_seconds": 0,
+            "end_seconds": 5.08
+          },
+          {
+            "source_start_seconds": 15.2,
+            "source_end_seconds": 20.04,
+            "playback_rate": 1,
+            "start_seconds": 5.08,
+            "end_seconds": 9.92
+          }
+        ],
+        "source_playback_duration_seconds": 9.92,
+        "end_seconds": 33.24
+      },
+      {
+        "revision": "R22",
+        "start_seconds": 42.84,
+        "source_end_seconds": 19.92,
+        "hold_seconds": 0.8,
+        "playback_edits": [
+          {
+            "source_start_seconds": 0,
+            "source_end_seconds": 15.2,
+            "playback_rate": 3,
+            "start_seconds": 0,
+            "end_seconds": 5.08
+          },
+          {
+            "source_start_seconds": 15.2,
+            "source_end_seconds": 19.92,
+            "playback_rate": 1,
+            "start_seconds": 5.08,
+            "end_seconds": 9.8
+          }
+        ],
+        "source_playback_duration_seconds": 9.8,
+        "end_seconds": 53.44
+      }
+    ],
+    "transitions": [
+      {
+        "id": "grasp",
+        "before": "R14",
+        "after": "R17",
+        "start_seconds": 16.2,
+        "end_seconds": 22.52,
+        "harness": "Return memory",
+        "action": "right-sleeve grasp, lift, fold and release",
+        "camera": "head",
+        "narration": "The right sleeve is missed. With return memory, both sleeves fold in."
+      },
+      {
+        "id": "fold",
+        "before": "R17",
+        "after": "R22",
+        "start_seconds": 33.24,
+        "end_seconds": 42.84,
+        "harness": "Wrist alignment and garment tracking",
+        "action": "complete left-sleeve, right-sleeve and hem folding sequence",
+        "camera": "head",
+        "narration": "One corner is missed. The updated harness grasps both corners and completes the fold."
+      }
+    ],
+    "duration_seconds": 53.44,
+    "media": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 960,
+          "r_frame_rate": "25/1",
+          "nb_frames": "1336"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "nb_frames": "2506"
+        }
+      ],
+      "format": {
+        "duration": "53.440000"
+      }
+    },
+    "narration_note": "Synthetic English narration is embedded only in the two bridges. Muted autoplay; the speaker button enables it. Audio follows pause, seek and speed.",
+    "editing_note": "R14 is editorially cut at 15.4 seconds after the right-sleeve failure; this is not a controller abort. R17 and R22 keep their entire action sequences. Repeated sleeves play at 3×, final folds at 1×, with 0.8-second outcome holds. Each comparison synchronizes the same action phase from both policies, with the same camera, crop and speed schedule within each pair. Repeated actions are accelerated with visible speed labels; final folds play at native speed. Attempt footage retains its full frame. No generated, stabilized or interpolated robot motion.",
+    "asset_version": "1ae03cfca57cce63"
+  },
+  "review": "Missed right sleeve; both sleeves folded but one hem corner missed; complete native success. The two comparisons show the same right-sleeve action and the whole folding sequence.",
+  "chart": {
+    "type": "shared_axes",
+    "range": [
+      0,
+      100
+    ],
+    "series": [
+      "success_rate_percent",
+      "mean_score"
+    ],
+    "revision_order": [
+      "R12",
+      "R14",
+      "R17",
+      "R18",
+      "R21",
+      "R22"
+    ],
+    "interaction": "Six selected complete-cohort milestones. The recording highlights its own policy point; hover or keyboard focus reveals both metrics for any point.",
+    "display_labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "points": [
+      {
+        "version": "R12",
+        "policy_revision": "r12_local_joint_servo",
+        "evaluated_episodes": 40,
+        "successful_episodes": 3,
+        "success_rate_percent": 7.5,
+        "mean_score": 17.5,
+        "result": "evidence/fold-clothes/validation/r12/coverage_summary.json",
+        "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r12_validation/coverage_summary.json",
+        "iteration": 1
+      },
+      {
+        "version": "R14",
+        "policy_revision": "r14_parallel_hem",
+        "evaluated_episodes": 40,
+        "successful_episodes": 11,
+        "success_rate_percent": 27.5,
+        "mean_score": 31.5,
+        "result": "evidence/fold-clothes/validation/r14/coverage_summary.json",
+        "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r14_validation/coverage_summary.json",
+        "iteration": 2
+      },
+      {
+        "version": "R17",
+        "policy_revision": "r17_reverse_lowering",
+        "evaluated_episodes": 40,
+        "successful_episodes": 13,
+        "success_rate_percent": 32.5,
+        "mean_score": 35.5,
+        "result": "evidence/fold-clothes/validation/r17/coverage_summary.json",
+        "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r17_validation/coverage_summary.json",
+        "iteration": 3
+      },
+      {
+        "version": "R18",
+        "policy_revision": "r18_rgb_edge_transport",
+        "evaluated_episodes": 40,
+        "successful_episodes": 16,
+        "success_rate_percent": 40.0,
+        "mean_score": 42.0,
+        "result": "evidence/fold-clothes/validation/r18/coverage_summary.json",
+        "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r18_validation/coverage_summary.json",
+        "iteration": 4
+      },
+      {
+        "version": "R21",
+        "policy_revision": "r21_semantic_garment_selection",
+        "evaluated_episodes": 40,
+        "successful_episodes": 18,
+        "success_rate_percent": 45.0,
+        "mean_score": 47.5,
+        "result": "evidence/fold-clothes/validation/r21/coverage_summary.json",
+        "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r21_validation/coverage_summary.json",
+        "iteration": 5
+      },
+      {
+        "version": "R22",
+        "policy_revision": "r22_temporal_garment_association",
+        "evaluated_episodes": 40,
+        "successful_episodes": 24,
+        "success_rate_percent": 60.0,
+        "mean_score": 61.5,
+        "result": "evidence/fold-clothes/validation/r22/coverage_summary.json",
+        "source_result": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22_validation/coverage_summary.json",
+        "iteration": 6
+      }
+    ],
+    "selection_note": "Chronological selected milestones, not the complete search history or a single parent-child chain. Every point uses the same 40 development coverage scenes."
+  },
+  "memory_note": "Six documented mechanisms; all previews use development base seed 2 layout 11. R14 has motion feedback, not R13 return memory. R17 has feedback and return memory with reverse-descent-path withdrawal. R22 has R13 return poses, R19 wrist refinement and cross-view checks, R21 target selection, and R22 temporal association. R22 does not inherit R17 reverse-path withdrawal. Only present mechanisms are highlighted.",
+  "bridges": [
+    {
+      "id": "grasp",
+      "before": "R14",
+      "after": "R17",
+      "harness": "Return memory",
+      "title": "Right-sleeve grasp",
+      "action": "right-sleeve grasp, lift, fold and release",
+      "camera": "head",
+      "start": 8.8,
+      "end": 15.2,
+      "lead": 0.16,
+      "crop": [
+        200,
+        80,
+        400,
+        400
+      ],
+      "pane": [
+        620,
+        620
+      ],
+      "top": 208,
+      "narration_playback_rate": 1,
+      "before_label": "Initial motion control",
+      "after_label": "Return memory",
+      "before_outcome": "Right sleeve missed",
+      "after_outcome": "Right sleeve folded in",
+      "spec": "evidence/fold-clothes/validation/r17/SPEC.md",
+      "additional_specs": [
+        "evidence/fold-clothes/validation/r13/SPEC.md"
+      ],
+      "mechanism": "R17 inherits saved return poses and reverses the measured descent path after release. The shirt stays in place after the left fold; its right sleeve is then acquired. R14 and R17 differ in more than one control mechanism; this is not an isolated ablation.",
+      "narration": "The right sleeve is missed. With return memory, both sleeves fold in.",
+      "video": "media/fold-clothes/bridge-grasp.mp4",
+      "audio": "media/fold-clothes/bridge-grasp.mp3",
+      "source_start_seconds": 8.8,
+      "source_end_seconds": 15.2,
+      "complete_recordings": false,
+      "before_native_duration": 20.04,
+      "after_native_duration": 20.04,
+      "lead_hold_seconds": 0.16,
+      "duration_seconds": 6.32,
+      "playback_edits": [
+        {
+          "source_start_seconds": 8.8,
+          "source_end_seconds": 11.2,
+          "playback_rate": 1,
+          "start_seconds": 0,
+          "end_seconds": 2.4
+        },
+        {
+          "source_start_seconds": 11.2,
+          "source_end_seconds": 15.2,
+          "playback_rate": 2,
+          "start_seconds": 2.4,
+          "end_seconds": 4.4
+        }
+      ],
+      "voice": "en-US-AriaNeural",
+      "voice_rate": "+0%",
+      "narration_type": "Synthetic English narration",
+      "before_source": "media/fold-clothes/r14-base2-scene11-full.mp4",
+      "after_source": "media/fold-clothes/r17-base2-scene11-full.mp4",
+      "before_native_source": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r14/base_s2_b1/results/native/2026-09-08_08-34-36/episode_0000000_cam_head_fail.mp4",
+      "after_native_source": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r17/base_s2_b0/results/native/2026-09-08_09-25-53/episode_0000003_cam_head_fail.mp4",
+      "visual_note": "Both sides show the same action, camera, source interval, crop, speed schedule and holds. The first comparison follows right-sleeve acquisition through release. The second starts both recordings at zero and plays both to their native ends; the earlier-ending recording holds its terminal frame.",
+      "comparison_limit": "The edit identifies specific visible problems and documented remedies, not the sole cause of a complete episode score. R14, R17 and R22 are selected campaign policies with different control lineages. The full-task comparison contains multiple changes and is not an isolated ablation.",
+      "media": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 960,
+            "r_frame_rate": "25/1",
+            "nb_frames": "158"
+          },
+          {
+            "codec_type": "audio",
+            "r_frame_rate": "0/0",
+            "nb_frames": "298"
+          }
+        ],
+        "format": {
+          "duration": "6.320000"
+        }
+      }
+    },
+    {
+      "id": "fold",
+      "before": "R17",
+      "after": "R22",
+      "harness": "Wrist alignment and garment tracking",
+      "title": "Complete folding sequence",
+      "action": "complete left-sleeve, right-sleeve and hem folding sequence",
+      "camera": "head",
+      "start": 0,
+      "end": null,
+      "lead": 0.16,
+      "crop": [
+        120,
+        0,
+        400,
+        480
+      ],
+      "pane": [
+        620,
+        744
+      ],
+      "top": 148,
+      "narration_playback_rate": 1,
+      "before_label": "Return memory",
+      "after_label": "Wrist alignment + tracking",
+      "before_outcome": "One corner missed",
+      "after_outcome": "Fold complete",
+      "spec": "evidence/fold-clothes/validation/r19/SPEC.md",
+      "additional_specs": [
+        "evidence/fold-clothes/validation/r21/SPEC.md",
+        "evidence/fold-clothes/validation/r22/SPEC.md"
+      ],
+      "mechanism": "The R19 SPEC explicitly diagnoses the R17 base seed 2 layout 11 left hem miss. R22 inherits R19 wrist refinement and cross-view checks, R21 target selection and R13 return poses, then adds temporal association. It does not inherit R17 reverse-path withdrawal. The full-task comparison includes multiple changes.",
+      "narration": "One corner is missed. The updated harness grasps both corners and completes the fold.",
+      "video": "media/fold-clothes/bridge-fold.mp4",
+      "audio": "media/fold-clothes/bridge-fold.mp3",
+      "source_start_seconds": 0,
+      "source_end_seconds": 20.04,
+      "complete_recordings": true,
+      "before_native_duration": 20.04,
+      "after_native_duration": 19.92,
+      "lead_hold_seconds": 0.16,
+      "duration_seconds": 9.6,
+      "playback_edits": [
+        {
+          "source_start_seconds": 0,
+          "source_end_seconds": 15.2,
+          "playback_rate": 4,
+          "start_seconds": 0,
+          "end_seconds": 3.8
+        },
+        {
+          "source_start_seconds": 15.2,
+          "source_end_seconds": 20.04,
+          "playback_rate": 1,
+          "start_seconds": 3.8,
+          "end_seconds": 8.64
+        }
+      ],
+      "voice": "en-US-AriaNeural",
+      "voice_rate": "+0%",
+      "narration_type": "Synthetic English narration",
+      "before_source": "media/fold-clothes/r17-base2-scene11-full.mp4",
+      "after_source": "media/fold-clothes/r22-base2-scene11-full.mp4",
+      "before_native_source": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r17/base_s2_b0/results/native/2026-09-08_09-25-53/episode_0000003_cam_head_fail.mp4",
+      "after_native_source": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r22/base_s2_b0/results/native/2026-09-08_12-25-54/episode_0000003_cam_head_success.mp4",
+      "visual_note": "Both sides show the same action, camera, source interval, crop, speed schedule and holds. The first comparison follows right-sleeve acquisition through release. The second starts both recordings at zero and plays both to their native ends; the earlier-ending recording holds its terminal frame.",
+      "comparison_limit": "The edit identifies specific visible problems and documented remedies, not the sole cause of a complete episode score. R14, R17 and R22 are selected campaign policies with different control lineages. The full-task comparison contains multiple changes and is not an isolated ablation.",
+      "media": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 960,
+            "r_frame_rate": "25/1",
+            "nb_frames": "240"
+          },
+          {
+            "codec_type": "audio",
+            "r_frame_rate": "0/0",
+            "nb_frames": "451"
+          }
+        ],
+        "format": {
+          "duration": "9.600000"
+        }
+      }
+    }
+  ],
+  "narrative_audit": "evidence/fold-clothes/narrative-audit.json"
+}

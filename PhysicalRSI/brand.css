@@ -1,0 +1,10 @@
+/* One wordmark treatment for every visible project name. */
+:root{--brand-pink:#ba4d88}
+.physicalrsi{font-family:'Grenze Gotisch',Georgia,serif!important;font-weight:500;font-style:normal;letter-spacing:-.015em;white-space:nowrap;color:#261e28}
+.physicalrsi .brand-rsi{color:var(--brand-pink);font-family:inherit;font-weight:inherit;letter-spacing:inherit}
+.project-name{font-family:'Grenze Gotisch',Georgia,serif;font-weight:500}
+.wordmark .physicalrsi,.footer-brand .physicalrsi{font-size:1.12em}
+.ascent-name .physicalrsi{font-size:1.15em}
+.title-colon{color:var(--brand-pink);font-size:.75em;margin-left:.035em}
+.project-subtitle{font-size:clamp(10px,2.75vw,34px);color:#382535}
+.self-harness-title{color:#a83f78}

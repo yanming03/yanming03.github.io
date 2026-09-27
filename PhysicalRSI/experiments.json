@@ -1,0 +1,3355 @@
+{
+  "schema": 1,
+  "evaluation": "official6300_24gpu_groups10_max20_agent_20260922",
+  "scope": "Archived local evaluation; comparator rows are historical references, not paired reruns or an official ranking.",
+  "aggregation": "Within-task means over all 3 seeds. Generalization requires both standard and random halves, averaged equally. Tasks are averaged equally within each category, then the five categories are averaged equally. All models use the identical complete-task subset.",
+  "valid_episodes": 5850,
+  "planned_episodes": 6300,
+  "excluded_episodes": 450,
+  "complete_configs": 48,
+  "complete_tasks": 37,
+  "category_tasks": {
+    "Generalization": [
+      "stack_bowls",
+      "push_T",
+      "pack_objects_into_box",
+      "hang_mugs",
+      "sweep_blocks",
+      "arrange_largest_number",
+      "sort_nesting_dolls_by_size"
+    ],
+    "Precision": [
+      "fasten_screws",
+      "insert_tubes",
+      "plug_in_charger",
+      "pour_balls_into_vase",
+      "play_Xylophone",
+      "deposit_coin",
+      "insert_key",
+      "build_tower"
+    ],
+    "Long-Horizon": [
+      "put_bottles_into_dustbin",
+      "play_tic_tac_toe",
+      "classify_objects",
+      "fill_pen_holder",
+      "fill_egg_holder",
+      "organize_table",
+      "play_stacking_toy",
+      "make_kong"
+    ],
+    "Memory": [
+      "cover_blocks",
+      "match_and_pick_from_conveyor",
+      "swap_T",
+      "press_by_number",
+      "imitate_sorting_sequence",
+      "swap_blocks"
+    ],
+    "Open": [
+      "align_blocks",
+      "solve_equation",
+      "stack_blocks_by_language",
+      "general_pickup",
+      "classify_objects_by_language",
+      "pick_from_conveyor_by_image",
+      "store_tools_in_toolbox",
+      "pour_by_language"
+    ]
+  },
+  "episode_weighted": {
+    "score": 38.28547008547009,
+    "sr": 32.76923076923077
+  },
+  "models": [
+    {
+      "id": "ours",
+      "name": "PhysicalRSI",
+      "scope": "Local frozen routing evaluation",
+      "metrics": {
+        "Generalization": {
+          "score": 19.695238095238096,
+          "sr": 14.095238095238095
+        },
+        "Precision": {
+          "score": 43.1875,
+          "sr": 36.0
+        },
+        "Long-Horizon": {
+          "score": 46.637499999999996,
+          "sr": 37.166666666666664
+        },
+        "Memory": {
+          "score": 52.61111111111111,
+          "sr": 52.44444444444444
+        },
+        "Open": {
+          "score": 29.120833333333334,
+          "sr": 25.333333333333332
+        },
+        "Average": {
+          "score": 38.250436507936506,
+          "sr": 33.007936507936506
+        }
+      }
+    },
+    {
+      "id": "pi05",
+      "name": "π₀.₅",
+      "scope": "Historical leaderboard reference",
+      "metrics": {
+        "Generalization": {
+          "score": 11.366428571428571,
+          "sr": 6.666428571428572
+        },
+        "Precision": {
+          "score": 12.395,
+          "sr": 5.5
+        },
+        "Long-Horizon": {
+          "score": 23.536250000000003,
+          "sr": 14.66625
+        },
+        "Memory": {
+          "score": 5.89,
+          "sr": 4.666666666666667
+        },
+        "Open": {
+          "score": 1.97875,
+          "sr": 1.66625
+        },
+        "Average": {
+          "score": 11.033285714285714,
+          "sr": 6.633119047619048
+        }
+      }
+    },
+    {
+      "id": "sparse",
+      "name": "π₀.₅ + sparse memory",
+      "scope": "Task-level reference table used for routing, 21 Sep 2026; separate standard/random values unavailable",
+      "metrics": {
+        "Generalization": {
+          "score": 10.457142857142857,
+          "sr": 6.571428571428571
+        },
+        "Precision": {
+          "score": 20.1,
+          "sr": 13.0
+        },
+        "Long-Horizon": {
+          "score": 26.475,
+          "sr": 16.75
+        },
+        "Memory": {
+          "score": 18.516666666666666,
+          "sr": 17.666666666666668
+        },
+        "Open": {
+          "score": 2.325,
+          "sr": 2.0
+        },
+        "Average": {
+          "score": 15.574761904761905,
+          "sr": 11.197619047619048
+        }
+      }
+    },
+    {
+      "id": "gpt",
+      "name": "GPT-6 Astra",
+      "role": "GPT-as-policy",
+      "scope": "Official RoboDojo leaderboard; common-task aggregation",
+      "metrics": {
+        "Generalization": {
+          "score": 32.81428571428572,
+          "sr": 29.142857142857142
+        },
+        "Precision": {
+          "score": 12.65,
+          "sr": 4
+        },
+        "Long-Horizon": {
+          "score": 21.45,
+          "sr": 8.25
+        },
+        "Memory": {
+          "score": 43.03333333333333,
+          "sr": 38.666666666666664
+        },
+        "Open": {
+          "score": 34.3625,
+          "sr": 31
+        },
+        "Average": {
+          "score": 28.86202380952381,
+          "sr": 22.211904761904762
+        }
+      },
+      "official_full_metrics": {
+        "generalizationStd": {
+          "score": 35.32,
+          "sr": 32.67
+        },
+        "generalizationRand": {
+          "score": 31.4,
+          "sr": 28.33
+        },
+        "precision": {
+          "score": 12.65,
+          "sr": 4.0
+        },
+        "longHorizon": {
+          "score": 21.45,
+          "sr": 8.25
+        },
+        "memory": {
+          "score": 43.04,
+          "sr": 38.67
+        },
+        "open": {
+          "score": 34.36,
+          "sr": 31.0
+        },
+        "average": {
+          "score": 28.97,
+          "sr": 22.48
+        }
+      },
+      "source_key": "GPT-6-Astra"
+    },
+    {
+      "id": "best-vla",
+      "name": "DM0.5",
+      "role": "Best VLA",
+      "scope": "Official RoboDojo leaderboard; common-task aggregation",
+      "metrics": {
+        "Generalization": {
+          "score": 11.267142857142856,
+          "sr": 6.666428571428572
+        },
+        "Precision": {
+          "score": 24.821250000000003,
+          "sr": 16.75
+        },
+        "Long-Horizon": {
+          "score": 33.705,
+          "sr": 19.5
+        },
+        "Memory": {
+          "score": 47.745,
+          "sr": 47.445
+        },
+        "Open": {
+          "score": 2.43,
+          "sr": 2.08375
+        },
+        "Average": {
+          "score": 23.99367857142857,
+          "sr": 18.489035714285713
+        }
+      },
+      "official_full_metrics": {
+        "generalizationStd": {
+          "score": 23.49,
+          "sr": 17.89
+        },
+        "generalizationRand": {
+          "score": 8.06,
+          "sr": 4.0
+        },
+        "precision": {
+          "score": 24.82,
+          "sr": 16.75
+        },
+        "longHorizon": {
+          "score": 33.7,
+          "sr": 19.5
+        },
+        "memory": {
+          "score": 47.74,
+          "sr": 47.44
+        },
+        "open": {
+          "score": 2.43,
+          "sr": 2.08
+        },
+        "average": {
+          "score": 24.9,
+          "sr": 19.34
+        }
+      },
+      "source_key": "OpenDM05"
+    },
+    {
+      "id": "best-wam",
+      "name": "Liber-0 Lite",
+      "role": "Best WAM",
+      "scope": "Official RoboDojo leaderboard; common-task aggregation",
+      "metrics": {
+        "Generalization": {
+          "score": 17.876428571428573,
+          "sr": 12.357142857142858
+        },
+        "Precision": {
+          "score": 36.60625,
+          "sr": 31.25
+        },
+        "Long-Horizon": {
+          "score": 45.5,
+          "sr": 33.125
+        },
+        "Memory": {
+          "score": 35.685,
+          "sr": 35.5
+        },
+        "Open": {
+          "score": 3.06375,
+          "sr": 2.625
+        },
+        "Average": {
+          "score": 27.746285714285715,
+          "sr": 22.97142857142857
+        }
+      },
+      "official_full_metrics": {
+        "generalizationStd": {
+          "score": 39.83,
+          "sr": 33.22
+        },
+        "generalizationRand": {
+          "score": 10.88,
+          "sr": 5.0
+        },
+        "precision": {
+          "score": 36.6,
+          "sr": 31.08
+        },
+        "longHorizon": {
+          "score": 45.5,
+          "sr": 32.92
+        },
+        "memory": {
+          "score": 35.68,
+          "sr": 35.44
+        },
+        "open": {
+          "score": 3.06,
+          "sr": 2.58
+        },
+        "average": {
+          "score": 29.24,
+          "sr": 24.23
+        }
+      },
+      "source_key": "Liber_wam"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "stack_bowls",
+      "name": "Stack bowls",
+      "category": "Generalization",
+      "expert": "PI05-sparse-mem",
+      "episodes": 75,
+      "successes": 50,
+      "score": 70.46666666666667,
+      "sr": 66.66666666666666,
+      "pi05": {
+        "score": 76,
+        "sr": 72
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 18,
+          "score": 75.0,
+          "sr": 72.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_bowls__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_bowls/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_bowls__seed0__attempt2/_result.json",
+            "sha256": "afa2b19e9d77f9becbd7530959fa51724baf364ad7c039477f6b9bf370ecb440"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 15,
+          "score": 64.8,
+          "sr": 60.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_bowls__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_bowls/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_bowls__seed1__attempt1/_result.json",
+            "sha256": "b530689f776670055e5cdbf7adf8cd194a5a506dab2626b3f1b4b4d47cc9aeb4"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 17,
+          "score": 71.6,
+          "sr": 68.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_bowls__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_bowls/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_bowls__seed2__attempt1/_result.json",
+            "sha256": "713a7420aa3fd38deac9e12267e2099017c0375eec5af83e1cb214bf915f9a51"
+          },
+          "expert": "PI05-sparse-mem"
+        }
+      ]
+    },
+    {
+      "id": "stack_bowls_random",
+      "name": "Stack bowls random",
+      "category": "Generalization",
+      "expert": "PI05-sparse-mem",
+      "episodes": 75,
+      "successes": 4,
+      "score": 15.733333333333333,
+      "sr": 5.333333333333334,
+      "pi05": {
+        "score": 14.2,
+        "sr": 4
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 0,
+          "score": 12.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_bowls_random__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_bowls_random/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_bowls_random__seed0__attempt2/_result.json",
+            "sha256": "bef59fb12378f5e3e9277af37b47419d193f8fac0b83976f2508ab10defff9c7"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 1,
+          "score": 13.600000000000001,
+          "sr": 4.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_bowls_random__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_bowls_random/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_bowls_random__seed1__attempt2/_result.json",
+            "sha256": "aba8af5d2c1a86b611da9831412340e43a6618f03bb4ecd3ec0a5b6d39439ccc"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 3,
+          "score": 21.6,
+          "sr": 12.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_bowls_random__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_bowls_random/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_bowls_random__seed2__attempt1/_result.json",
+            "sha256": "2ed3c2efa16300412d930bd5db7c18a1b4a8b6ab08c829f12368b77f5675972d"
+          },
+          "expert": "PI05-sparse-mem"
+        }
+      ]
+    },
+    {
+      "id": "push_T",
+      "name": "Push t",
+      "category": "Generalization",
+      "expert": "CAP",
+      "episodes": 75,
+      "successes": 49,
+      "score": 65.33333333333333,
+      "sr": 65.33333333333333,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 13,
+          "score": 52.0,
+          "sr": 52.0,
+          "evidence": {
+            "file": "evidence/experiments/native/push_T__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/push_T/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__push_T__seed0__attempt2/_result.json",
+            "sha256": "54afecaf25d39b5aceccf03bdb4457c0b199116e4773eb5bf0b93ffcdb3211d3"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 22,
+          "score": 88.0,
+          "sr": 88.0,
+          "evidence": {
+            "file": "evidence/experiments/native/push_T__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/push_T/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__push_T__seed1__attempt1/_result.json",
+            "sha256": "481874e510f4ea1c4bf414e8855fa56dd88e6055af565618e019e1ef69f58e8a"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 14,
+          "score": 56.00000000000001,
+          "sr": 56.0,
+          "evidence": {
+            "file": "evidence/experiments/native/push_T__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/push_T/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__push_T__seed2__attempt1/_result.json",
+            "sha256": "1152ae44c1341fd05bbcbc0f8baca2f221024ddcef3aa04442d93ac8d8951b14"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "push_T_random",
+      "name": "Push t random",
+      "category": "Generalization",
+      "expert": "PI05",
+      "episodes": 75,
+      "successes": 0,
+      "score": 0.0,
+      "sr": 0.0,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/push_T_random__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/push_T_random/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__push_T_random__seed0__attempt1/_result.json",
+            "sha256": "670228d5a2619a793ee0c27fdd5447a150aa9dffbd101f0145d7329721fef316"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/push_T_random__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/push_T_random/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__push_T_random__seed1__attempt1/_result.json",
+            "sha256": "670228d5a2619a793ee0c27fdd5447a150aa9dffbd101f0145d7329721fef316"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/push_T_random__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/push_T_random/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__push_T_random__seed2__attempt1/_result.json",
+            "sha256": "670228d5a2619a793ee0c27fdd5447a150aa9dffbd101f0145d7329721fef316"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "pack_objects_into_box",
+      "name": "Pack objects into box",
+      "category": "Generalization",
+      "expert": "PI05",
+      "episodes": 75,
+      "successes": 5,
+      "score": 29.6,
+      "sr": 6.666666666666667,
+      "pi05": {
+        "score": 22.8,
+        "sr": 4
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 1,
+          "score": 26.400000000000002,
+          "sr": 4.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pack_objects_into_box__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pack_objects_into_box/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pack_objects_into_box__seed0__attempt2/_result.json",
+            "sha256": "a5484188c65d304e9744f39742e0907be9b82be2fd15f93bb9879e30a8c23fb2"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 2,
+          "score": 30.4,
+          "sr": 8.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pack_objects_into_box__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pack_objects_into_box/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pack_objects_into_box__seed1__attempt2/_result.json",
+            "sha256": "5321935fe4ff26e3cc21bc7d1a8eb6b8067f07dc82f5da72b87a93e0ebfce20b"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 2,
+          "score": 32.0,
+          "sr": 8.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pack_objects_into_box__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pack_objects_into_box/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pack_objects_into_box__seed2__attempt1/_result.json",
+            "sha256": "a930241aa47fcd23b5053d60067d3f8051b6e8c676f9c6f01eaa69f64e3a3517"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "pack_objects_into_box_random",
+      "name": "Pack objects into box random",
+      "category": "Generalization",
+      "expert": "PI05",
+      "episodes": 75,
+      "successes": 1,
+      "score": 14.466666666666667,
+      "sr": 1.3333333333333335,
+      "pi05": {
+        "score": 15.4,
+        "sr": 1.33
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 0,
+          "score": 18.6,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pack_objects_into_box_random__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pack_objects_into_box_random/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pack_objects_into_box_random__seed0__attempt1/_result.json",
+            "sha256": "8fdc9a85a9aa5c5c643fa96ee223861a9f2dfa8c0c702735095f3f0608e523ac"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 0,
+          "score": 9.2,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pack_objects_into_box_random__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pack_objects_into_box_random/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pack_objects_into_box_random__seed1__attempt1/_result.json",
+            "sha256": "44af9da6d72ed7aa58710698f07e781ead542311f000f6dafb54fa78854f38b5"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 1,
+          "score": 15.6,
+          "sr": 4.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pack_objects_into_box_random__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pack_objects_into_box_random/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pack_objects_into_box_random__seed2__attempt1/_result.json",
+            "sha256": "90b5457f09125e75dc3e951cc5f035da5f40a5e8a6ba5e001fb23d82eb0b06ec"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "fold_clothes",
+      "name": "Fold clothes",
+      "category": "Generalization",
+      "expert": "PI05",
+      "episodes": 75,
+      "successes": 29,
+      "score": 46.4,
+      "sr": 38.666666666666664,
+      "pi05": {
+        "score": 48,
+        "sr": 38.67
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 8,
+          "score": 40.800000000000004,
+          "sr": 32.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fold_clothes__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fold_clothes/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fold_clothes__seed0__attempt2/_result.json",
+            "sha256": "3f5279a58d3559987baf4cacddc6a69c7c1cf693b7e64386d790a99a50836bdb"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 11,
+          "score": 51.2,
+          "sr": 44.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fold_clothes__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fold_clothes/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fold_clothes__seed1__attempt1/_result.json",
+            "sha256": "875a898883b4a786d7bfe09bd9be098b1087d40d897afd1a9fa1eddeefe2354a"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 10,
+          "score": 47.2,
+          "sr": 40.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fold_clothes__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fold_clothes/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fold_clothes__seed2__attempt1/_result.json",
+            "sha256": "89c239c2935be1c1200de9345e2d8f2744b02e48cd3edf06bc933ce8b304e7d4"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "hang_mugs",
+      "name": "Hang mugs",
+      "category": "Generalization",
+      "expert": "PI05",
+      "episodes": 75,
+      "successes": 0,
+      "score": 8.066666666666666,
+      "sr": 0.0,
+      "pi05": {
+        "score": 9.53,
+        "sr": 0
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 0,
+          "score": 9.2,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/hang_mugs__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/hang_mugs/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__hang_mugs__seed0__attempt1/_result.json",
+            "sha256": "4192baef8f7ecb631c972821cde19e7be3c6e70923729835d173fdbf7b834d11"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 0,
+          "score": 9.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/hang_mugs__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/hang_mugs/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__hang_mugs__seed1__attempt1/_result.json",
+            "sha256": "d303226f521fceb2c75e1698712be09f423ee929785adc7f64b6d3f81c0fea96"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 0,
+          "score": 6.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/hang_mugs__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/hang_mugs/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__hang_mugs__seed2__attempt1/_result.json",
+            "sha256": "ee54a216323fff35254d76b05cececaa5bc940eee1607899e60c6533f5ee468c"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "hang_mugs_random",
+      "name": "Hang mugs random",
+      "category": "Generalization",
+      "expert": "PI05",
+      "episodes": 75,
+      "successes": 0,
+      "score": 2.8,
+      "sr": 0.0,
+      "pi05": {
+        "score": 5,
+        "sr": 0
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 0,
+          "score": 3.5999999999999996,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/hang_mugs_random__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/hang_mugs_random/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__hang_mugs_random__seed0__attempt1/_result.json",
+            "sha256": "645abf8ee77152d4906d3e4fb052f51b2b8b8ca05f3bcca4904d08da4c5e01f5"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 0,
+          "score": 1.2,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/hang_mugs_random__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/hang_mugs_random/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__hang_mugs_random__seed1__attempt1/_result.json",
+            "sha256": "20ed4ba806a9f06f38d07a7954843baa3f339ff3033ac9c0041c9960af32eb04"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 0,
+          "score": 3.5999999999999996,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/hang_mugs_random__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/hang_mugs_random/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__hang_mugs_random__seed2__attempt1/_result.json",
+            "sha256": "7eae717f3abea5f50cf942688c7b4e0c63af60bda4b2156be66574e2b6d601df"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "sweep_blocks",
+      "name": "Sweep blocks",
+      "category": "Generalization",
+      "expert": "PI05",
+      "episodes": 75,
+      "successes": 1,
+      "score": 1.3333333333333333,
+      "sr": 1.3333333333333335,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 1,
+          "score": 4.0,
+          "sr": 4.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sweep_blocks__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sweep_blocks/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sweep_blocks__seed0__attempt1/_result.json",
+            "sha256": "a4d490065e6e6053585c686aad33db944a870a2ee0e89e4e17891cdae36b23bc"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sweep_blocks__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sweep_blocks/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sweep_blocks__seed1__attempt1/_result.json",
+            "sha256": "670228d5a2619a793ee0c27fdd5447a150aa9dffbd101f0145d7329721fef316"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sweep_blocks__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sweep_blocks/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sweep_blocks__seed2__attempt1/_result.json",
+            "sha256": "670228d5a2619a793ee0c27fdd5447a150aa9dffbd101f0145d7329721fef316"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "sweep_blocks_random",
+      "name": "Sweep blocks random",
+      "category": "Generalization",
+      "expert": "PI05",
+      "episodes": 75,
+      "successes": 0,
+      "score": 0.0,
+      "sr": 0.0,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sweep_blocks_random__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sweep_blocks_random/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sweep_blocks_random__seed0__attempt1/_result.json",
+            "sha256": "670228d5a2619a793ee0c27fdd5447a150aa9dffbd101f0145d7329721fef316"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sweep_blocks_random__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sweep_blocks_random/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sweep_blocks_random__seed1__attempt1/_result.json",
+            "sha256": "670228d5a2619a793ee0c27fdd5447a150aa9dffbd101f0145d7329721fef316"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sweep_blocks_random__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sweep_blocks_random/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sweep_blocks_random__seed2__attempt1/_result.json",
+            "sha256": "670228d5a2619a793ee0c27fdd5447a150aa9dffbd101f0145d7329721fef316"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "pour_liquid_into_cup",
+      "name": "Pour liquid into cup",
+      "category": "Generalization",
+      "expert": "CAP",
+      "episodes": 75,
+      "successes": 67,
+      "score": 89.33333333333333,
+      "sr": 89.33333333333333,
+      "pi05": {
+        "score": 28,
+        "sr": 28
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 24,
+          "score": 96.0,
+          "sr": 96.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pour_liquid_into_cup__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pour_liquid_into_cup/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pour_liquid_into_cup__seed0__attempt1/_result.json",
+            "sha256": "4309a3e45f56516cc32b602ddd14fbc642d503594f2703bc8cf5674d82c47ed2"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 24,
+          "score": 96.0,
+          "sr": 96.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pour_liquid_into_cup__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pour_liquid_into_cup/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pour_liquid_into_cup__seed1__attempt1/_result.json",
+            "sha256": "b806f1853d6aab07e0dae8ab5b769fb5cc1b1749e2165f79daf6e3c7718f0eb0"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 19,
+          "score": 76.0,
+          "sr": 76.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pour_liquid_into_cup__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pour_liquid_into_cup/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pour_liquid_into_cup__seed2__attempt1/_result.json",
+            "sha256": "0e71403df0185ebe911b74ebba65fdf5267f139115be17d79ac3739f7e210e90"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "make_toast",
+      "name": "Make toast",
+      "category": "Generalization",
+      "expert": "PI05-sparse-mem",
+      "episodes": 75,
+      "successes": 2,
+      "score": 10.666666666666666,
+      "sr": 2.666666666666667,
+      "pi05": {
+        "score": 9.33,
+        "sr": 1.33
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 0,
+          "score": 6.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/make_toast__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/make_toast/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__make_toast__seed0__attempt1/_result.json",
+            "sha256": "18de9367c4ab10a095cf183e7c62382ae3c139edb841d6baa7d436fcdceb8665"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 2,
+          "score": 16.0,
+          "sr": 8.0,
+          "evidence": {
+            "file": "evidence/experiments/native/make_toast__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/make_toast/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__make_toast__seed1__attempt1/_result.json",
+            "sha256": "48c3edc7fa95086c6f14567737115e9350cf3c0b0d795005488b197f4f9532ca"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 0,
+          "score": 10.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/make_toast__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/make_toast/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__make_toast__seed2__attempt1/_result.json",
+            "sha256": "e1f3a84e07def141e0123119ac9323cf8f2a63da810a945425194096a663fe00"
+          },
+          "expert": "PI05-sparse-mem"
+        }
+      ]
+    },
+    {
+      "id": "arrange_largest_number",
+      "name": "Arrange largest number",
+      "category": "Generalization",
+      "expert": "PI05",
+      "episodes": 75,
+      "successes": 0,
+      "score": 5.533333333333333,
+      "sr": 0.0,
+      "pi05": {
+        "score": 5.13,
+        "sr": 1.33
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 0,
+          "score": 5.8,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/arrange_largest_number__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/arrange_largest_number/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__arrange_largest_number__seed0__attempt2/_result.json",
+            "sha256": "05caa7fbe875cc8c98017dd70349c659afabbeaee37c2b8b81670b7a737bc0c8"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 0,
+          "score": 4.8,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/arrange_largest_number__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/arrange_largest_number/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__arrange_largest_number__seed1__attempt1/_result.json",
+            "sha256": "9d0a773d89365ef51843990e4e921c9a6cbd7e5e8b8a7ee5865297f0f450985c"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 0,
+          "score": 6.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/arrange_largest_number__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/arrange_largest_number/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__arrange_largest_number__seed2__attempt1/_result.json",
+            "sha256": "d11fce01cdc949149dff34dcbc5fefac2da7228aa00e58e8eeea048cf0b42144"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "arrange_largest_number_random",
+      "name": "Arrange largest number random",
+      "category": "Generalization",
+      "expert": "CAP",
+      "episodes": 75,
+      "successes": 19,
+      "score": 37.06666666666667,
+      "sr": 25.333333333333336,
+      "pi05": {
+        "score": 0.4,
+        "sr": 0
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 3,
+          "score": 27.800000000000004,
+          "sr": 12.0,
+          "evidence": {
+            "file": "evidence/experiments/native/arrange_largest_number_random__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/arrange_largest_number_random/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__arrange_largest_number_random__seed0__attempt2/_result.json",
+            "sha256": "0e7304e6634ddcbb7c0d562f3b56a021606953901e3991dd2a349987a1d93042"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 8,
+          "score": 41.199999999999996,
+          "sr": 32.0,
+          "evidence": {
+            "file": "evidence/experiments/native/arrange_largest_number_random__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/arrange_largest_number_random/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__arrange_largest_number_random__seed1__attempt2/_result.json",
+            "sha256": "b65607ce4d94f73f5f3bd82c677e6a12fc0944e28bd0b5de6e154be17a6e9ab9"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 8,
+          "score": 42.199999999999996,
+          "sr": 32.0,
+          "evidence": {
+            "file": "evidence/experiments/native/arrange_largest_number_random__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/arrange_largest_number_random/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__arrange_largest_number_random__seed2__attempt1/_result.json",
+            "sha256": "ce0cfd019a7dbb56d3bd41d787e56ddbd9972693cf7467812cbb1877a507b71b"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "sort_nesting_dolls_by_size",
+      "name": "Sort nesting dolls by size",
+      "category": "Generalization",
+      "expert": "CAP",
+      "episodes": 75,
+      "successes": 19,
+      "score": 25.333333333333336,
+      "sr": 25.333333333333336,
+      "pi05": {
+        "score": 10.67,
+        "sr": 10.67
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 7,
+          "score": 28.000000000000004,
+          "sr": 28.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sort_nesting_dolls_by_size__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sort_nesting_dolls_by_size/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sort_nesting_dolls_by_size__seed0__attempt1/_result.json",
+            "sha256": "44ca418cda32ada9abcaffdc13580261ca1ec5521b248eb5a9cc8a5b0423f802"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 7,
+          "score": 28.000000000000004,
+          "sr": 28.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sort_nesting_dolls_by_size__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sort_nesting_dolls_by_size/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sort_nesting_dolls_by_size__seed1__attempt1/_result.json",
+            "sha256": "ae3fcda6008934e5c716ec397594f4c84503cd64f7598da56aa1128dece46d4e"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 5,
+          "score": 20.0,
+          "sr": 20.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sort_nesting_dolls_by_size__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sort_nesting_dolls_by_size/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sort_nesting_dolls_by_size__seed2__attempt1/_result.json",
+            "sha256": "da66be49c0f4c5389ff6d56b7174471390b15c0a16588f15a0bdf5c063e136b8"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "sort_nesting_dolls_by_size_random",
+      "name": "Sort nesting dolls by size random",
+      "category": "Generalization",
+      "expert": "PI05",
+      "episodes": 75,
+      "successes": 0,
+      "score": 0.0,
+      "sr": 0.0,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sort_nesting_dolls_by_size_random__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sort_nesting_dolls_by_size_random/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sort_nesting_dolls_by_size_random__seed0__attempt1/_result.json",
+            "sha256": "670228d5a2619a793ee0c27fdd5447a150aa9dffbd101f0145d7329721fef316"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sort_nesting_dolls_by_size_random__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sort_nesting_dolls_by_size_random/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sort_nesting_dolls_by_size_random__seed1__attempt1/_result.json",
+            "sha256": "670228d5a2619a793ee0c27fdd5447a150aa9dffbd101f0145d7329721fef316"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/sort_nesting_dolls_by_size_random__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/sort_nesting_dolls_by_size_random/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__sort_nesting_dolls_by_size_random__seed2__attempt1/_result.json",
+            "sha256": "670228d5a2619a793ee0c27fdd5447a150aa9dffbd101f0145d7329721fef316"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "stack_blocks",
+      "name": "Stack blocks",
+      "category": "Generalization",
+      "expert": "PI05-sparse-mem",
+      "episodes": 75,
+      "successes": 17,
+      "score": 29.666666666666668,
+      "sr": 22.666666666666664,
+      "pi05": {
+        "score": 22.53,
+        "sr": 13.33
+      },
+      "sparse": null,
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 25,
+          "successes": 6,
+          "score": 31.8,
+          "sr": 24.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_blocks__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_blocks/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_blocks__seed0__attempt2/_result.json",
+            "sha256": "a98127539d8c062baff314be62fa6a82245f0ecc782cbb8114891ae1056b66ce"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 1,
+          "episodes": 25,
+          "successes": 4,
+          "score": 22.6,
+          "sr": 16.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_blocks__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_blocks/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_blocks__seed1__attempt1/_result.json",
+            "sha256": "5cb314df3e97bafdf90f57e0c5ea9ace5104d2bb0c5f396ad8ee50dd7912aa01"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 2,
+          "episodes": 25,
+          "successes": 7,
+          "score": 34.599999999999994,
+          "sr": 28.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_blocks__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_blocks/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_blocks__seed2__attempt1/_result.json",
+            "sha256": "1e5d6782f3c97e2b6473ec5e6c5dc88515ddd3543e8a557cd1ce30e799c49da5"
+          },
+          "expert": "PI05-sparse-mem"
+        }
+      ]
+    },
+    {
+      "id": "cover_blocks",
+      "name": "Cover blocks",
+      "category": "Memory",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 150,
+      "score": 100.0,
+      "sr": 100.0,
+      "pi05": {
+        "score": 19.07,
+        "sr": 13.33
+      },
+      "sparse": {
+        "score": 74.8,
+        "sr": 70.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 50,
+          "score": 100.0,
+          "sr": 100.0,
+          "evidence": {
+            "file": "evidence/experiments/native/cover_blocks__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/cover_blocks/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__cover_blocks__seed0__attempt1/_result.json",
+            "sha256": "8e5db84a75b1d94fccb9a0bbf0a1e10110295ddb41de34aafabca20a9936a29b"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 50,
+          "score": 100.0,
+          "sr": 100.0,
+          "evidence": {
+            "file": "evidence/experiments/native/cover_blocks__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/cover_blocks/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__cover_blocks__seed1__attempt1/_result.json",
+            "sha256": "8e5db84a75b1d94fccb9a0bbf0a1e10110295ddb41de34aafabca20a9936a29b"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 50,
+          "score": 100.0,
+          "sr": 100.0,
+          "evidence": {
+            "file": "evidence/experiments/native/cover_blocks__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/cover_blocks/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__cover_blocks__seed2__attempt1/_result.json",
+            "sha256": "8e5db84a75b1d94fccb9a0bbf0a1e10110295ddb41de34aafabca20a9936a29b"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "match_and_pick_from_conveyor",
+      "name": "Match and pick from conveyor",
+      "category": "Memory",
+      "expert": "PI05-sparse-mem",
+      "episodes": 150,
+      "successes": 25,
+      "score": 16.666666666666668,
+      "sr": 16.666666666666664,
+      "pi05": {
+        "score": 14,
+        "sr": 14
+      },
+      "sparse": {
+        "score": 20.0,
+        "sr": 20.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 9,
+          "score": 18.0,
+          "sr": 18.0,
+          "evidence": {
+            "file": "evidence/experiments/native/match_and_pick_from_conveyor__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/match_and_pick_from_conveyor/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__match_and_pick_from_conveyor__seed0__attempt1/_result.json",
+            "sha256": "19f7a8e1a2d4816c37ccd5ec46f5838d05dce94d2dd9b05acfa9d4e8c337065f"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 8,
+          "score": 16.0,
+          "sr": 16.0,
+          "evidence": {
+            "file": "evidence/experiments/native/match_and_pick_from_conveyor__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/match_and_pick_from_conveyor/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__match_and_pick_from_conveyor__seed1__attempt1/_result.json",
+            "sha256": "138eb3b4f5b238cd02717a991ce27c19c41c773ffaa083b56622dbc0160ee48b"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 8,
+          "score": 16.0,
+          "sr": 16.0,
+          "evidence": {
+            "file": "evidence/experiments/native/match_and_pick_from_conveyor__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/match_and_pick_from_conveyor/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__match_and_pick_from_conveyor__seed2__attempt1/_result.json",
+            "sha256": "0873ee314be67d4a7d35b2efc9d86835301c9a24cf224fc4e76ab73201ca8ddd"
+          },
+          "expert": "PI05-sparse-mem"
+        }
+      ]
+    },
+    {
+      "id": "swap_blocks",
+      "name": "Swap blocks",
+      "category": "Memory",
+      "expert": "PI05-sparse-mem",
+      "episodes": 150,
+      "successes": 29,
+      "score": 19.333333333333332,
+      "sr": 19.333333333333332,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 12.0,
+        "sr": 12.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 13,
+          "score": 26.0,
+          "sr": 26.0,
+          "evidence": {
+            "file": "evidence/experiments/native/swap_blocks__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/swap_blocks/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__swap_blocks__seed0__attempt1/_result.json",
+            "sha256": "5b0fb9bc0be88ce864b6bb94606c6d3bb3a629c8ea3fdfcdeee4e0974c16da8c"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 7,
+          "score": 14.000000000000002,
+          "sr": 14.0,
+          "evidence": {
+            "file": "evidence/experiments/native/swap_blocks__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/swap_blocks/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__swap_blocks__seed1__attempt1/_result.json",
+            "sha256": "ca9e9018de9243064ca7baa92845be8c0b69b8dfac276401a73d2322e2ef7637"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 9,
+          "score": 18.0,
+          "sr": 18.0,
+          "evidence": {
+            "file": "evidence/experiments/native/swap_blocks__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/swap_blocks/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__swap_blocks__seed2__attempt1/_result.json",
+            "sha256": "93d00a8f073fa958744303bc0f2c0dd91d2cc0d557c25246f4f556938fd91c2c"
+          },
+          "expert": "PI05-sparse-mem"
+        }
+      ]
+    },
+    {
+      "id": "swap_T",
+      "name": "Swap t",
+      "category": "Memory",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 140,
+      "score": 93.33333333333333,
+      "sr": 93.33333333333333,
+      "pi05": {
+        "score": 0.67,
+        "sr": 0.67
+      },
+      "sparse": {
+        "score": 0.0,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 46,
+          "score": 92.0,
+          "sr": 92.0,
+          "evidence": {
+            "file": "evidence/experiments/native/swap_T__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/swap_T/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__swap_T__seed0__attempt2/_result.json",
+            "sha256": "56d2024e8b381d74b6b1897db8332b151a5180337b988fe6bde046df3ef00aca"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 46,
+          "score": 92.0,
+          "sr": 92.0,
+          "evidence": {
+            "file": "evidence/experiments/native/swap_T__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/swap_T/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__swap_T__seed1__attempt1/_result.json",
+            "sha256": "e3cd99bd601a756f0d2863b55fbe07d482641868d2aecd6dc1d95c656e95804e"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 48,
+          "score": 96.0,
+          "sr": 96.0,
+          "evidence": {
+            "file": "evidence/experiments/native/swap_T__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/swap_T/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__swap_T__seed2__attempt1/_result.json",
+            "sha256": "bd875464cb143c012c36c6a7cdfa74a7e89fa9ae12266ee823263b4bed4c8d49"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "press_by_number",
+      "name": "Press by number",
+      "category": "Memory",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 128,
+      "score": 85.33333333333333,
+      "sr": 85.33333333333334,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 4.0,
+        "sr": 4.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 41,
+          "score": 82.0,
+          "sr": 82.0,
+          "evidence": {
+            "file": "evidence/experiments/native/press_by_number__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/press_by_number/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__press_by_number__seed0__attempt1/_result.json",
+            "sha256": "829dd0106d69b5b909fc7bc96ad443b33c4677828b398ae7f5c684527359f7e0"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 43,
+          "score": 86.0,
+          "sr": 86.0,
+          "evidence": {
+            "file": "evidence/experiments/native/press_by_number__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/press_by_number/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__press_by_number__seed1__attempt1/_result.json",
+            "sha256": "94b36bb81b3553d4e658a8a0b9eb422d405c9a91868932c2006ccfe840c0a409"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 44,
+          "score": 88.0,
+          "sr": 88.0,
+          "evidence": {
+            "file": "evidence/experiments/native/press_by_number__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/press_by_number/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__press_by_number__seed2__attempt1/_result.json",
+            "sha256": "075c09571af4ad09e8eb049b091f60b79fed241e110ae42fd68f7ed87369c843"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "imitate_sorting_sequence",
+      "name": "Imitate sorting sequence",
+      "category": "Memory",
+      "expert": "PI05",
+      "episodes": 150,
+      "successes": 0,
+      "score": 1.0,
+      "sr": 0.0,
+      "pi05": {
+        "score": 1.6,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 0.3,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 0,
+          "score": 1.0999999999999999,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/imitate_sorting_sequence__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/imitate_sorting_sequence/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__imitate_sorting_sequence__seed0__attempt2/_result.json",
+            "sha256": "fbb81e4a4930d3870bfeb9a15683e4310e2725c4e8ef129329a0d08b04832f4c"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 0,
+          "score": 1.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/imitate_sorting_sequence__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/imitate_sorting_sequence/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__imitate_sorting_sequence__seed1__attempt1/_result.json",
+            "sha256": "fdebaf741592b7d74148ae975923a4cd0c4ebca70a42d742d8c8a482dccfb848"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.9000000000000001,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/imitate_sorting_sequence__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/imitate_sorting_sequence/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__imitate_sorting_sequence__seed2__attempt1/_result.json",
+            "sha256": "1428bef10d8e98879ac555f162a942d3f135ba2173c82a236072467e15786f97"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "fasten_screws",
+      "name": "Fasten screws",
+      "category": "Precision",
+      "expert": "PI05-sparse-mem",
+      "episodes": 150,
+      "successes": 3,
+      "score": 23.266666666666666,
+      "sr": 2.0,
+      "pi05": {
+        "score": 15.13,
+        "sr": 2.67
+      },
+      "sparse": {
+        "score": 16.4,
+        "sr": 2.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 1,
+          "score": 20.400000000000002,
+          "sr": 2.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fasten_screws__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fasten_screws/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fasten_screws__seed0__attempt1/_result.json",
+            "sha256": "73f8629f77025d7d3110fd925dd5f8e383e105085824f077f1ceadaec5d0b2e5"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 1,
+          "score": 26.6,
+          "sr": 2.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fasten_screws__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fasten_screws/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fasten_screws__seed1__attempt1/_result.json",
+            "sha256": "a7130d3c919b8573a80099e5c2b1091e6da1ddf4fb8bbe310cfba140e1110e41"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 1,
+          "score": 22.8,
+          "sr": 2.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fasten_screws__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fasten_screws/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fasten_screws__seed2__attempt1/_result.json",
+            "sha256": "6da78d806017d6ccd0823469f148b40cc3686b64ace98180f2df99d08f9ebd5f"
+          },
+          "expert": "PI05-sparse-mem"
+        }
+      ]
+    },
+    {
+      "id": "plug_in_charger",
+      "name": "Plug in charger",
+      "category": "Precision",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 48,
+      "score": 32.0,
+      "sr": 32.0,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 0.0,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 19,
+          "score": 38.0,
+          "sr": 38.0,
+          "evidence": {
+            "file": "evidence/experiments/native/plug_in_charger__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/plug_in_charger/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__plug_in_charger__seed0__attempt1/_result.json",
+            "sha256": "314fa5996d9be0864ec291a9b8ac8ecc75a2d6520583b623230f83067f180519"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 11,
+          "score": 22.0,
+          "sr": 22.0,
+          "evidence": {
+            "file": "evidence/experiments/native/plug_in_charger__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/plug_in_charger/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__plug_in_charger__seed1__attempt1/_result.json",
+            "sha256": "82fbbfb8ffee1fb9320f7131519cdc8e09156dfb5c65fd48f641bfc3693f064e"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 18,
+          "score": 36.0,
+          "sr": 36.0,
+          "evidence": {
+            "file": "evidence/experiments/native/plug_in_charger__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/plug_in_charger/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__plug_in_charger__seed2__attempt1/_result.json",
+            "sha256": "9c67f3ed04e5b16e1516cfad75045bb8bcf174ac4f30e3603114f3f2d24f5056"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "insert_tubes",
+      "name": "Insert tubes",
+      "category": "Precision",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 98,
+      "score": 77.86666666666666,
+      "sr": 65.33333333333333,
+      "pi05": {
+        "score": 17.87,
+        "sr": 3.33
+      },
+      "sparse": {
+        "score": 43.6,
+        "sr": 22.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 35,
+          "score": 80.0,
+          "sr": 70.0,
+          "evidence": {
+            "file": "evidence/experiments/native/insert_tubes__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/insert_tubes/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__insert_tubes__seed0__attempt1/_result.json",
+            "sha256": "d5aba488eb77a770a92cd7a0fd4e4ff2f67c1f65310e83beeec0b6dc65816ef9"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 31,
+          "score": 76.0,
+          "sr": 62.0,
+          "evidence": {
+            "file": "evidence/experiments/native/insert_tubes__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/insert_tubes/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__insert_tubes__seed1__attempt1/_result.json",
+            "sha256": "bd0f8d2bfc8c380f271e731be5d5319ea8cb79722344cf1514d741c3815cdccc"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 32,
+          "score": 77.60000000000001,
+          "sr": 64.0,
+          "evidence": {
+            "file": "evidence/experiments/native/insert_tubes__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/insert_tubes/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__insert_tubes__seed2__attempt1/_result.json",
+            "sha256": "72dae0d61a07b9836cd9760b1468289669e69a6889c96ca88136a9c8cfae94e4"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "pour_balls_into_vase",
+      "name": "Pour balls into vase",
+      "category": "Precision",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 59,
+      "score": 39.333333333333336,
+      "sr": 39.33333333333333,
+      "pi05": {
+        "score": 13.33,
+        "sr": 13.33
+      },
+      "sparse": {
+        "score": 18.0,
+        "sr": 18.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 17,
+          "score": 34.0,
+          "sr": 34.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pour_balls_into_vase__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pour_balls_into_vase/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pour_balls_into_vase__seed0__attempt1/_result.json",
+            "sha256": "e1a478c78bf41b1a0931854ff2e965e4c93a373898856b1620db8f68b0837160"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 20,
+          "score": 40.0,
+          "sr": 40.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pour_balls_into_vase__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pour_balls_into_vase/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pour_balls_into_vase__seed1__attempt1/_result.json",
+            "sha256": "844abdcdd905c9765cb064d48c826bee9f1b8b4fcd28dc6bace81a400a48f51e"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 22,
+          "score": 44.0,
+          "sr": 44.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pour_balls_into_vase__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pour_balls_into_vase/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pour_balls_into_vase__seed2__attempt1/_result.json",
+            "sha256": "077ae8b084abae1e5fe5111346c9ac30c466e163b7393fb1ca9cf34ab54f7012"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "play_Xylophone",
+      "name": "Play xylophone",
+      "category": "Precision",
+      "expert": "PI05",
+      "episodes": 150,
+      "successes": 0,
+      "score": 0.0,
+      "sr": 0.0,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 0.0,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/play_Xylophone__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/play_Xylophone/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__play_Xylophone__seed0__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/play_Xylophone__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/play_Xylophone/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__play_Xylophone__seed1__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/play_Xylophone__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/play_Xylophone/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__play_Xylophone__seed2__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "deposit_coin",
+      "name": "Deposit coin",
+      "category": "Precision",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 77,
+      "score": 58.4,
+      "sr": 51.33333333333333,
+      "pi05": {
+        "score": 3.2,
+        "sr": 0.67
+      },
+      "sparse": {
+        "score": 3.2,
+        "sr": 2.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 22,
+          "score": 51.6,
+          "sr": 44.0,
+          "evidence": {
+            "file": "evidence/experiments/native/deposit_coin__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/deposit_coin/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__deposit_coin__seed0__attempt1/_result.json",
+            "sha256": "8e8ed20bedae0035915b1ad213a391ee5890a4c07acbf18137b81e8684a79194"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 29,
+          "score": 64.4,
+          "sr": 58.0,
+          "evidence": {
+            "file": "evidence/experiments/native/deposit_coin__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/deposit_coin/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__deposit_coin__seed1__attempt1/_result.json",
+            "sha256": "037bb224c6e2db1440511a032cee525b1bd073d7d234b38be99208e9203e04fb"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 26,
+          "score": 59.199999999999996,
+          "sr": 52.0,
+          "evidence": {
+            "file": "evidence/experiments/native/deposit_coin__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/deposit_coin/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__deposit_coin__seed2__attempt1/_result.json",
+            "sha256": "a61fc7c747cc85705b423340901dd0ca0ad34cc72dbf560a7136ff9229654736"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "insert_key",
+      "name": "Insert key",
+      "category": "Precision",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 61,
+      "score": 49.56666666666667,
+      "sr": 40.666666666666664,
+      "pi05": {
+        "score": 11.9,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 13.2,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 23,
+          "score": 54.1,
+          "sr": 46.0,
+          "evidence": {
+            "file": "evidence/experiments/native/insert_key__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/insert_key/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__insert_key__seed0__attempt1/_result.json",
+            "sha256": "55fc52e8d92282959659dc7678c538978df965281073caf0f0802763bd4bf5bf"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 17,
+          "score": 43.9,
+          "sr": 34.0,
+          "evidence": {
+            "file": "evidence/experiments/native/insert_key__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/insert_key/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__insert_key__seed1__attempt1/_result.json",
+            "sha256": "5980056a6aa765baccaf2a01b4869229d99e06a6df4682942a6eadfa20a33cb2"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 21,
+          "score": 50.7,
+          "sr": 42.0,
+          "evidence": {
+            "file": "evidence/experiments/native/insert_key__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/insert_key/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__insert_key__seed2__attempt1/_result.json",
+            "sha256": "b4b84c6570c0210ba98f410c0e2f193ca46daab769586a8b2c257f5615b093a1"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "build_tower",
+      "name": "Build tower",
+      "category": "Precision",
+      "expert": "PI05-sparse-mem",
+      "episodes": 150,
+      "successes": 86,
+      "score": 65.06666666666666,
+      "sr": 57.333333333333336,
+      "pi05": {
+        "score": 37.73,
+        "sr": 24
+      },
+      "sparse": {
+        "score": 66.4,
+        "sr": 60.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 34,
+          "score": 74.0,
+          "sr": 68.0,
+          "evidence": {
+            "file": "evidence/experiments/native/build_tower__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/build_tower/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__build_tower__seed0__attempt1/_result.json",
+            "sha256": "aea274506fe6582bbedec91ad259a26995828c88ed26ec57041e68801d03255d"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 28,
+          "score": 65.0,
+          "sr": 56.0,
+          "evidence": {
+            "file": "evidence/experiments/native/build_tower__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/build_tower/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__build_tower__seed1__attempt1/_result.json",
+            "sha256": "604370561140396eed6aa25e210e2f4b650bf03260e42e25568325610138bda8"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 24,
+          "score": 56.199999999999996,
+          "sr": 48.0,
+          "evidence": {
+            "file": "evidence/experiments/native/build_tower__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/build_tower/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__build_tower__seed2__attempt1/_result.json",
+            "sha256": "2a7ad4b63ad5bd92591e9e9c12c94d33b00c3d2e8528a898989e3ee86c8ff883"
+          },
+          "expert": "PI05-sparse-mem"
+        }
+      ]
+    },
+    {
+      "id": "fill_pen_holder",
+      "name": "Fill pen holder",
+      "category": "Long-Horizon",
+      "expert": "PI05-sparse-mem",
+      "episodes": 150,
+      "successes": 9,
+      "score": 22.06666666666667,
+      "sr": 6.0,
+      "pi05": {
+        "score": 23.23,
+        "sr": 7.33
+      },
+      "sparse": {
+        "score": 26.3,
+        "sr": 10.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 4,
+          "score": 20.700000000000003,
+          "sr": 8.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fill_pen_holder__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fill_pen_holder/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fill_pen_holder__seed0__attempt1/_result.json",
+            "sha256": "13b5f6cc1208edfbb666f4b0767f844a41257fed23e4ca8e83056eb3556fdedb"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 2,
+          "score": 21.5,
+          "sr": 4.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fill_pen_holder__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fill_pen_holder/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fill_pen_holder__seed1__attempt1/_result.json",
+            "sha256": "596ac84d953378ed782b08efc579607f2c34ddf5c1d5c8d07cc62f533b9d0b36"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 3,
+          "score": 24.000000000000004,
+          "sr": 6.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fill_pen_holder__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fill_pen_holder/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fill_pen_holder__seed2__attempt1/_result.json",
+            "sha256": "3398234d2269e2e6ed3d53ef8b3bb2d46f2ed3f5fad63e8d633d3fad2270a11e"
+          },
+          "expert": "PI05-sparse-mem"
+        }
+      ]
+    },
+    {
+      "id": "classify_objects",
+      "name": "Classify objects",
+      "category": "Long-Horizon",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 64,
+      "score": 57.9,
+      "sr": 42.66666666666667,
+      "pi05": {
+        "score": 24.67,
+        "sr": 12.67
+      },
+      "sparse": {
+        "score": 20.7,
+        "sr": 10.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 22,
+          "score": 57.699999999999996,
+          "sr": 44.0,
+          "evidence": {
+            "file": "evidence/experiments/native/classify_objects__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/classify_objects/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__classify_objects__seed0__attempt1/_result.json",
+            "sha256": "856896acb6c7aa045df53e538a26049f0c2646c2e8a332ff19f84a52ecfac92c"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 26,
+          "score": 64.4,
+          "sr": 52.0,
+          "evidence": {
+            "file": "evidence/experiments/native/classify_objects__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/classify_objects/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__classify_objects__seed1__attempt1/_result.json",
+            "sha256": "a098b6517b2760f15750b829d7138cfa971e38b73f27a082bbf1ca670b64cb0c"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 16,
+          "score": 51.6,
+          "sr": 32.0,
+          "evidence": {
+            "file": "evidence/experiments/native/classify_objects__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/classify_objects/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__classify_objects__seed2__attempt1/_result.json",
+            "sha256": "dddeb4b57c6678d87194f0033eb0ec1e80f2e5266b0a690688628abb36887613"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "put_bottles_into_dustbin",
+      "name": "Put bottles into dustbin",
+      "category": "Long-Horizon",
+      "expert": "PI05-sparse-mem",
+      "episodes": 150,
+      "successes": 105,
+      "score": 81.1,
+      "sr": 70.0,
+      "pi05": {
+        "score": 79.93,
+        "sr": 69.33
+      },
+      "sparse": {
+        "score": 80.9,
+        "sr": 72.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 34,
+          "score": 79.3,
+          "sr": 68.0,
+          "evidence": {
+            "file": "evidence/experiments/native/put_bottles_into_dustbin__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/put_bottles_into_dustbin/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__put_bottles_into_dustbin__seed0__attempt1/_result.json",
+            "sha256": "5cbdc180f4c2ae53c55ce6d7159abf04532c2c394dc551400256fa7d6973b272"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 38,
+          "score": 85.0,
+          "sr": 76.0,
+          "evidence": {
+            "file": "evidence/experiments/native/put_bottles_into_dustbin__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/put_bottles_into_dustbin/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__put_bottles_into_dustbin__seed1__attempt1/_result.json",
+            "sha256": "bd96e71fddc64239829569819358dd931e3e3bda93a53b6b36fb97a9f3419ae3"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 33,
+          "score": 79.0,
+          "sr": 66.0,
+          "evidence": {
+            "file": "evidence/experiments/native/put_bottles_into_dustbin__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/put_bottles_into_dustbin/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__put_bottles_into_dustbin__seed2__attempt1/_result.json",
+            "sha256": "badeec4941418187be95160f6688b6cb1a190c9dc6f85c68a3a6a52c8b5ad51b"
+          },
+          "expert": "PI05-sparse-mem"
+        }
+      ]
+    },
+    {
+      "id": "play_tic_tac_toe",
+      "name": "Play tic tac toe",
+      "category": "Long-Horizon",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 139,
+      "score": 97.56666666666666,
+      "sr": 92.66666666666666,
+      "pi05": {
+        "score": 8.23,
+        "sr": 1.33
+      },
+      "sparse": {
+        "score": 11.0,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 46,
+          "score": 98.0,
+          "sr": 92.0,
+          "evidence": {
+            "file": "evidence/experiments/native/play_tic_tac_toe__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/play_tic_tac_toe/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__play_tic_tac_toe__seed0__attempt1/_result.json",
+            "sha256": "9b985e458951175c34b2658a0f46dd8c1d746a3893de7d0672305f75c88b4234"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 46,
+          "score": 96.2,
+          "sr": 92.0,
+          "evidence": {
+            "file": "evidence/experiments/native/play_tic_tac_toe__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/play_tic_tac_toe/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__play_tic_tac_toe__seed1__attempt1/_result.json",
+            "sha256": "a3b2f814614b5b08d9844f45013a6abac1a283e094a29c4db830b73a2ee3ab96"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 47,
+          "score": 98.5,
+          "sr": 94.0,
+          "evidence": {
+            "file": "evidence/experiments/native/play_tic_tac_toe__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/play_tic_tac_toe/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__play_tic_tac_toe__seed2__attempt1/_result.json",
+            "sha256": "f8e8aaa8a0a3ab86fc34115ba9bee7c7fc04ad12e1176ae063da486e9e08746d"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "fill_egg_holder",
+      "name": "Fill egg holder",
+      "category": "Long-Horizon",
+      "expert": "PI05",
+      "episodes": 150,
+      "successes": 0,
+      "score": 2.3,
+      "sr": 0.0,
+      "pi05": {
+        "score": 2.23,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 1.4,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 0,
+          "score": 2.8000000000000003,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fill_egg_holder__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fill_egg_holder/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fill_egg_holder__seed0__attempt1/_result.json",
+            "sha256": "3bb1ad3ca5761aee291eb3be928e7ee3f3f536cf814abc5db64a5b54baea1372"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 0,
+          "score": 2.4,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fill_egg_holder__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fill_egg_holder/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fill_egg_holder__seed1__attempt1/_result.json",
+            "sha256": "3fdfb1f2c32fb16a32598f7c0769736e16f29f53d9f92e0f727ce0290581567c"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 0,
+          "score": 1.7000000000000002,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/fill_egg_holder__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/fill_egg_holder/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__fill_egg_holder__seed2__attempt1/_result.json",
+            "sha256": "c733344bac9e9128a19a134ac14975219cdd1afa5f495f7c880b9c8307ca71d2"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "organize_table",
+      "name": "Organize table",
+      "category": "Long-Horizon",
+      "expert": "PI05-sparse-mem",
+      "episodes": 150,
+      "successes": 1,
+      "score": 26.833333333333332,
+      "sr": 0.6666666666666667,
+      "pi05": {
+        "score": 23.33,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 37.5,
+        "sr": 8.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 0,
+          "score": 27.500000000000004,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/organize_table__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/organize_table/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__organize_table__seed0__attempt1/_result.json",
+            "sha256": "12c2332534c50e5c260abeb1c48a9e1c5ce52e377db33187a579e7bfe580aba9"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 1,
+          "score": 24.0,
+          "sr": 2.0,
+          "evidence": {
+            "file": "evidence/experiments/native/organize_table__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/organize_table/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__organize_table__seed1__attempt1/_result.json",
+            "sha256": "11b2ad04e560e86ea69160de36c5f0808bd418d2f106768d04d41ee1d9a50462"
+          },
+          "expert": "PI05-sparse-mem"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 0,
+          "score": 28.999999999999996,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/organize_table__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/organize_table/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__organize_table__seed2__attempt1/_result.json",
+            "sha256": "e803889927c73c08149197be51c8e1c89601f8c7708fe6483ed0dc38f732866b"
+          },
+          "expert": "PI05-sparse-mem"
+        }
+      ]
+    },
+    {
+      "id": "make_kong",
+      "name": "Make kong",
+      "category": "Long-Horizon",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 128,
+      "score": 85.33333333333333,
+      "sr": 85.33333333333334,
+      "pi05": {
+        "score": 26.67,
+        "sr": 26.67
+      },
+      "sparse": {
+        "score": 34.0,
+        "sr": 34.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 43,
+          "score": 86.0,
+          "sr": 86.0,
+          "evidence": {
+            "file": "evidence/experiments/native/make_kong__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/make_kong/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__make_kong__seed0__attempt2/_result.json",
+            "sha256": "800f65a5d33bc94d613a035892ec2a2149b9887872089f87b24b49b8994e0e79"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 42,
+          "score": 84.0,
+          "sr": 84.0,
+          "evidence": {
+            "file": "evidence/experiments/native/make_kong__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/make_kong/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__make_kong__seed1__attempt1/_result.json",
+            "sha256": "5427c80adde08af757d8483b654e8624d32b500c5ea34671ac96d5ee6e87a06d"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 43,
+          "score": 86.0,
+          "sr": 86.0,
+          "evidence": {
+            "file": "evidence/experiments/native/make_kong__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/make_kong/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__make_kong__seed2__attempt1/_result.json",
+            "sha256": "066dc25c87ca3837dc9a871aea4ac909955d14664b211284f5000c3cbc5cb89d"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "play_stacking_toy",
+      "name": "Play stacking toy",
+      "category": "Long-Horizon",
+      "expert": "PI05",
+      "episodes": 150,
+      "successes": 0,
+      "score": 0.0,
+      "sr": 0.0,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 0.0,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/play_stacking_toy__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/play_stacking_toy/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__play_stacking_toy__seed0__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/play_stacking_toy__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/play_stacking_toy/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__play_stacking_toy__seed1__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/play_stacking_toy__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/play_stacking_toy/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__play_stacking_toy__seed2__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "align_blocks",
+      "name": "Align blocks",
+      "category": "Open",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 130,
+      "score": 86.66666666666667,
+      "sr": 86.66666666666667,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 0.0,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 45,
+          "score": 90.0,
+          "sr": 90.0,
+          "evidence": {
+            "file": "evidence/experiments/native/align_blocks__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/align_blocks/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__align_blocks__seed0__attempt1/_result.json",
+            "sha256": "a2544df716a9fe8ca78f807c75d2ed04063846a0720bcbd8fb5550dfb965e732"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 41,
+          "score": 82.0,
+          "sr": 82.0,
+          "evidence": {
+            "file": "evidence/experiments/native/align_blocks__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/align_blocks/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__align_blocks__seed1__attempt1/_result.json",
+            "sha256": "5bcc5bb526ab14ebed67ee6584a5b5bfbd0b7f3c480ccf7cd9a7d1ebb4a4ed4e"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 44,
+          "score": 88.0,
+          "sr": 88.0,
+          "evidence": {
+            "file": "evidence/experiments/native/align_blocks__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/align_blocks/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__align_blocks__seed2__attempt1/_result.json",
+            "sha256": "96052ee39d92230c4db954895031797918cb2a930452459b2253269232cac3de"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "general_pickup",
+      "name": "General pickup",
+      "category": "Open",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 66,
+      "score": 44.0,
+      "sr": 44.0,
+      "pi05": {
+        "score": 12,
+        "sr": 12
+      },
+      "sparse": {
+        "score": 10.0,
+        "sr": 10.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 28,
+          "score": 56.00000000000001,
+          "sr": 56.0,
+          "evidence": {
+            "file": "evidence/experiments/native/general_pickup__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/general_pickup/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__general_pickup__seed0__attempt1/_result.json",
+            "sha256": "384c76fc9ddfc6a355e96151f0fb599aade2eed00040b90426a9e8016aae3b1f"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 22,
+          "score": 44.0,
+          "sr": 44.0,
+          "evidence": {
+            "file": "evidence/experiments/native/general_pickup__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/general_pickup/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__general_pickup__seed1__attempt1/_result.json",
+            "sha256": "becc72368a71cafa50681af976f09051888f3318b222daf59b73f507c2e77aa0"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 16,
+          "score": 32.0,
+          "sr": 32.0,
+          "evidence": {
+            "file": "evidence/experiments/native/general_pickup__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/general_pickup/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__general_pickup__seed2__attempt1/_result.json",
+            "sha256": "04a0845d6dc9367390b7b0f4954bc2c85a163646d1ecc81ee6bf280f7cd81708"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "solve_equation",
+      "name": "Solve equation",
+      "category": "Open",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 92,
+      "score": 61.333333333333336,
+      "sr": 61.33333333333333,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 0.0,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 30,
+          "score": 60.0,
+          "sr": 60.0,
+          "evidence": {
+            "file": "evidence/experiments/native/solve_equation__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/solve_equation/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__solve_equation__seed0__attempt2/_result.json",
+            "sha256": "c9dc16745b9856e5f68bdb5ae73c9739d702eaa0d9e90159b87e8b69d691d283"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 28,
+          "score": 56.00000000000001,
+          "sr": 56.0,
+          "evidence": {
+            "file": "evidence/experiments/native/solve_equation__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/solve_equation/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__solve_equation__seed1__attempt1/_result.json",
+            "sha256": "ad5fc64e7e86a2d56a16e98d0b67dc8648226d3795d436a79e96ffda07ff3efe"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 34,
+          "score": 68.0,
+          "sr": 68.0,
+          "evidence": {
+            "file": "evidence/experiments/native/solve_equation__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/solve_equation/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__solve_equation__seed2__attempt1/_result.json",
+            "sha256": "f1f64ea8018a80edec3c1e79bc480e41f6d31daef834eba94e93929dee0954d4"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "stack_blocks_by_language",
+      "name": "Stack blocks by language",
+      "category": "Open",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 0,
+      "score": 0.0,
+      "sr": 0.0,
+      "pi05": {
+        "score": 1.73,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 7.6,
+        "sr": 6.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_blocks_by_language__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_blocks_by_language/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_blocks_by_language__seed0__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_blocks_by_language__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_blocks_by_language/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_blocks_by_language__seed1__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/stack_blocks_by_language__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/stack_blocks_by_language/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__stack_blocks_by_language__seed2__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "classify_objects_by_language",
+      "name": "Classify objects by language",
+      "category": "Open",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 16,
+      "score": 25.06666666666667,
+      "sr": 10.666666666666668,
+      "pi05": {
+        "score": 0.6,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 1.0,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 6,
+          "score": 25.0,
+          "sr": 12.0,
+          "evidence": {
+            "file": "evidence/experiments/native/classify_objects_by_language__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/classify_objects_by_language/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__classify_objects_by_language__seed0__attempt1/_result.json",
+            "sha256": "082060c518e8b72466fafe253c9afb0fd651cea9729204a82f85d8748ace5bde"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 1,
+          "score": 17.400000000000002,
+          "sr": 2.0,
+          "evidence": {
+            "file": "evidence/experiments/native/classify_objects_by_language__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/classify_objects_by_language/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__classify_objects_by_language__seed1__attempt1/_result.json",
+            "sha256": "c8cb6b0b7683eedf21c11b57ab35763a063e49dc4247c949054b01e4dd65f5c3"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 9,
+          "score": 32.800000000000004,
+          "sr": 18.0,
+          "evidence": {
+            "file": "evidence/experiments/native/classify_objects_by_language__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/classify_objects_by_language/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__classify_objects_by_language__seed2__attempt1/_result.json",
+            "sha256": "f496f249801be4c5f7837cb23a7c9ff12af6f1abb862950fa4c98fa2366d596e"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "pick_from_conveyor_by_image",
+      "name": "Pick from conveyor by image",
+      "category": "Open",
+      "expert": "PI05",
+      "episodes": 150,
+      "successes": 0,
+      "score": 0.0,
+      "sr": 0.0,
+      "pi05": {
+        "score": 1.33,
+        "sr": 1.33
+      },
+      "sparse": {
+        "score": 0.0,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pick_from_conveyor_by_image__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pick_from_conveyor_by_image/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pick_from_conveyor_by_image__seed0__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pick_from_conveyor_by_image__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pick_from_conveyor_by_image/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pick_from_conveyor_by_image__seed1__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "PI05"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 0,
+          "score": 0.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pick_from_conveyor_by_image__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pick_from_conveyor_by_image/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pick_from_conveyor_by_image__seed2__attempt1/_result.json",
+            "sha256": "7a2d317fe33e9423f5ac1bad25fb197b3fb0a09afa51be9ea0c620eb8f325445"
+          },
+          "expert": "PI05"
+        }
+      ]
+    },
+    {
+      "id": "store_tools_in_toolbox",
+      "name": "Store tools in toolbox",
+      "category": "Open",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 0,
+      "score": 6.166666666666667,
+      "sr": 0.0,
+      "pi05": {
+        "score": 0.17,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 0.0,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 0,
+          "score": 6.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/store_tools_in_toolbox__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/store_tools_in_toolbox/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__store_tools_in_toolbox__seed0__attempt1/_result.json",
+            "sha256": "4a4bc2ab1b22f9db58e5fafd13ad16a3356644171e8fe4e451055168d3f9f9b2"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 0,
+          "score": 6.5,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/store_tools_in_toolbox__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/store_tools_in_toolbox/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__store_tools_in_toolbox__seed1__attempt1/_result.json",
+            "sha256": "0c1a1365c8d55d416f1d18d69d1baf2694ea5f55a601ae9bd9382c8aa727f7c5"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 0,
+          "score": 6.0,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/store_tools_in_toolbox__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/store_tools_in_toolbox/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__store_tools_in_toolbox__seed2__attempt1/_result.json",
+            "sha256": "c8da0c7f0dfb0ded4b12d078e9177604f0cad60c7d4e20bf2cbef718d863dc70"
+          },
+          "expert": "CAP"
+        }
+      ]
+    },
+    {
+      "id": "pour_by_language",
+      "name": "Pour by language",
+      "category": "Open",
+      "expert": "CAP",
+      "episodes": 150,
+      "successes": 0,
+      "score": 9.733333333333334,
+      "sr": 0.0,
+      "pi05": {
+        "score": 0,
+        "sr": 0
+      },
+      "sparse": {
+        "score": 0.0,
+        "sr": 0.0
+      },
+      "cells": [
+        {
+          "seed": 0,
+          "episodes": 50,
+          "successes": 0,
+          "score": 8.4,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pour_by_language__seed0.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pour_by_language/RoboRouter/arx_x5/0_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pour_by_language__seed0__attempt1/_result.json",
+            "sha256": "a7d3e4a016af5a1fb395748368c9257ef05a0a704688304ea2e829dc164e6dd6"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 1,
+          "episodes": 50,
+          "successes": 0,
+          "score": 12.000000000000002,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pour_by_language__seed1.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pour_by_language/RoboRouter/arx_x5/1_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pour_by_language__seed1__attempt1/_result.json",
+            "sha256": "cc96ea98b8f2433ea61ed41a20a583dd571bd80ea6c6ba0185b3860e8faf199e"
+          },
+          "expert": "CAP"
+        },
+        {
+          "seed": 2,
+          "episodes": 50,
+          "successes": 0,
+          "score": 8.8,
+          "sr": 0.0,
+          "evidence": {
+            "file": "evidence/experiments/native/pour_by_language__seed2.json",
+            "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/RoboDojo/eval_result/RoboDojo/pour_by_language/RoboRouter/arx_x5/2_route_plan=cap_pi05_score/official6300_24gpu_groups10_max20_agent_20260922__pour_by_language__seed2__attempt1/_result.json",
+            "sha256": "665cdd23257e7d94ff84587351678210d196276f6e7a97d78a91779e220b7cb6"
+          },
+          "expert": "CAP"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "task": "fold_clothes_random",
+      "seed": 0,
+      "episodes": 25
+    },
+    {
+      "task": "pour_liquid_into_cup_random",
+      "seed": 0,
+      "episodes": 25
+    },
+    {
+      "task": "make_toast_random",
+      "seed": 0,
+      "episodes": 25
+    },
+    {
+      "task": "store_laptop_and_headphones",
+      "seed": 0,
+      "episodes": 25
+    },
+    {
+      "task": "store_laptop_and_headphones_random",
+      "seed": 0,
+      "episodes": 25
+    },
+    {
+      "task": "stack_blocks_random",
+      "seed": 0,
+      "episodes": 25
+    },
+    {
+      "task": "fold_clothes_random",
+      "seed": 1,
+      "episodes": 25
+    },
+    {
+      "task": "pour_liquid_into_cup_random",
+      "seed": 1,
+      "episodes": 25
+    },
+    {
+      "task": "make_toast_random",
+      "seed": 1,
+      "episodes": 25
+    },
+    {
+      "task": "store_laptop_and_headphones",
+      "seed": 1,
+      "episodes": 25
+    },
+    {
+      "task": "store_laptop_and_headphones_random",
+      "seed": 1,
+      "episodes": 25
+    },
+    {
+      "task": "stack_blocks_random",
+      "seed": 1,
+      "episodes": 25
+    },
+    {
+      "task": "fold_clothes_random",
+      "seed": 2,
+      "episodes": 25
+    },
+    {
+      "task": "pour_liquid_into_cup_random",
+      "seed": 2,
+      "episodes": 25
+    },
+    {
+      "task": "make_toast_random",
+      "seed": 2,
+      "episodes": 25
+    },
+    {
+      "task": "store_laptop_and_headphones",
+      "seed": 2,
+      "episodes": 25
+    },
+    {
+      "task": "store_laptop_and_headphones_random",
+      "seed": 2,
+      "episodes": 25
+    },
+    {
+      "task": "stack_blocks_random",
+      "seed": 2,
+      "episodes": 25
+    }
+  ],
+  "evolution": [
+    {
+      "id": "fold",
+      "name": "Cloth folding",
+      "scope": "Same 12 development scenes · nine archived revisions",
+      "axis": "Recorded revision",
+      "points": [
+        {
+          "label": "R10",
+          "iteration": 10,
+          "score": 20.0,
+          "sr": 16.666666666666664,
+          "n": 12,
+          "evidence": "evidence/fold-clothes/r10/coverage_summary.json"
+        },
+        {
+          "label": "R11",
+          "iteration": 11,
+          "score": 36.666666666666664,
+          "sr": 33.33333333333333,
+          "n": 12,
+          "evidence": "evidence/fold-clothes/r11/coverage_summary.json"
+        },
+        {
+          "label": "R13",
+          "iteration": 13,
+          "score": 60.0,
+          "sr": 58.333333333333336,
+          "n": 12,
+          "evidence": "evidence/fold-clothes/r13/coverage_summary.json"
+        },
+        {
+          "label": "R16",
+          "iteration": 16,
+          "score": 0.0,
+          "sr": 0.0,
+          "n": 12,
+          "evidence": "evidence/fold-clothes/r16/coverage_summary.json"
+        },
+        {
+          "label": "R17",
+          "iteration": 17,
+          "score": 45.0,
+          "sr": 41.666666666666664,
+          "n": 12,
+          "evidence": "evidence/fold-clothes/r17-coverage-summary.json"
+        },
+        {
+          "label": "R18",
+          "iteration": 18,
+          "score": 45.0,
+          "sr": 41.666666666666664,
+          "n": 12,
+          "evidence": "evidence/fold-clothes/r18/coverage_summary.json"
+        },
+        {
+          "label": "R19",
+          "iteration": 19,
+          "score": 66.66666666666667,
+          "sr": 66.66666666666667,
+          "n": 12,
+          "evidence": "evidence/fold-clothes/r19/coverage_summary.json"
+        },
+        {
+          "label": "R21",
+          "iteration": 21,
+          "score": 78.33333333333333,
+          "sr": 75.0,
+          "n": 12,
+          "evidence": "evidence/fold-clothes/r21/coverage_summary.json"
+        },
+        {
+          "label": "R22",
+          "iteration": 22,
+          "score": 85.0,
+          "sr": 83.33333333333334,
+          "n": 12,
+          "evidence": "evidence/fold-clothes/r22/coverage_summary.json"
+        }
+      ],
+      "mechanism": "Joint-space control → saved return poses → garment association. Each revision is evaluated on the same scenes; the strongest recorded candidate improves from 20.0 to 85.0.",
+      "cohort": "Development regression set; distinct from the 40-scene validation cohort."
+    }
+  ],
+  "sources": [
+    {
+      "file": "evidence/experiments/fleet-results.csv",
+      "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/runtime/fleets/official6300_24gpu_groups10_max20_agent_20260922/results.csv",
+      "sha256": "d3e1476524849997bf9ba8f8f35ad5b9f444bd1e55be6dc45f618c6b208d80a0"
+    },
+    {
+      "file": "evidence/experiments/fleet-audit.json",
+      "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/runtime/fleets/official6300_24gpu_groups10_max20_agent_20260922/official_summary_audit.json",
+      "sha256": "8303bf87e93c822d2b229133017e8677665271bd7c5ab35e70f9efc1d8fb38c7"
+    },
+    {
+      "file": "evidence/experiments/final-results.md",
+      "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/OFFICIAL6300_FINAL_RESULTS.md",
+      "sha256": "10d8556c3c7f324f61945793c536213e43e98ed953b16458095e08a26b4deb7e"
+    },
+    {
+      "file": "evidence/experiments/leaderboard-reference.json",
+      "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/analysis/roborouter-2026-09-21/leaderboard_snapshot.json",
+      "sha256": "0d7c264ff64f3efadbf67faf277c936926bc69a97f4ebd9f262679eb27cb8c70"
+    },
+    {
+      "file": "evidence/experiments/pi05-reference.csv",
+      "source": "/cpfs02/user/shaoyanming/robodojo-kai-aleph0/analysis/pi05-routing-2026-09-21/source_scores_and_routes.csv",
+      "sha256": "e272ab31e1f041bdd97ed1bab33de1ecac6f8b1ca4a3927df9b37638686a9793"
+    }
+  ],
+  "official_comparison": {
+    "file": "evidence/experiments/official-leaderboard-latest.json",
+    "url": "https://robodojo-benchmark.com/leaderboard",
+    "retrieved_at": "2026-09-27T02:08:55.638641+00:00",
+    "edition_date": "2026-09-28",
+    "selection": {
+      "criterion": "Highest official overall score within the specified standalone model family; one model retained across all dimensions and both metric views.",
+      "vla": {
+        "name": "DM0.5",
+        "key": "OpenDM05",
+        "classification_source": "https://github.com/dexmal/opendm"
+      },
+      "wam": {
+        "name": "Liber-0 Lite",
+        "key": "Liber_wam",
+        "classification_source": "Official leaderboard model-key mapping; Liber-0 Preview maps to Liber_agent_wam."
+      },
+      "excluded_agent_systems": [
+        "Simate-beta",
+        "Liber-0 Preview"
+      ],
+      "classification_note": "The public board has no authoritative family field. Selection is curated; the mountain dual/vla visual grouping is not taxonomy."
+    }
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "revision": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/candidates/campaign_fold_clothes_20260907/iterations/r11_feedback_transport",
+  "split": "development",
+  "expected_task_score": null,
+  "unseen_qualification": "pending task-wide unfinished/offline development history",
+  "configs": {
+    "base": {
+      "planned_n": 12,
+      "completed_n": 12,
+      "missing_n": 0,
+      "completed_subset_mean": 56.666666666666664,
+      "population_std": 43.84315479321968,
+      "full_frozen_coverage_mean": 56.666666666666664,
+      "confirmed_unseen": {
+        "n": 0,
+        "mean": null,
+        "population_std": null,
+        "missing_n": null,
+        "qualification": "pending"
+      },
+      "episodes": [
+        {
+          "config": "base",
+          "seed": 1,
+          "layout_id": 18,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_18.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 20.0,
+          "native_score_raw": 0.2,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s1_b0/results/native/2026-09-08_07-15-23/_result.json"
+        },
+        {
+          "config": "base",
+          "seed": 1,
+          "layout_id": 19,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_19.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s1_b0/results/native/2026-09-08_07-15-23/_result.json"
+        },
+        {
+          "config": "base",
+          "seed": 1,
+          "layout_id": 20,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_20.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 0.0,
+          "native_score_raw": 0.0,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s1_b0/results/native/2026-09-08_07-15-23/_result.json"
+        },
+        {
+          "config": "base",
+          "seed": 1,
+          "layout_id": 21,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_21.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 20.0,
+          "native_score_raw": 0.2,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s1_b0/results/native/2026-09-08_07-15-23/_result.json"
+        },
+        {
+          "config": "base",
+          "seed": 1,
+          "layout_id": 22,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_22.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 0.0,
+          "native_score_raw": 0.0,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s1_b0/results/native/2026-09-08_07-15-23/_result.json"
+        },
+        {
+          "config": "base",
+          "seed": 1,
+          "layout_id": 23,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_23.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s1_b0/results/native/2026-09-08_07-15-23/_result.json"
+        },
+        {
+          "config": "base",
+          "seed": 0,
+          "layout_id": 14,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_14.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s0_b0/results/native/2026-09-08_07-21-49/_result.json"
+        },
+        {
+          "config": "base",
+          "seed": 0,
+          "layout_id": 15,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_15.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 20.0,
+          "native_score_raw": 0.2,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s0_b0/results/native/2026-09-08_07-21-49/_result.json"
+        },
+        {
+          "config": "base",
+          "seed": 0,
+          "layout_id": 16,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_16.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s0_b0/results/native/2026-09-08_07-21-49/_result.json"
+        },
+        {
+          "config": "base",
+          "seed": 0,
+          "layout_id": 17,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_17.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 20.0,
+          "native_score_raw": 0.2,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s0_b0/results/native/2026-09-08_07-21-49/_result.json"
+        },
+        {
+          "config": "base",
+          "seed": 0,
+          "layout_id": 18,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_18.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s0_b0/results/native/2026-09-08_07-21-49/_result.json"
+        },
+        {
+          "config": "base",
+          "seed": 0,
+          "layout_id": 19,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_19.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/base_s0_b0/results/native/2026-09-08_07-21-49/_result.json"
+        }
+      ]
+    },
+    "random": {
+      "planned_n": 12,
+      "completed_n": 12,
+      "missing_n": 0,
+      "completed_subset_mean": 50.0,
+      "population_std": 50.0,
+      "full_frozen_coverage_mean": 50.0,
+      "confirmed_unseen": {
+        "n": 0,
+        "mean": null,
+        "population_std": null,
+        "missing_n": null,
+        "qualification": "pending"
+      },
+      "episodes": [
+        {
+          "config": "random",
+          "seed": 1,
+          "layout_id": 0,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_0.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 0.0,
+          "native_score_raw": 0.0,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s1_b0/results/native/2026-09-08_07-28-11/_result.json"
+        },
+        {
+          "config": "random",
+          "seed": 1,
+          "layout_id": 1,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_1.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 0.0,
+          "native_score_raw": 0.0,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s1_b0/results/native/2026-09-08_07-28-11/_result.json"
+        },
+        {
+          "config": "random",
+          "seed": 1,
+          "layout_id": 2,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_2.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 0.0,
+          "native_score_raw": 0.0,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s1_b0/results/native/2026-09-08_07-28-11/_result.json"
+        },
+        {
+          "config": "random",
+          "seed": 1,
+          "layout_id": 3,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_3.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s1_b0/results/native/2026-09-08_07-28-11/_result.json"
+        },
+        {
+          "config": "random",
+          "seed": 1,
+          "layout_id": 4,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_4.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s1_b0/results/native/2026-09-08_07-28-11/_result.json"
+        },
+        {
+          "config": "random",
+          "seed": 1,
+          "layout_id": 5,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/1/fold_clothes_random_5.json",
+          "exposure": "development",
+          "role": "fixed_regression",
+          "episode_score": 0.0,
+          "native_score_raw": 0.0,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s1_b0/results/native/2026-09-08_07-28-11/_result.json"
+        },
+        {
+          "config": "random",
+          "seed": 0,
+          "layout_id": 12,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_12.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s0_b0/results/native/2026-09-08_07-37-17/_result.json"
+        },
+        {
+          "config": "random",
+          "seed": 0,
+          "layout_id": 13,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_13.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s0_b0/results/native/2026-09-08_07-37-17/_result.json"
+        },
+        {
+          "config": "random",
+          "seed": 0,
+          "layout_id": 14,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_14.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s0_b0/results/native/2026-09-08_07-37-17/_result.json"
+        },
+        {
+          "config": "random",
+          "seed": 0,
+          "layout_id": 15,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_15.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 100.0,
+          "native_score_raw": 1.0,
+          "success": true,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s0_b0/results/native/2026-09-08_07-37-17/_result.json"
+        },
+        {
+          "config": "random",
+          "seed": 0,
+          "layout_id": 16,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_16.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 0.0,
+          "native_score_raw": 0.0,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s0_b0/results/native/2026-09-08_07-37-17/_result.json"
+        },
+        {
+          "config": "random",
+          "seed": 0,
+          "layout_id": 17,
+          "source": "/cpfs02/user/shaoyanming/RoboDojo_store/assets_cache/Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_17.json",
+          "exposure": "development",
+          "role": "rotating_development",
+          "episode_score": 0.0,
+          "native_score_raw": 0.0,
+          "success": false,
+          "native": "/cpfs02/user/shaoyanming/rdj_master/.deps/leaderboard_20260907/workers/campaign_fold_clothes_20260907/results/r11/random_s0_b0/results/native/2026-09-08_07-37-17/_result.json"
+        }
+      ]
+    }
+  }
+}

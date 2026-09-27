@@ -1,0 +1,6 @@
+PhysicalRSI 网页预览
+
+在线地址：https://yanming03.github.io/PhysicalRSI/
+离线查看：完整解压此文件夹，然后使用 Chrome 或 Edge 打开 index.html。
+请保留文件夹结构，图片、字体及演示视频均已包含。
+页面支持鼠标交互、视频播放和结果切换；外部来源链接需要联网。
