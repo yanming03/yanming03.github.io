@@ -7,18 +7,19 @@
 .skill-space-control select{max-width:100%;border:1px solid #c4d6cb;border-radius:2px;background:#fff;color:#315644;padding:9px 24px 9px 10px;font:12px var(--sans)}
 .skill-space-layout{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:20px;padding:0 24px 20px;align-items:center}
 .skill-space-plot{min-width:0}.skill-space-plot svg{display:block;width:100%;height:auto;overflow:visible}
-#skill-space-mesh path{fill:none;stroke:#b6ccbf;stroke-width:.65;vector-effect:non-scaling-stroke}
-#skill-space-mesh path.mesh-edge{stroke:#789f88;stroke-width:.9}
+#skill-space-mesh path{fill:none;stroke:#d7e3dc;stroke-width:.6;vector-effect:non-scaling-stroke}
+#skill-space-mesh path.mesh-edge{stroke:#a8c0b3;stroke-width:.75}
 #skill-space-labels text{font:500 13px var(--sans);fill:#537461;text-anchor:middle}
-#skill-space-labels path{fill:none;stroke:#9ab6a4;stroke-width:.8;stroke-dasharray:3 3}
+#skill-space-labels .space-symbol{font:italic 28px var(--math);fill:#7d9d8e}
 #skill-space-path{stroke:#1c7b70;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
 .space-point{cursor:pointer;outline:none}
-.space-point .point-hit{fill:transparent;stroke:none}.space-point .point-dot{fill:#789b86;stroke:#f9fcfa;stroke-width:.5;opacity:.65;transition:fill .15s,opacity .15s}
+.space-point .point-hit{fill:transparent;stroke:none}.space-point .point-dot{fill:#8ba99b;stroke:none;opacity:.23;transition:fill .15s,opacity .15s}
 .space-point.is-task .point-dot{fill:#176b65;stroke:#f9fcfa;stroke-width:1.4;opacity:1}
 .space-point.is-current .point-dot{fill:#fff;stroke:#176b65;stroke-width:2.4}
 .space-point:hover .point-dot,.space-point:focus-visible .point-dot{fill:#d4ebdf;stroke:#176b65;stroke-width:2;opacity:1}
 .space-point .point-focus{fill:none;stroke:transparent;stroke-width:1.5}.space-point:focus-visible .point-focus{stroke:#176b65}
-#skill-space-step-labels text{font:500 12px var(--mono);fill:#176b65;paint-order:stroke;stroke:#f9fcfa;stroke-width:4px;stroke-linejoin:round}
+#skill-space-step-labels text{font:400 12px var(--mono);fill:#7b998b;text-anchor:middle;paint-order:stroke;stroke:#f9fcfa;stroke-width:5px;stroke-linejoin:round}
+#skill-space-step-labels text.is-current{fill:#176b65;font-weight:500}
 .skill-space-inspector{min-width:0;border-left:1px solid #d5e1d9;padding-left:20px}
 .space-clip-label{font:10px var(--sans);color:#778e7f;letter-spacing:.03em}
 .skill-space-inspector h4{font:500 17px/1.4 var(--sans);letter-spacing:-.015em;margin:7px 0 12px;overflow-wrap:anywhere;color:#284c3b}

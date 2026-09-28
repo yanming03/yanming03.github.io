@@ -40,12 +40,12 @@ if (skillAtlasRoot) {
   let timer = null;
   let stepTimer = null;
 
-  fetch('skill-clips.json').then(response => {
+  fetch('skill-clips.json?v=successful-20260928').then(response => {
     if (!response.ok) throw new Error(`Skill index returned ${response.status}`);
     return response.json();
   }).then(data => {
-    allClips = data;
-    clips = data; // Every tile links to its recorded video, including perception windows.
+    allClips = data.filter(clip => clip.rollout_success === true);
+    clips = allClips; // Only clips traced to successful task rollouts enter the library.
     const grouped = new Map();
     clips.forEach((clip, index) => {
       clip.globalIndex = index;
