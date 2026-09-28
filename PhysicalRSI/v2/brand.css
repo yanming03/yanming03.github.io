@@ -9,3 +9,8 @@
 .project-subtitle{font-size:clamp(10px,2.75vw,34px);color:#253835}
 .self-harness-title{color:#3fa89a}
 @media(max-width:600px){.hero .project-name{font-size:clamp(46px,13vw,72px)}}
+
+/* Transparent partner wordmark, preserving the original SVG geometry. */
+.masthead .kinetix-mark{background:transparent;padding:0;border-radius:0}
+.masthead .kinetix-mark img{height:24px;max-width:80px}
+@media(max-width:600px){.masthead .kinetix-mark img{height:22px;max-width:70px}}
