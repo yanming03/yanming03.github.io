@@ -1,0 +1,15 @@
+/* Only additions required for the About entry; original site.css supplies typography and layout. */
+.personal-index,.about-page{cursor:auto}
+.personal-index a,.personal-index button,.about-page a,.about-page button{cursor:pointer}
+.personal-index .identity .identity-note{margin:14px 0 0;font-size:12px;line-height:1.8;max-width:70ch}
+.personal-index .contact{grid-template-columns:1fr repeat(4,auto) 1fr}
+.index-motto{width:var(--page);margin:0 auto;padding:0 0 36px;color:var(--gray);font-size:12px;line-height:1.8}
+.index-motto blockquote{margin:0}
+.index-motto figcaption{margin-top:7px;font-size:10px}
+.about-page .article p{overflow-wrap:anywhere}
+.about-links{display:flex;flex-wrap:wrap;gap:12px 24px}
+.about-motto{margin:64px 0 0;padding-top:28px;border-top:1px dashed var(--gray)}
+.about-motto blockquote{margin:0}
+.about-motto figcaption{margin-top:20px;font-size:11px;line-height:1.8;color:var(--gray)}
+.about-motto cite{font-style:normal}
+@media(max-width:680px){.personal-index .contact{grid-template-columns:1fr 1fr}.personal-index .identity .identity-note{font-size:11px}.about-motto{margin-top:44px}}
