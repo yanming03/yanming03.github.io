@@ -1,0 +1,35 @@
+/* v2: one technical text family; separate wordmark, quotation and math faces. */
+@font-face{font-family:'STIX Two Math';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/stix-two-math.woff2') format('woff2')}
+:root{--sans:'Inter','PingFang SC','Microsoft YaHei',sans-serif;--font:var(--sans);--serif:var(--sans);--mono:'IBM Plex Mono',monospace;--math:'STIX Two Math','Cambria Math',math}
+body{font-family:var(--sans);font-optical-sizing:auto;font-feature-settings:'cv11','ss01';-webkit-font-smoothing:antialiased}
+h2,.section-heading h2,.rsi-recursion h2,.evolution-panel-heading h2{font-family:var(--sans)!important;font-weight:480;letter-spacing:-.035em;line-height:1.18}
+.section-heading h2{font-size:clamp(27px,3.05vw,41px)}
+#mountain-first .section-heading h2{font-family:'Grenze Gotisch',Georgia,serif!important}
+.architecture-heading h2{font-size:clamp(25px,2.85vw,38px)}
+.physicalrsi{font-family:'Grenze Gotisch',Georgia,serif!important}
+.method-quote{font-family:'Cormorant Garamond',Georgia,serif}
+.rsi-recursion h2{font-size:clamp(27px,3vw,40px)}
+.layout-loop-heading h3,.memory-explainer h3,.self-harness-principle h3,.skill-reel-caption h3{font-family:var(--sans);font-weight:500;letter-spacing:-.025em}
+.layout-loop-heading h3{font-size:23px}.loop-case-node>p,.loop-return>span,.principle-cycle{font:400 13px/1.65 var(--sans)}
+.self-harness-principle p{font-family:var(--sans);font-size:14px}.self-harness-principle h3{font-size:23px}
+math{font-family:var(--math)!important;font-weight:400;letter-spacing:normal}
+math mtext{font-family:var(--sans)}
+.rsi-operation,.geometry-equation,.harness-revision,.loop-skill-patch>span,.layout-generations{font-family:var(--math)}
+.property-heading h3{font-weight:520;letter-spacing:-.02em}
+.skill-reel-section .section-deck{font:400 13px/1.6 var(--sans);max-width:370px}
+.skill-reel-section .section-heading{align-items:baseline;gap:24px}
+.skill-tile{animation:none;box-shadow:none}.skill-tile:hover{transform:translateY(-2px);box-shadow:none}.skill-tile.is-selected{box-shadow:0 0 0 1px var(--accent)}
+.skill-atlas{background:#fafcfb}.skill-atlas-shell,.skill-detail-main,.skill-detail-rail{border-radius:3px}
+.skill-reel-caption h3{font-size:24px}.skill-reel-caption p{font-size:12px}
+.harness-memory-heading h3{font:500 clamp(22px,2.4vw,30px)/1.3 var(--sans);letter-spacing:-.025em}
+.harness-memory-heading p{font:400 14px/1.6 var(--sans)}
+.harness-memory-flow h4{font:500 14px/1.4 var(--sans)}
+.memory-routine-name{font:500 16px/1.4 var(--sans)}
+.memory-link-label{font:400 12px/1.4 var(--sans)}
+.memory-state-diagram text{font-family:var(--sans);font-size:14px}
+.memory-state-diagram .state-variable{font-family:var(--math);font-size:20px}
+.rsi-operation{font:400 16px/1.6 var(--sans)}
+.rsi-code-panel .rsi-code-note{font:400 12px/1.7 var(--sans)}
+.rsi-symbols dt,.task-relation,.pattern-tabs button i,.geo-digit{font-family:var(--math)}
+.geo-label{font-family:var(--sans)}
+@media(max-width:600px){.skill-reel-section .section-heading{align-items:flex-start;gap:12px}.skill-reel-section .section-deck{font-size:12px}.layout-loop-heading h3{font-size:20px}}

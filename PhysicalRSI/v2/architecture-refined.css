@@ -1,0 +1,40 @@
+.architecture-math{display:grid;grid-template-columns:1fr 1fr;gap:18px 36px;margin:26px auto 20px;max-width:1080px}
+.architecture-equation{text-align:center;min-width:0;padding:12px 0}
+.architecture-equation>span{font:500 11px var(--sans);color:var(--muted);display:block;margin-bottom:12px}
+.architecture-equation math{font-size:clamp(20px,2.15vw,28px);color:var(--accent);overflow-x:auto;overflow-y:hidden;padding:2px 0}
+.architecture-math-key{grid-column:1/-1;text-align:center;margin:0;color:var(--muted);font:11px/1.8 var(--sans);text-wrap:balance}
+.architecture-math-key b{font-family:var(--math);font-weight:400;color:var(--accent);font-size:14px}
+.architecture-canvas{background:#fafcfb}
+.architecture-canvas .arch-node{border-color:#b8ccc5;border-radius:4px;box-shadow:none!important}
+.architecture-canvas .arch-label{font:500 1.02cqw/1.4 var(--sans);letter-spacing:0;color:#4e6861}
+.architecture-canvas .arch-node h3{font:500 1.8cqw/1.2 var(--sans);letter-spacing:-.025em;margin:1cqw 0;color:#203d35}
+.architecture-canvas .arch-lane-label{font:500 1.15cqw var(--sans);letter-spacing:0;color:#35685b}
+.architecture-canvas .arch-node math{font-size:1.85cqw;display:block math;margin:1cqw 0;color:#176b65}
+.architecture-canvas .reasoner-node{background:#e8f1ed}
+.architecture-canvas .reasoner-node math{margin:1.5cqw 0 0}
+.architecture-canvas .editable-node{background:#f3f8f5}
+.architecture-canvas .harness-parts{margin:1cqw 0 .5cqw;gap:.5cqw;justify-content:center}
+.architecture-canvas .harness-parts span{font:400 1.05cqw var(--sans);border:0;background:transparent;padding:.2cqw .1cqw}
+.architecture-canvas .harness-parts span+span:before{content:'·';margin-right:.5cqw;color:#8da99e}
+.architecture-canvas .harness-revision{font-size:2.4cqw;margin:.8cqw 0 0}
+.architecture-canvas .harness-artifact-label{font:400 1cqw var(--sans);color:#61776d;margin:.3cqw 0 0}
+.architecture-canvas .task-node{display:flex;align-items:center;gap:1cqw;padding:.5cqw .8cqw}
+.arch-observation{width:5.4cqw;height:4.1cqw;object-fit:cover;border-radius:2px}
+.architecture-canvas .task-node math{font-size:1.85cqw;margin:0}
+.architecture-canvas .router-node h3{font-size:1.4cqw;margin:.9cqw 0}
+.architecture-canvas .router-node math{font-size:1.65cqw;margin:1cqw 0}
+.architecture-canvas .router-node .memory-polarities{margin:.6cqw 0 0;justify-content:center;gap:1cqw;font-family:var(--math);font-size:1.7cqw}
+.architecture-canvas .route-options button{padding:.75cqw 1cqw;border-radius:3px;background:#f7faf8;border-color:#cbdad3}
+.architecture-canvas .route-options button b{font:500 1.15cqw/1.3 var(--sans)}
+.architecture-canvas .route-options button small{font:1.35cqw/1.2 var(--math);margin-top:.35cqw;color:#456f5e}
+.architecture-canvas .route-options button[aria-pressed=true]{background:#e0eee7;border-color:#7ca992;color:#234d3d}
+.architecture-canvas .physical-api-node{display:flex;align-items:center;justify-content:space-between;padding:.8cqw 1.2cqw}
+.architecture-canvas .physical-api-node math{margin:0;font-size:1.7cqw}
+.architecture-canvas .execution-composition{font:1.5cqw var(--math);top:84.5%;color:#3f6c5b}
+.architecture-canvas .system-wires text{font:11px var(--sans);fill:#668275;letter-spacing:0}
+.architecture-canvas .memory-polarities{font:1.2cqw var(--math);justify-content:center;gap:2cqw}
+.architecture-canvas .arch-wire{stroke:#8aab9d}.architecture-canvas .arch-flow{stroke:#388372}
+.architecture-canvas .execution-boundary,.architecture-canvas .improvement-boundary{border-radius:4px;border-color:#b6cfc3;background:#eaf3ee33}
+.architecture-toolbar{border-color:#c6d8ce;background:#edf4ef}
+.architecture-toolbar .system-tabs button{font-weight:450}
+@media(max-width:650px){.architecture-math{grid-template-columns:1fr;gap:0;margin-top:20px}.architecture-equation{padding:12px 0}.architecture-math-key{margin-top:12px;font-size:10px}.architecture-equation math{font-size:24px}}

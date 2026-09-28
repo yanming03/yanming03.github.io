@@ -5,11 +5,6 @@ if (skillAtlasRoot) {
   const taskSelect = document.querySelector('#skill-task-select');
   const atlasSelection = document.querySelector('#atlas-selection');
   const atlasReplay = document.querySelector('#atlas-replay');
-  const skillCinematic = document.querySelector('#skill-cinematic');
-  const cinematicNodes = document.querySelector('#cinematic-task-nodes');
-  const cinematicParticles = document.querySelector('#cinematic-particles');
-  const cinematicProgress = document.querySelector('#cinematic-progress');
-  const enterAtlas = document.querySelector('#enter-skill-atlas');
   const skillSection = document.querySelector('#skills');
   const hoverPreview = document.querySelector('#skill-hover-preview');
   const hoverVideo = document.querySelector('#skill-hover-video');
@@ -60,11 +55,12 @@ if (skillAtlasRoot) {
     tasks = [...grouped.entries()].map(([task, items]) => ({ task, items }));
     totalCount.textContent = String(clips.length);
     taskCountLabel.textContent = String(tasks.length);
-    renderCinematic();
     renderTaskOptions();
     renderAtlas();
     renderTaskSequence();
     showClip(0, 0, false);
+    window.physicalSkillClips = allClips;
+    window.dispatchEvent(new CustomEvent('skill-library-ready', {detail: allClips}));
     if (playing && sectionVisible) scheduleNext();
   }).catch(error => {
     skillAtlasRoot.innerHTML = `<p class="atlas-error">Could not load the skill index: ${error.message}</p>`;
@@ -123,38 +119,6 @@ if (skillAtlasRoot) {
       skillAtlasRoot.append(tile);
     });
     applyAtlasFilter();
-  }
-
-  function renderCinematic() {
-    if (!cinematicNodes || !cinematicParticles) return;
-    cinematicNodes.replaceChildren();
-    cinematicParticles.replaceChildren();
-    tasks.forEach((group, index) => {
-      const node = document.createElement('span');
-      node.className = 'cinematic-task-node';
-      const angle = (index / tasks.length) * 360;
-      node.style.setProperty('--angle', `${angle}deg`);
-      node.style.setProperty('--counter-angle', `${-angle}deg`);
-      node.style.setProperty('--node-delay', `${Math.min(index * 35, 1600)}ms`);
-      node.textContent = group.task.replaceAll('_', ' ');
-      cinematicNodes.append(node);
-    });
-    for (let index = 0; index < 90; index += 1) {
-      const particle = document.createElement('i');
-      particle.className = 'cinematic-particle';
-      particle.style.setProperty('--particle-angle', `${(index * 137.5) % 360}deg`);
-      particle.style.setProperty('--particle-radius', `${28 + (index % 7) * 5}%`);
-      particle.style.setProperty('--particle-delay', `${(index % 19) * 90}ms`);
-      cinematicParticles.append(particle);
-    }
-    cinematicProgress.textContent = `00 / ${String(tasks.length).padStart(2, '0')} TASKS`;
-    if (reducedMotion) finishCinematic();
-
-  }
-
-  function finishCinematic() {
-    skillCinematic?.classList.add('is-complete');
-    if (cinematicProgress) cinematicProgress.textContent = `${String(tasks.length).padStart(2, '0')} / ${String(tasks.length).padStart(2, '0')} TASKS`;
   }
 
   function showHoverPreview(clip, event) {
@@ -293,20 +257,6 @@ if (skillAtlasRoot) {
   atlasReplay.addEventListener('click', () => {
     skillAtlasRoot.querySelectorAll('.skill-tile').forEach(tile => { tile.style.animation = 'none'; tile.offsetHeight; tile.style.animation = ''; });
   });
-  enterAtlas?.addEventListener('click', () => {
-    finishCinematic();
-    skillSection?.classList.add('is-browse-mode');
-    skillCinematic?.classList.add('is-dismissed');
-    document.querySelector('#skill-atlas')?.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'center' });
-  });
-  const cinematicObserver = new IntersectionObserver(entries => {
-    if (entries.some(entry => entry.isIntersecting)) {
-      skillCinematic?.classList.add('is-playing');
-      setTimeout(finishCinematic, 4300);
-      cinematicObserver.disconnect();
-    }
-  }, { threshold: .3 });
-  if (skillCinematic) cinematicObserver.observe(skillCinematic);
   setPlaying(false);
   new IntersectionObserver(entries => {
     sectionVisible = entries[0].isIntersecting;
