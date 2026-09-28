@@ -1,92 +1,98 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Yanming — HKU MMLab 实习生，研究灵巧操作与 Embodied RSI。" />
-    <title>Yanming / Dexterous Manipulation &amp; Embodied RSI</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&display=swap" rel="stylesheet" />
-    <script src="assets/js/theme.js"></script>
+    <meta name="description" content="Yanming is a research intern at HKU MMLab, working on dexterous manipulation and embodied recursive self-improvement." />
+    <meta name="theme-color" content="#fafafa" />
+    <title>Yanming — Dexterous Manipulation &amp; Embodied RSI</title>
+    <link rel="preload" href="assets/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin />
+    <script src="assets/js/theme.js?v=home-en-20260928"></script>
     <link rel="stylesheet" href="assets/css/site.css" />
-    <link rel="stylesheet" href="assets/css/home.css?v=20260928" />
-    <script defer src="content/index.js"></script>
-    <script defer src="assets/js/site.js"></script>
+    <link rel="stylesheet" href="assets/css/home.css?v=editorial-en-20260928" />
+    <script defer src="content/index.js?v=home-en-20260928"></script>
+    <script defer src="assets/js/site.js?v=home-en-20260928"></script>
   </head>
   <body class="home">
-    <a class="skip" href="#content">跳到内容</a>
-
-    <header class="identity" id="top">
-      <div><h1>YANMING</h1><p class="research-focus">Dexterous Manipulation / Embodied RSI</p></div>
-      <div class="identity-controls">
-        <button class="theme-toggle" data-appearance="text" type="button" aria-label="切换配色">[night]</button>
-      </div>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="home-header" id="top">
+      <a class="home-wordmark" href="#top" aria-label="Yanming, home">Yanming<span aria-hidden="true">.</span></a>
+      <nav class="home-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#vision">Vision</a>
+        <a href="#index">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" data-appearance="text" type="button" aria-label="Switch to dark theme">Dark</button>
     </header>
 
-    <nav class="relations" aria-label="内容关系">
-      <span>research</span>
-      <span aria-hidden="true">-&gt;</span>
-      <a href="#index" data-filter-link="blogs">blogs</a>
-      <span aria-hidden="true">|</span>
-      <a href="#index" data-filter-link="agenda">agenda</a>
-      <span aria-hidden="true">|</span>
-      <a href="#index" data-filter-link="papers">papers</a>
-      <span aria-hidden="true">+</span>
-      <a href="#index" data-filter-link="misc">misc</a>
-    </nav>
-
     <main id="content">
-      <section class="profile" aria-labelledby="about-title">
-        <h2 id="about-title">[about]</h2>
+      <section class="profile" id="about" aria-labelledby="profile-name">
+        <div class="profile-heading">
+          <p class="eyebrow">HKU MMLab / Research intern</p>
+          <h1 id="profile-name">Yanming<span aria-hidden="true">.</span></h1>
+          <p class="research-focus">Dexterous manipulation.<br>Embodied self-improvement.</p>
+        </div>
         <div class="profile-copy">
-          <p>目前在 <span lang="en">HKU MMLab</span> 实习，导师为罗平教授。此前曾在 <span lang="en">Shanghai AI Lab</span> 和 <span lang="en">SJTU</span> 实习，导师为穆尧教授。</p>
-          <p>我的研究方向是灵巧操作与具身递归自我改进（<span lang="en">Embodied RSI</span>）。</p>
+          <p class="profile-intro">I study how robots can acquire new skills through interaction with the physical world.</p>
+          <p>I am currently a research intern at <strong>HKU MMLab</strong>, mentored by <strong>Prof. Ping Luo</strong>. Previously, I interned at <strong>Shanghai AI Lab</strong> and <strong>Shanghai Jiao Tong University</strong>, mentored by <strong>Prof. Yao Mu</strong>.</p>
+          <p>My research focuses on dexterous manipulation and embodied recursive self-improvement <span class="nowrap">(Embodied RSI).</span></p>
+          <a class="inline-link" href="mailto:hyacinthhschatten@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
         </div>
       </section>
-      <section class="vision" aria-labelledby="vision-title">
-        <h2 id="vision-title">[vision]</h2>
+
+      <section class="vision section-grid" id="vision" aria-labelledby="vision-title">
+        <div class="section-label"><span aria-hidden="true">01</span><h2 id="vision-title">Research vision</h2></div>
         <div class="vision-copy">
-          <h3 lang="en">Embodied RSI towards human-level dexterity</h3>
-          <p>我希望让机器人通过探索，学会原本无法完成的灵巧操作。我尤其关心困难任务的第一次成功：当现有策略失效时，机器人能否分析交互反馈，改写控制程序，并组合已有技能，找到一条成功轨迹？</p>
-          <p>我设想以真实与合成的人类数据扩展任务和场景，让 agent 通过 self-harness 迭代工具、代码、记忆与技能。探索得到的成功轨迹可以蒸馏到动作模型中，动作模型再成为 agent 可调用的工具。我希望这个循环能在越来越复杂的任务中持续积累能力，走向人类水平的灵巧性。</p>
+          <h3>Towards human-level<br class="desktop-break"> dexterity.</h3>
+          <div class="vision-text">
+            <p>I am especially interested in the first successful trajectory on a difficult manipulation task. When its current policy fails, can a robot use interaction feedback to revise its control code and compose existing skills into a solution?</p>
+            <p>My goal is to use real and synthetic human data to expand the tasks and environments robots can explore. Through self-harness, an agent would refine its tools, code, memory, and skills. Successful trajectories could then be distilled into action models, which become tools for further exploration. I want to understand how this cycle can scale toward human-level dexterity.</p>
+          </div>
         </div>
       </section>
-      <section class="index" id="index" aria-labelledby="index-title">
-        <header class="index-header">
-          <h2 id="index-title">[index]</h2>
-          <div class="filters" aria-label="筛选内容">
-            <button class="active" type="button" data-filter="all">all</button>
-            <button type="button" data-filter="blogs">blogs</button>
-            <button type="button" data-filter="agenda">agenda</button>
-            <button type="button" data-filter="papers">papers</button>
-            <button type="button" data-filter="misc">misc</button>
+
+      <section class="index section-grid" id="index" aria-labelledby="index-title">
+        <div class="section-label"><span aria-hidden="true">02</span><h2 id="index-title">Work &amp; writing</h2></div>
+        <div class="index-content">
+          <div class="index-header">
+            <p>Projects, ideas, and notes.</p>
+            <div class="filters" role="group" aria-label="Filter work and writing">
+              <button class="active" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button type="button" data-filter="blogs" aria-pressed="false">Writing</button>
+              <button type="button" data-filter="projects" aria-pressed="false">Projects</button>
+              <button type="button" data-filter="misc" aria-pressed="false">Notes</button>
+            </div>
           </div>
-        </header>
-
-        <div class="column-labels" aria-hidden="true">
-          <span>no.</span><span>type</span><span>title</span><span>year</span><span>link</span>
+          <ol class="entries" id="entries" aria-live="polite">
+            <li class="entry"><a href="content/misc/hello-world/"><span class="number">001</span><span class="type">Note</span><span class="title">Hello World</span><time datetime="2026">2026</time><span class="link" aria-hidden="true">↗</span></a></li>
+            <li class="entry"><a href="content/blogs/captwin-0-per-act-reflect/"><span class="number">002</span><span class="type">Writing</span><span class="title">CapTwin (0) Per-Code-Act</span><time datetime="2026">2026</time><span class="link" aria-hidden="true">↗</span></a></li>
+            <li class="entry"><a href="content/blogs/embodied-harness/"><span class="number">003</span><span class="type">Writing</span><span class="title">Embodied Harness</span><time datetime="2026">2026</time><span class="link" aria-hidden="true">↗</span></a></li>
+            <li class="entry"><a href="https://yanming03.github.io/PhysicalRSI/v2/"><span class="number">004</span><span class="type">Project</span><span class="title">PhysicalRSI</span><time datetime="2026">2026</time><span class="link" aria-hidden="true">↗</span></a></li>
+          </ol>
+          <p class="empty" id="empty" hidden>No entries in this category.</p>
         </div>
-        <ol class="entries" id="entries" aria-live="polite"></ol>
-        <p class="empty" id="empty" hidden>no entries.</p>
+      </section>
 
-
+      <section class="contact section-grid" id="contact" aria-labelledby="contact-title">
+        <div class="section-label"><span aria-hidden="true">03</span><h2 id="contact-title">Contact</h2></div>
+        <div class="contact-content">
+          <a class="email-link" href="mailto:hyacinthhschatten@gmail.com">hyacinthhschatten@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="social-links" aria-label="Research and social profiles">
+            <a href="https://github.com/yanming03">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://scholar.google.com/citations?user=gHy232gAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="https://www.xiaohongshu.com/user/profile/6a58ab7e000000000f03b800">Xiaohongshu <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="home-footer">
-      <div class="contact" id="contact">
-        <span>[contact]</span>
-        <a href="mailto:hyacinthhschatten@gmail.com">hyacinthhschatten@gmail.com</a>
-        <a href="https://github.com/yanming03">GitHub -&gt;</a>
-        <a href="https://scholar.google.com/citations?user=gHy232gAAAAJ&amp;hl=en">Scholar -&gt;</a>
-        <a href="https://www.xiaohongshu.com/user/profile/6a58ab7e000000000f03b800">小红书 -&gt;</a>
-        <a class="top" href="#top">top ↑</a>
-      </div>
-      <figure class="motto" aria-label="格罗滕迪克的格言">
-        <blockquote><p>“海洋的前进无声无息，好象什么事情都没有发生，什么都没有被打扰，海水是如此之远人们几乎听不到它。但结果它却包围了最顽固的物体，其渐渐变成了半岛，然后是岛屿，然后是小岛，最终被淹没了，就好象被无边无际伸展的大洋溶解了一样。”</p></blockquote>
-        <figcaption>— 亚历山大·格罗滕迪克<br><cite>《收获与播种》</cite> · 中译参照<cite>《仿佛来自虚空》</cite></figcaption>
+      <figure class="motto">
+        <blockquote><p>“The sea advances imperceptibly and without a sound. Nothing seems to break; nothing moves. The water is so far away that one can barely hear it… Yet it eventually surrounds the resistant substance, which little by little becomes a peninsula, then an island, then an islet, and is finally submerged in turn, as though dissolved in the ocean stretching as far as the eye can see.”</p></blockquote>
+        <figcaption><span>Alexandre Grothendieck</span><cite>Récoltes et Semailles · English rendering</cite></figcaption>
       </figure>
+      <div class="footer-end"><span>Yanming / Research</span><a href="#top">Back to top ↑</a></div>
     </footer>
   </body>
 </html>

@@ -16,14 +16,15 @@ function createEntry(item) {
 
   const link = document.createElement('a');
   link.href = item.href;
+  const typeLabel = {blogs: 'Writing', projects: 'Project', misc: 'Note', papers: 'Paper', agenda: 'Agenda'}[item.type] || item.type;
   link.innerHTML = `
     <span class="number">${item.id}</span>
-    <span class="type">${item.type}</span>
+    <span class="type">${typeLabel}</span>
     <span class="title">${item.title}</span>
     <time datetime="${item.year}">${item.year}</time>
-    <span class="link" aria-hidden="true">-&gt;</span>
+    <span class="link" aria-hidden="true">↗</span>
   `;
-  link.setAttribute('aria-label', `${item.type}: ${item.title}, ${item.year}`);
+  link.setAttribute('aria-label', `${typeLabel}: ${item.title}, ${item.year}`);
   row.append(link);
   return row;
 }
