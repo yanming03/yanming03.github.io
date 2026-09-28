@@ -1,0 +1,37 @@
+.skill-properties{padding-top:72px;padding-bottom:72px}
+.skill-properties>.section-heading{margin-bottom:36px}
+.skill-properties>.section-heading h2{font-size:clamp(27px,3.1vw,40px);font-weight:400}
+.property-study{border-top:1px solid var(--line);padding-top:24px}
+.property-study+.property-study{margin-top:52px}
+.property-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:20px}
+.property-heading h3{font:500 22px/1.3 var(--sans);margin:0;color:var(--ink)}
+.property-heading p{margin:0;font:13px/1.5 var(--sans);color:var(--muted)}
+.inheritance-videos{display:grid;grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr);align-items:center}
+.property-video{margin:0;min-width:0}
+.property-video video{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#e8eeeb;border:1px solid var(--line);border-radius:3px}
+.property-video figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:10px;font:13px/1.5 var(--sans)}
+.property-video figcaption span{color:var(--muted);font-size:11px}
+.inheritance-link{text-align:center;color:var(--accent);font:28px Georgia,serif;padding-bottom:30px}
+.property-detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:center;margin-top:24px}
+.property-equations{min-width:0;color:var(--accent)}
+.property-equations math{font-size:clamp(18px,2.1vw,25px);margin:10px 0 15px;overflow-x:auto;overflow-y:hidden;padding-bottom:3px}
+.property-equations .property-key{font:11px/1.7 var(--sans);color:var(--muted);margin:12px 0 0;text-align:center;text-wrap:balance}
+.property-code{min-width:0;border-left:2px solid #99bfb4;padding:2px 0 2px 18px}
+.property-code-label{font:10px var(--mono);color:var(--muted);margin-bottom:10px;letter-spacing:.04em}
+.property-code pre{margin:0;overflow-x:auto;color:#284a42;font:11px/1.85 var(--mono);tab-size:4;background:transparent;white-space:pre}
+.property-code code{font:inherit}
+.property-code .code-comment{color:#71847d}
+.property-code .code-keyword{color:var(--accent);font-weight:600}
+.composition-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:36px;align-items:center}
+.composition-detail{min-width:0}
+.composition-detail .property-code{margin-top:24px}
+.composition-detail math{font-size:clamp(16px,1.8vw,23px)}
+.property-stages{display:flex;gap:4px;margin-top:12px;flex-wrap:wrap}
+.property-stages button{flex:1;min-width:80px;padding:9px 6px;background:transparent;color:#61706d;border:1px solid var(--line);border-radius:2px;font:11px var(--sans);cursor:pointer}
+.property-stages button[aria-pressed=true]{background:#e0eee8;border-color:#79a997;color:#176b65}
+.property-stages button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.property-code [data-code-stage]{display:block;padding:0 6px;margin-left:-6px;border-left:2px solid transparent;transition:background .15s}
+.property-code [data-code-stage].is-active{background:#e0eee8;border-left-color:#378d7b}
+@media(max-width:760px){.property-detail,.composition-layout{grid-template-columns:1fr;gap:22px}.property-heading{display:block}.property-heading p{margin-top:8px}.property-equations math{font-size:22px}.composition-detail math{font-size:21px}.property-code pre{font-size:11px}.skill-properties{padding-top:44px;padding-bottom:44px}}
+@media(max-width:480px){.inheritance-videos{grid-template-columns:1fr;gap:12px}.inheritance-link{padding:0;line-height:20px;transform:rotate(90deg)}.property-heading h3{font-size:20px}.property-equations math{font-size:20px}.composition-detail math{font-size:17px}.property-video figcaption{font-size:12px}.property-detail{gap:20px}.property-code{padding-left:10px}.property-code pre{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.property-code [data-code-stage]{transition:none}}
