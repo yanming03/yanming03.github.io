@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&display=swap" rel="stylesheet" />
     <script src="assets/js/theme.js"></script>
     <link rel="stylesheet" href="assets/css/site.css" />
-    <link rel="stylesheet" href="assets/css/profile.css?v=original-style-20260928" />
+    <link rel="stylesheet" href="assets/css/profile.css?v=refine-20260928" />
     <script defer src="content/index.js"></script>
     <script defer src="assets/js/site.js"></script>
   </head>
@@ -19,7 +19,7 @@
 
     <header class="identity" id="top">
       <div class="identity-text"><h1>YANMING<span aria-hidden="true">_</span></h1>
-        <p class="identity-note">HKU MMLab · Whole-body robotic dexterity / Embodied RSI.<br><a href="about/index.html">about -&gt;</a></p></div>
+        <p class="identity-note"><span>Research intern · HKU MMLab</span><br><span>Whole-body robotic dexterity / Embodied RSI</span><br><a class="about-entry" href="about/index.html">about -&gt;</a></p></div>
       <div class="identity-controls">
         <button class="theme-toggle" data-appearance="text" type="button" aria-label="Switch theme">[night]</button>
       </div>
@@ -41,7 +41,7 @@
       <section class="index" id="index" aria-labelledby="index-title">
         <header class="index-header">
           <h2 id="index-title">[index]</h2>
-          <div class="filters" aria-label="Filter content">
+          <div class="filters" role="group" aria-label="Filter content">
             <button class="active" type="button" data-filter="all">all</button>
             <button type="button" data-filter="blogs">blogs</button>
             <button type="button" data-filter="agenda">agenda</button>
@@ -54,6 +54,7 @@
           <span>no.</span><span>type</span><span>title</span><span>date</span><span>link</span>
         </div>
         <ol class="entries" id="entries" aria-live="polite"></ol>
+        <noscript><p>Enable JavaScript to filter the index. <a href="about/index.html">About Yanming</a> · <a href="PhysicalRSI/v2/">PhysicalRSI</a></p></noscript>
         <p class="empty" id="empty" hidden>no entries.</p>
 
 

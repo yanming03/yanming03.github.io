@@ -29,7 +29,7 @@ function createEntry(item) {
   return row;
 }
 
-function setFilter(filter) {
+function setFilter(filter = 'all') {
   filterButtons.forEach((button) => {
     const active = button.dataset.filter === filter;
     button.classList.toggle('active', active);
@@ -47,5 +47,5 @@ document.querySelectorAll('[data-filter-link]').forEach((link) => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  render();
+  setFilter();
 });

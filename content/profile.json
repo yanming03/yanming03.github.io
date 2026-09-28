@@ -2,13 +2,12 @@
   "name": "Yanming",
   "focus": "Whole-body robotic dexterity / Embodied RSI",
   "intro": [
-    "I am currently a research intern at HKU MMLab, mentored by Prof. Ping Luo. Previously, I interned at Shanghai AI Lab and Shanghai Jiao Tong University, mentored by Prof. Yao Mu.",
-    "My research focuses on whole-body robotic dexterity and embodied recursive self-improvement (Embodied RSI)."
+    "I am currently a research intern at HKU MMLab, mentored by Prof. Ping Luo. Previously, I interned at Shanghai AI Lab and Shanghai Jiao Tong University, mentored by Prof. Yao Mu."
   ],
   "vision_title": "Towards human-level dexterity",
   "vision": [
-    "I focus on the zero-to-one problem in robotic learning: how a robot discovers its first successful trajectory on a task its current policy cannot solve. For whole-body dexterity, I study how an embodied agent can use feedback from failed attempts to revise its tools and control code, compose existing skills, and test new strategies in the physical world.",
-    "My goal is to use real and synthetic human data to expand the tasks and environments robots can explore. Through self-harness, an agent would refine its tools, code, memory, and skills. Successful trajectories could then be distilled into action models, which become tools for further exploration. I want to understand how this cycle can scale toward human-level dexterity."
+    "I am interested in how a robot learns to solve a task that its current skills cannot handle. My focus is dexterous manipulation: using physical feedback to discover a first successful strategy, then turning that strategy into a skill that transfers to new objects and situations.",
+    "I study embodied recursive self-improvement through self-harness: an agent revises the code that coordinates its tools, memory, and skills, then tests those changes through interaction. I want to connect this process with learning from real and synthetic human data. Successful trajectories could train better action models; those models could, in turn, support exploration of harder tasks. My long-term goal is to understand what makes this cycle reliable and scalable toward human-level dexterity."
   ],
   "email": "hyacinthhschatten@gmail.com",
   "xiaohongshu": "https://www.xiaohongshu.com/user/profile/6a58ab7e000000000f03b800",
