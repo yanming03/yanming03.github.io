@@ -12,6 +12,12 @@ function readTheme() {
 
 function renderThemeControl(control, theme) {
   const isNight = theme === 'night';
+  if (control.dataset.appearance === 'text') {
+    control.textContent = isNight ? '[day]' : '[night]';
+    control.setAttribute('aria-label', isNight ? '切换到日间配色' : '切换到夜间配色');
+    control.setAttribute('aria-pressed', String(isNight));
+    return;
+  }
   control.textContent = isNight
     ? ['  _', ' / )', '(_/'].join('\n')
     : ['\\ | /', '- * -', '/ | \\'].join('\n');

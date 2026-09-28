@@ -1,0 +1,41 @@
+/* Personal introduction: text, whitespace and thin rules. */
+.home{cursor:auto}
+.home a,.home button{cursor:pointer}
+.home .identity{min-height:0;padding:48px 0 38px;flex-direction:row;align-items:flex-start;gap:24px}
+.home .identity h1{font-size:clamp(28px,4vw,42px);line-height:1.1;letter-spacing:.02em}
+.home .identity .research-focus{margin:15px 0 0;font-size:16px;line-height:1.6;color:var(--gray)}
+.home .identity-controls{align-self:flex-start}
+.home .theme-toggle{font-size:14px;white-space:normal;line-height:1.5}
+.home .theme-toggle:hover,.home .theme-toggle:focus-visible{transform:none;text-decoration:underline}
+.profile,.vision{width:var(--page);margin:0 auto;display:grid;grid-template-columns:140px minmax(0,1fr);gap:32px}
+.profile{padding:48px 0 34px}
+.vision{padding:34px 0 52px;border-top:1px dashed var(--gray)}
+.profile h2,.vision h2{color:var(--gray);font-size:14px;padding-top:7px}
+.profile-copy,.vision-copy{max-width:800px}
+.profile p,.vision p{font-size:15px;line-height:1.95;margin:0 0 16px;overflow-wrap:anywhere}
+.profile p:last-child,.vision p:last-child{margin-bottom:0}
+.vision h3{font-size:clamp(20px,2.3vw,27px);font-weight:400;line-height:1.35;margin:0 0 23px;text-wrap:balance}
+.home .index{padding:38px 0 64px;border-top:1px solid var(--black)}
+.home .index-header{margin-bottom:28px}
+.home .contact{min-height:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:18px 30px;padding-top:28px;padding-bottom:28px}
+.home .contact a{overflow-wrap:anywhere}
+.home .contact .top{margin-left:auto}
+.motto{width:var(--page);margin:0 auto;padding:36px 0 54px;border-top:1px dashed var(--gray)}
+.motto blockquote{margin:0;max-width:830px}
+.motto p{margin:0;font-size:15px;line-height:2.05}
+.motto figcaption{max-width:830px;margin-top:23px;text-align:right;color:var(--gray);font-size:12px;line-height:1.9}
+.motto cite{font-style:normal}
+@media(max-width:680px){
+ .home .identity{padding:30px 0 25px}
+ .home .identity .research-focus{max-width:28ch;font-size:13px}
+ .profile,.vision{grid-template-columns:1fr;gap:18px}
+ .profile{padding-top:30px;padding-bottom:28px}
+ .vision{padding-top:28px;padding-bottom:34px}
+ .profile h2,.vision h2{padding-top:0}
+ .profile p,.vision p,.motto p{font-size:14px}
+ .home .index{padding-top:30px;padding-bottom:40px}
+ .home .contact{gap:18px 24px}
+ .home .contact>span{flex-basis:100%}
+ .home .contact .top{margin-left:0}
+ .motto{padding:28px 0 38px}
+}

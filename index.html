@@ -3,29 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Yanming 的研究、笔记与作品索引。" />
-    <title>Yanming / Index</title>
+    <meta name="description" content="Yanming — HKU MMLab 实习生，研究灵巧操作与 Embodied RSI。" />
+    <title>Yanming / Dexterous Manipulation &amp; Embodied RSI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&display=swap" rel="stylesheet" />
     <script src="assets/js/theme.js"></script>
     <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/home.css?v=20260928" />
     <script defer src="content/index.js"></script>
     <script defer src="assets/js/site.js"></script>
   </head>
-  <body>
+  <body class="home">
     <a class="skip" href="#content">跳到内容</a>
 
     <header class="identity" id="top">
-      <h1>YANMING<span aria-hidden="true">_</span></h1>
+      <div><h1>YANMING</h1><p class="research-focus">Dexterous Manipulation / Embodied RSI</p></div>
       <div class="identity-controls">
-        <div
-          id="catgirl"
-          role="button"
-          tabindex="0"
-          aria-label="pixel catgirl, idle; press to interact"
-        ></div>
-        <button class="theme-toggle" type="button" aria-label="切换配色"></button>
+        <button class="theme-toggle" data-appearance="text" type="button" aria-label="切换配色">[night]</button>
       </div>
     </header>
 
@@ -42,6 +37,21 @@
     </nav>
 
     <main id="content">
+      <section class="profile" aria-labelledby="about-title">
+        <h2 id="about-title">[about]</h2>
+        <div class="profile-copy">
+          <p>目前在 <span lang="en">HKU MMLab</span> 实习，导师为罗平教授。此前曾在 <span lang="en">Shanghai AI Lab</span> 和 <span lang="en">SJTU</span> 实习，导师为穆尧教授。</p>
+          <p>我的研究方向是灵巧操作与具身递归自我改进（<span lang="en">Embodied RSI</span>）。</p>
+        </div>
+      </section>
+      <section class="vision" aria-labelledby="vision-title">
+        <h2 id="vision-title">[vision]</h2>
+        <div class="vision-copy">
+          <h3 lang="en">Embodied RSI towards human-level dexterity</h3>
+          <p>我希望让机器人通过探索，学会原本无法完成的灵巧操作。我尤其关心困难任务的第一次成功：当现有策略失效时，机器人能否分析交互反馈，改写控制程序，并组合已有技能，找到一条成功轨迹？</p>
+          <p>我设想以真实与合成的人类数据扩展任务和场景，让 agent 通过 self-harness 迭代工具、代码、记忆与技能。探索得到的成功轨迹可以蒸馏到动作模型中，动作模型再成为 agent 可调用的工具。我希望这个循环能在越来越复杂的任务中持续积累能力，走向人类水平的灵巧性。</p>
+        </div>
+      </section>
       <section class="index" id="index" aria-labelledby="index-title">
         <header class="index-header">
           <h2 id="index-title">[index]</h2>
@@ -60,22 +70,23 @@
         <ol class="entries" id="entries" aria-live="polite"></ol>
         <p class="empty" id="empty" hidden>no entries.</p>
 
-        <figure class="prettiest">
-          <a href="https://pixeljeff1995.artstation.com/projects/DAnoLo" target="_blank" rel="noreferrer">
-            <img src="assets/images/prettiest-8bit.png" alt="Pixel Jeff 的像素画 Prettiest：流星划过日落城市上空" />
-          </a>
-          <figcaption>[image] Prettiest / Pixel Jeff -&gt;</figcaption>
-        </figure>
 
       </section>
     </main>
 
-    <footer class="contact" id="contact">
-      <span>[contact]</span>
-      <a href="mailto:yanming_03@outlook.com">mail -&gt;</a>
-      <a href="https://github.com/Tsunami-kun">github -&gt;</a>
-      <a href="https://scholar.google.com/citations?user=gHy232gAAAAJ&amp;hl=en">scholar -&gt;</a>
-      <a class="top" href="#top">top ↑</a>
+    <footer class="home-footer">
+      <div class="contact" id="contact">
+        <span>[contact]</span>
+        <a href="mailto:hyacinthhschatten@gmail.com">hyacinthhschatten@gmail.com</a>
+        <a href="https://github.com/yanming03">GitHub -&gt;</a>
+        <a href="https://scholar.google.com/citations?user=gHy232gAAAAJ&amp;hl=en">Scholar -&gt;</a>
+        <a href="https://www.xiaohongshu.com/user/profile/6a58ab7e000000000f03b800">小红书 -&gt;</a>
+        <a class="top" href="#top">top ↑</a>
+      </div>
+      <figure class="motto" aria-label="格罗滕迪克的格言">
+        <blockquote><p>“海洋的前进无声无息，好象什么事情都没有发生，什么都没有被打扰，海水是如此之远人们几乎听不到它。但结果它却包围了最顽固的物体，其渐渐变成了半岛，然后是岛屿，然后是小岛，最终被淹没了，就好象被无边无际伸展的大洋溶解了一样。”</p></blockquote>
+        <figcaption>— 亚历山大·格罗滕迪克<br><cite>《收获与播种》</cite> · 中译参照<cite>《仿佛来自虚空》</cite></figcaption>
+      </figure>
     </footer>
   </body>
 </html>

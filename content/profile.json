@@ -1,0 +1,19 @@
+{
+  "name": "Yanming",
+  "focus": "Dexterous Manipulation / Embodied RSI",
+  "intro": [
+    "目前在 HKU MMLab 实习，导师为罗平教授。此前曾在 Shanghai AI Lab 和 SJTU 实习，导师为穆尧教授。",
+    "我的研究方向是灵巧操作与具身递归自我改进（Embodied RSI）。"
+  ],
+  "vision_title": "Embodied RSI towards human-level dexterity",
+  "vision": [
+    "我希望让机器人通过探索，学会原本无法完成的灵巧操作。我尤其关心困难任务的第一次成功：当现有策略失效时，机器人能否分析交互反馈，改写控制程序，并组合已有技能，找到一条成功轨迹？",
+    "我设想以真实与合成的人类数据扩展任务和场景，让 agent 通过 self-harness 迭代工具、代码、记忆与技能。探索得到的成功轨迹可以蒸馏到动作模型中，动作模型再成为 agent 可调用的工具。我希望这个循环能在越来越复杂的任务中持续积累能力，走向人类水平的灵巧性。"
+  ],
+  "email": "hyacinthhschatten@gmail.com",
+  "xiaohongshu": "https://www.xiaohongshu.com/user/profile/6a58ab7e000000000f03b800",
+  "project": "https://yanming03.github.io/PhysicalRSI/v2/",
+  "motto": "海洋的前进无声无息，好象什么事情都没有发生，什么都没有被打扰，海水是如此之远人们几乎听不到它。但结果它却包围了最顽固的物体，其渐渐变成了半岛，然后是岛屿，然后是小岛，最终被淹没了，就好象被无边无际伸展的大洋溶解了一样。",
+  "motto_author": "亚历山大·格罗滕迪克",
+  "motto_source": "《收获与播种》；中译参照《仿佛来自虚空》"
+}
