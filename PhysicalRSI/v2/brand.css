@@ -8,3 +8,4 @@
 .title-colon{color:var(--brand-pink);font-size:.75em;margin-left:.035em}
 .project-subtitle{font-size:clamp(10px,2.75vw,34px);color:#253835}
 .self-harness-title{color:#3fa89a}
+@media(max-width:600px){.hero .project-name{font-size:clamp(46px,13vw,72px)}}
