@@ -1,0 +1,42 @@
+/* Only additions required for the About entry; original site.css supplies typography and layout. */
+.personal-index,.about-page{cursor:auto}
+.personal-index a,.personal-index button,.about-page a,.about-page button{cursor:pointer}
+.personal-index .identity .identity-note{margin:14px 0 0;font-size:12px;line-height:1.8;max-width:70ch}
+.personal-index .contact{grid-template-columns:1fr repeat(4,auto) 1fr}
+.index-motto{width:var(--page);margin:0 auto;padding:0 0 36px;color:var(--gray);font-size:12px;line-height:1.8}
+.index-motto blockquote{margin:0}
+.index-motto figcaption{margin-top:7px;font-size:10px}
+.about-page .article p{overflow-wrap:anywhere}
+.about-links{display:flex;flex-wrap:wrap;gap:12px 24px}
+.about-motto{margin:64px 0 0;padding-top:28px;border-top:1px dashed var(--gray)}
+.about-motto blockquote{margin:0}
+.about-motto figcaption{margin-top:20px;font-size:11px;line-height:1.8;color:var(--gray)}
+.about-motto cite{font-style:normal}
+.personal-index .identity{position:relative;padding-right:80px}
+.personal-index .identity-controls{position:absolute;right:0;top:42px}
+.personal-index .identity .identity-note{max-width:60ch}
+.about-entry{display:inline-block;margin-top:8px}
+.personal-index .identity h1 span{animation:none}
+.personal-index .theme-toggle:hover,.about-page .theme-toggle:hover,
+.personal-index .theme-toggle:focus-visible,.about-page .theme-toggle:focus-visible{transform:none;text-decoration:underline}
+.personal-index .filters{flex-wrap:wrap;row-gap:14px}
+.personal-index .entry .title{min-width:0;overflow-wrap:anywhere}
+.personal-index .entry time{white-space:nowrap;font-variant-numeric:tabular-nums}
+.about-page .article-header{margin-bottom:44px}
+.about-page .article p{max-width:72ch;line-height:1.9;overflow-wrap:break-word}
+.about-page .article h3{margin-top:28px;font-size:16px}
+.about-page .profile-project{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px}
+.profile-project>span{color:var(--gray);font-size:12px}
+.about-page .about-links{gap:16px 24px}
+.about-page .article a{overflow-wrap:anywhere}
+.about-page .about-motto blockquote{color:var(--gray)}
+.about-page .article-nav .theme-toggle{font-size:12px;padding:10px 4px}
+@media(max-width:680px){
+ .personal-index .identity-controls{top:32px}
+ .personal-index .identity{padding-right:60px}
+ .personal-index .filters button{min-height:28px}
+ .about-page .article-header{margin-bottom:34px}
+ .about-page .article p{font-size:14px;line-height:1.85}
+ .about-page .article-shell{width:calc(100% - 32px)}
+}
+@media(max-width:680px){.personal-index .contact{grid-template-columns:1fr 1fr}.personal-index .identity .identity-note{font-size:11px}.about-motto{margin-top:44px}}
